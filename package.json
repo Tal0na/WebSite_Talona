@@ -11,15 +11,21 @@
   "dependencies": {
     "next": "14.0.1",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-slick": "^0.29.0",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
+    "@svgr/webpack": "^8.1.0",
     "@types/node": "20.8.10",
     "@types/react": "18.2.34",
     "@types/react-dom": "^18",
     "@types/tailwindcss": "^3.1.0",
     "autoprefixer": "^10.0.1",
+    "file-loader": "^6.2.0",
     "postcss": "^8",
+    "prettier": "^3.1.0",
+    "prettier-plugin-tailwindcss": "^0.5.7",
     "tailwindcss": "^3.3.5",
     "typescript": "5.2.2"
   }
