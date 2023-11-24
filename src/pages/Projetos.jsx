@@ -185,7 +185,7 @@ const Projetos = () => {
           text-white flex flex-col items-center justify-center shadow-md transition-transform duration-300 transform hover:scale-105"
         >
           <FontAwesomeIcon icon={faSpotify} className="text-3xl mb-2" />
-          <span className="text-lg font-bold mt-2">Misnhas Playlist</span>
+          <span className="text-lg font-bold mt-2">Minhas Playlist</span>
           <p className="text-sm mt-1">Clone UI Spotify</p>
         </a>
 
@@ -199,7 +199,7 @@ const Projetos = () => {
           <FontAwesomeIcon icon={faYoutube} className="text-3xl mb-2" />
           <span className="text-xl font-bold mt-2">Vídeos Eternizados</span>
           <p className="text-sm mt-1">
-            destacando o conteúdo de alguns canais.
+          Clone UI YouTube - Destacando o conteúdo de alguns canais .
           </p>
         </a>
       </div>
