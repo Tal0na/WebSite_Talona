@@ -22,7 +22,7 @@ export const metadata = {
   description: "Explore nosso portfólio para experiências web excepcionais. Contate-nos para colaborações inovadoras!",
   keywords: "design web, desenvolvimento web, portfólio, inovação",
   author: "Tales Costa",
-  ogImage: '/svgs/Union.svg',
+  ogImage: '/foto/florborda.png',
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
