@@ -1,19 +1,22 @@
-import React from "react";
+"use client";
+
+import React from 'react';
 import Image from "next/image";
 import Link from "next/link";
 
+
 const Navbar = () => {
-  return (
+ return (
     <>
-      <header class="text-white">
+      <header className="bg-custom">
         <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-          <a
+        <Link
             href="/"
             class="flex title-font font-medium items-center text-white mb-4 md:mb-0"
           >
             <Image src="/svgs/Union.svg" alt="rosa" width={35} height={35} />
             <span class="ml-3 text-2xl">Talona</span>
-          </a>
+            </Link>
           <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center gap-x-8">
             <Link href="/Sobre">
               <span className="text-purple-500 ">01.</span> Sobre Mim
@@ -42,6 +45,7 @@ const Navbar = () => {
                   <path d="M5 12h14M12 5l7 7-7 7"></path>
                 </svg>
               </button>
+        
             </Link>
           </nav>
         </div>

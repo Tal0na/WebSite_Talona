@@ -4,7 +4,6 @@ import { ReactNode } from 'react';
 import { Poppins, Roboto } from 'next/font/google';
 import './globals.css';
 
-// Defina as fontes personalizadas
 const customFontPoppins = Poppins({
   variable: '--font-poppins',
   subsets: ['latin'],
@@ -19,8 +18,8 @@ const customFontRoboto = Roboto({
 
 export const metadata = {
   title: "Talona - Design e Desenvolvimento Web",
-  description: "Explore nosso portfólio para experiências web excepcionais. Contate-nos para colaborações inovadoras!",
-  keywords: "design web, desenvolvimento web, portfólio, inovação",
+  description: "Explore meu site para experiências web excepcionais. Contate-nos para colaborações inovadoras!",
+  keywords: "design web, desenvolvimento web, portfólio, inovação ,Talona ,talona",
   author: "Tales Costa",
   ogImage: '/foto/florborda.png',
 };
@@ -37,7 +36,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <meta property="og:image" content={metadata.ogImage} />
       </Head>
       <body>
-        {children}
+     {children}
       </body>
     </html>
     </>

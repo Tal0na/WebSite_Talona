@@ -1,36 +1,36 @@
-import React from "react"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faTools,
   faCertificate,
   faTableColumns,
-} from "@fortawesome/free-solid-svg-icons"
+} from "@fortawesome/free-solid-svg-icons";
 import {
   faGithub,
   faSpotify,
   faYoutube,
-} from "@fortawesome/free-brands-svg-icons"
-import Navbar from "../app/components/Navbar/NavbarComponent"
+} from "@fortawesome/free-brands-svg-icons";
+import Navbar from "../app/components/Navbar/NavbarComponent";
 
 const Projetos = () => {
   return (
     <>
       <Navbar />
 
-      <h1 className="text-3xl text-purple-400 font-poppins text-center mt-10 mb-20">
+      <h1 className="font-poppins mb-20 mt-10 text-center text-3xl text-purple-400">
         Aqui estão alguns dos meus projetos
       </h1>
 
-      <div className="grid grid-cols-8 grid-rows-7 gap-3 p-4">
+      <div className="grid-rows-7 grid grid-cols-8 gap-3 p-4">
         {/* Item 1 */}
         <a
           href="https://coffe-com-codigo.vercel.app/"
           target="_blank"
-          className="col-span-2 bg-[#e9d691] text-center rounded-xl row-span-2 h-32 text-[#4e3629]
-  flex flex-col items-center justify-center shadow-md transition-transform duration-300 transform hover:scale-105 border-2 border-[#4e3629]"
+          className="col-span-2 row-span-2 flex h-32 transform flex-col items-center
+  justify-center rounded-xl border-2 border-[#4e3629] bg-[#e9d691] text-center text-[#4e3629] shadow-md transition-transform duration-300 hover:scale-105"
         >
           <span className="text-lg font-bold">Coffe Com Codigo</span>
-          <p className="text-sm mt-2">
+          <p className="mt-2 text-sm">
             Projetos Leves e Divertidos para Acompanhar Seu Café Matinal ☕️
           </p>
         </a>
@@ -39,8 +39,8 @@ const Projetos = () => {
         <a
           href=""
           target="_blank"
-          className="col-span-2 bg-purple-400 text-center rounded-xl row-span-2 col-start-3 text-white 
-          flex items-center justify-center shadow-md transition-transform duration-300 transform hover:scale-105"
+          className="col-span-2 col-start-3 row-span-2 flex transform items-center justify-center 
+          rounded-xl bg-purple-400 text-center text-white shadow-md transition-transform duration-300 hover:scale-105"
         >
           <span className="text-lg font-bold">2</span>
         </a>
@@ -49,8 +49,8 @@ const Projetos = () => {
         <a
           target="_blank"
           href=""
-          className="row-span-2 bg-purple-300 text-center rounded-xl col-start-5 text-white 
-          flex items-center justify-center shadow-md transition-transform duration-300 transform hover:scale-105"
+          className="col-start-5 row-span-2 flex transform items-center justify-center 
+          rounded-xl bg-purple-300 text-center text-white shadow-md transition-transform duration-300 hover:scale-105"
         >
           <span className="text-lg font-bold">3</span>
         </a>
@@ -59,8 +59,8 @@ const Projetos = () => {
         <a
           target="_blank"
           href=""
-          className="row-span-2 bg-purple-500 text-center rounded-xl col-start-6 text-white 
-          flex items-center justify-center shadow-md transition-transform duration-300 transform hover:scale-105"
+          className="col-start-6 row-span-2 flex transform items-center justify-center 
+          rounded-xl bg-purple-500 text-center text-white shadow-md transition-transform duration-300 hover:scale-105"
         >
           <span className="text-lg font-bold">4</span>
         </a>
@@ -69,11 +69,11 @@ const Projetos = () => {
         <a
           target="_blank"
           href=""
-          className="col-span-2 bg-purple-700 text-center rounded-xl row-span-2 col-start-7 text-white 
-          flex flex-col items-center justify-center shadow-md transition-transform duration-300 transform hover:scale-105"
+          className="col-span-2 col-start-7 row-span-2 flex transform flex-col items-center 
+          justify-center rounded-xl bg-purple-700 text-center text-white shadow-md transition-transform duration-300 hover:scale-105"
         >
-          <FontAwesomeIcon icon={faCertificate} className="text-3xl mb-2" />
-          <span className="text-lg font-bold mt-2">
+          <FontAwesomeIcon icon={faCertificate} className="mb-2 text-3xl" />
+          <span className="mt-2 text-lg font-bold">
             Certificação e ou Conquista
           </span>
         </a>
@@ -82,8 +82,8 @@ const Projetos = () => {
         <a
           href=""
           target="_blank"
-          className="col-span-2 bg-purple-500 text-center rounded-xl row-span-2 row-start-3 h-32 text-white 
-          flex items-center justify-center shadow-md transition-transform duration-300 transform hover:scale-105"
+          className="col-span-2 row-span-2 row-start-3 flex h-32 transform items-center justify-center 
+          rounded-xl bg-purple-500 text-center text-white shadow-md transition-transform duration-300 hover:scale-105"
         >
           <span className="text-lg font-bold">6</span>
         </a>
@@ -92,28 +92,28 @@ const Projetos = () => {
         <a
           href="https://github.com/Talonacosta?tab=repositories"
           target="_blank"
-          className="col-span-4 bg-purple-600 text-center rounded-xl row-span-3 col-start-3 row-start-3 text-white 
-        flex flex-col items-center justify-center shadow-md transition-transform duration-300 transform hover:scale-105"
+          className="col-span-4 col-start-3 row-span-3 row-start-3 flex transform flex-col items-center 
+        justify-center rounded-xl bg-purple-600 text-center text-white shadow-md transition-transform duration-300 hover:scale-105"
         >
-          <FontAwesomeIcon icon={faGithub} className="text-4xl mb-2" />
+          <FontAwesomeIcon icon={faGithub} className="mb-2 text-4xl" />
           <span className="text-lg font-bold">GitHub Repository</span>
-          <p className="text-lg mt-1">Todos os meus projetos no Github</p>
+          <p className="mt-1 text-lg">Todos os meus projetos no Github</p>
         </a>
 
         {/* Item 8 */}
         <a
           href="https://portifolio-talona.vercel.app/"
           target="_blank"
-          className="col-span-2 bg-[#276dae] text-center rounded-xl col-start-1 row-start-5 h-32 text-white 
-          flex flex-col items-center justify-center shadow-md transition-transform duration-300 transform hover:scale-105"
+          className="col-span-2 col-start-1 row-start-5 flex h-32 transform flex-col items-center 
+          justify-center rounded-xl bg-[#276dae] text-center text-white shadow-md transition-transform duration-300 hover:scale-105"
         >
-          <FontAwesomeIcon icon={faTableColumns} className="text-4xl mb-2" />
+          <FontAwesomeIcon icon={faTableColumns} className="mb-2 text-4xl" />
 
-          <span className="text-lg font-bold mt-2">
+          <span className="mt-2 text-lg font-bold">
             Habilidades e Tecnologias
           </span>
 
-          <p className="text-sm mt-1">
+          <p className="mt-1 text-sm">
             Isso inclui HTML, CSS, JavaScript, React, Node.js, etc.
           </p>
         </a>
@@ -122,13 +122,13 @@ const Projetos = () => {
         <a
           href="https://portifolio-talona.vercel.app/"
           target="_blank"
-          className="col-span-2 bg-yellow-500 text-center rounded-xl row-span-2 col-start-7 row-start-3 
-          text-white flex flex-col items-center justify-center shadow-md transition-transform duration-300 transform 
+          className="col-span-2 col-start-7 row-span-2 row-start-3 flex transform flex-col 
+          items-center justify-center rounded-xl bg-yellow-500 text-center text-white shadow-md transition-transform duration-300 
           hover:scale-105"
         >
-          <FontAwesomeIcon icon={faTools} className="text-3xl mb-2" />
-          <span className="text-lg font-bold mt-2">Ferramentas e Recursos</span>
-          <p className="text-sm mt-1">
+          <FontAwesomeIcon icon={faTools} className="mb-2 text-3xl" />
+          <span className="mt-2 text-lg font-bold">Ferramentas e Recursos</span>
+          <p className="mt-1 text-sm">
             Descubra minhas ferramentas e recursos favoritos que uso.
           </p>
         </a>
@@ -137,8 +137,8 @@ const Projetos = () => {
         <a
           href=""
           target="_blank"
-          className="col-start-7 bg-purple-500 text-center rounded-xl row-start-5 h-32 text-white flex items-center 
-          justify-center shadow-md transition-transform duration-300 transform hover:scale-105"
+          className="col-start-7 row-start-5 flex h-32 transform items-center justify-center rounded-xl bg-purple-500 
+          text-center text-white shadow-md transition-transform duration-300 hover:scale-105"
         >
           <span className="text-lg font-bold">10</span>
         </a>
@@ -147,8 +147,8 @@ const Projetos = () => {
         <a
           href=""
           target="_blank"
-          className="col-start-8 bg-purple-400 text-center rounded-xl row-start-5 text-white flex items-center 
-          justify-center shadow-md transition-transform duration-300 transform hover:scale-105"
+          className="col-start-8 row-start-5 flex transform items-center justify-center rounded-xl bg-purple-400 
+          text-center text-white shadow-md transition-transform duration-300 hover:scale-105"
         >
           <span className="text-lg font-bold">11</span>
         </a>
@@ -157,22 +157,22 @@ const Projetos = () => {
         <a
           href="https://blog-talona.vercel.app/Links"
           target="_blank"
-          className="col-span-2 bg-purple-900 rounded-xl row-span-2 row-start-6 h-32 text-white flex flex-col 
-          items-center justify-center shadow-md transition-transform duration-300 transform hover:scale-105"
+          className="col-span-2 row-span-2 row-start-6 flex h-32 transform flex-col items-center justify-center 
+          rounded-xl bg-purple-900 text-white shadow-md transition-transform duration-300 hover:scale-105"
         >
-          <spam className="text-lg font-bold mt-2">
+          <spam className="mt-2 text-lg font-bold">
             Pagina com os meus links
           </spam>
 
-          <p className="text-sm mt-1">meus projetos, redes sociais e mais.</p>
+          <p className="mt-1 text-sm">meus projetos, redes sociais e mais.</p>
         </a>
 
         {/* Item 13 */}
         <a
           href=""
           target="_blank"
-          className="row-span-2 bg-purple-400 text-center rounded-xl col-start-3 row-start-6 text-white 
-          flex items-center justify-center shadow-md transition-transform duration-300 transform hover:scale-105"
+          className="col-start-3 row-span-2 row-start-6 flex transform items-center justify-center 
+          rounded-xl bg-purple-400 text-center text-white shadow-md transition-transform duration-300 hover:scale-105"
         >
           <span className="text-lg font-bold">13</span>
         </a>
@@ -181,30 +181,30 @@ const Projetos = () => {
         <a
           href="https://minhas-playlists.vercel.app/"
           target="_blank"
-          className="col-span-3 bg-[#1DB954] text-center rounded-xl row-span-2 col-start-4 row-start-6 
-          text-white flex flex-col items-center justify-center shadow-md transition-transform duration-300 transform hover:scale-105"
+          className="col-span-3 col-start-4 row-span-2 row-start-6 flex transform flex-col 
+          items-center justify-center rounded-xl bg-[#1DB954] text-center text-white shadow-md transition-transform duration-300 hover:scale-105"
         >
-          <FontAwesomeIcon icon={faSpotify} className="text-3xl mb-2" />
-          <span className="text-lg font-bold mt-2">Minhas Playlist</span>
-          <p className="text-sm mt-1">Clone UI Spotify</p>
+          <FontAwesomeIcon icon={faSpotify} className="mb-2 text-3xl" />
+          <span className="mt-2 text-lg font-bold">Minhas Playlist</span>
+          <p className="mt-1 text-sm">Clone UI Spotify</p>
         </a>
 
         {/* Item 15 */}
         <a
           href="https://eternizar-videos.vercel.app/"
           target="_blank"
-          className="col-span-2 bg-red-500 text-center rounded-xl row-span-2 col-start-7 row-start-6 
-          flex flex-col items-center justify-center shadow-md transition-transform duration-300 transform hover:scale-105"
+          className="col-span-2 col-start-7 row-span-2 row-start-6 flex transform flex-col 
+          items-center justify-center rounded-xl bg-red-500 text-center shadow-md transition-transform duration-300 hover:scale-105"
         >
-          <FontAwesomeIcon icon={faYoutube} className="text-3xl mb-2" />
-          <span className="text-xl font-bold mt-2">Vídeos Eternizados</span>
-          <p className="text-sm mt-1">
-          Clone UI YouTube - Destacando o conteúdo de alguns canais .
+          <FontAwesomeIcon icon={faYoutube} className="mb-2 text-3xl" />
+          <span className="mt-2 text-xl font-bold">Vídeos Eternizados</span>
+          <p className="mt-1 text-sm">
+            Clone UI YouTube - Destacando o conteúdo de alguns canais .
           </p>
         </a>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Projetos
+export default Projetos;
