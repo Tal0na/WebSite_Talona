@@ -49,7 +49,7 @@ const Contact = () => {
       </div>
       <div className="container mx-auto flex px-5 py-24">
         <div className="relative z-10 mt-10 flex w-full flex-col rounded-lg bg-black p-8 shadow-md md:ml-auto md:mt-0 md:w-1/2 lg:w-1/3">
-          <h2 className="title-font mb-1 text-lg font-medium text-white">
+          <h2 className="title-font mb-1 text-lg font-medium text-purple-500">
             Me Chame
           </h2>
           <p className="mb-5 leading-relaxed">
@@ -103,7 +103,7 @@ const Contact = () => {
             </div>
 
             <input
-              className="rounded border-0 bg-purple-500 px-6 py-2 text-lg text-white hover:bg-purple-600 focus:outline-none"
+              className="rounded border-0 bg-yellow-500 px-6 py-2 text-lg text-white hover:bg-purple-600 focus:outline-none"
               type="submit"
               value="Enviar"
             />

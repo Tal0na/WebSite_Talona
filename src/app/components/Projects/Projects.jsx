@@ -3,10 +3,10 @@ import React from "react";
 const Projects = () => {
   return (
     <>
-      <section class="body-font text-gray-400">
+      <section class="body-font ">
         <div class="container mx-auto px-5 py-24">
           <div class="mb-20 flex w-full flex-col flex-wrap items-center text-center">
-            <h1 class="title-font text-purple-r mb-2 text-2xl font-medium sm:text-3xl">
+            <h1 class="title-font text-purple-500 mb-2 text-2xl font-medium sm:text-3xl">
               Um pouco da minha experiencia
             </h1>
             <p class="w-full leading-relaxed text-opacity-80 lg:w-1/2">
@@ -17,7 +17,7 @@ const Projects = () => {
           </div>
           <div class="-m-4 flex flex-wrap">
             <div class="p-4 md:w-1/2 xl:w-1/3">
-              <div class="rounded-lg border border-gray-700 border-opacity-75 p-6">
+              <div class="rounded-lg border border-yellow-500 border-opacity-75 p-6">
                 <div class="text-purple-r mb-4 inline-flex h-10 w-10 items-center justify-center rounded-full bg-gray-800">
                   <svg
                     fill="none"
@@ -41,7 +41,7 @@ const Projects = () => {
               </div>
             </div>
             <div class="p-4 md:w-1/2 xl:w-1/3">
-              <div class="rounded-lg border border-gray-700 border-opacity-75 p-6">
+              <div class="rounded-lg border border-yellow-500 border-opacity-75 p-6">
                 <div class="text-purple-r mb-4 inline-flex h-10 w-10 items-center justify-center rounded-full bg-gray-800">
                   <svg
                     fill="none"
@@ -67,7 +67,7 @@ const Projects = () => {
               </div>
             </div>
             <div class="p-4 md:w-1/2 xl:w-1/3">
-              <div class="rounded-lg border border-gray-700 border-opacity-75 p-6">
+              <div class="rounded-lg border border-yellow-500 border-opacity-75 p-6">
                 <div class="text-purple-r mb-4 inline-flex h-10 w-10 items-center justify-center rounded-full bg-gray-800">
                   <svg
                     fill="none"
@@ -91,7 +91,7 @@ const Projects = () => {
               </div>
             </div>
             <div class="p-4 md:w-1/2 xl:w-1/3">
-              <div class="rounded-lg border border-gray-700 border-opacity-75 p-6">
+              <div class="rounded-lg border border-yellow-500 border-opacity-75 p-6">
                 <div class="text-purple-r mb-4 inline-flex h-10 w-10 items-center justify-center rounded-full bg-gray-800">
                   <svg
                     fill="none"
@@ -114,7 +114,7 @@ const Projects = () => {
               </div>
             </div>
             <div class="p-4 md:w-1/2 xl:w-1/3">
-              <div class="rounded-lg border border-gray-700 border-opacity-75 p-6">
+              <div class="rounded-lg border border-yellow-500 border-opacity-75 p-6">
                 <div class="text-purple-r mb-4 inline-flex h-10 w-10 items-center justify-center rounded-full bg-gray-800">
                   <svg
                     fill="none"
@@ -138,7 +138,7 @@ const Projects = () => {
               </div>
             </div>
             <div class="p-4 md:w-1/2 xl:w-1/3">
-              <div class="rounded-lg border border-gray-700 border-opacity-75 p-6">
+              <div class="rounded-lg border border-yellow-500 border-opacity-75 p-6">
                 <div class="text-purple-r mb-4 inline-flex h-10 w-10 items-center justify-center rounded-full bg-gray-800">
                   <svg
                     fill="none"
@@ -162,7 +162,7 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          <button class="mx-auto mt-16 flex rounded border-0 bg-purple-950 px-8 py-2 text-lg text-white hover:bg-purple-600 focus:outline-none">
+          <button class="mx-auto mt-16 flex rounded border-0 bg-yellow-500 px-8 py-2 text-lg text-black hover:bg-purple-600 focus:outline-none">
             Mais
           </button>
         </div>
