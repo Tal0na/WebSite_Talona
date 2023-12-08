@@ -1,52 +1,45 @@
-"use client";
-
-import React from 'react';
+'use client';
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-
 const Navbar = () => {
- return (
+  return (
     <>
-      <header className="bg-custom">
-        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-        <Link
-            href="/"
-            class="flex title-font font-medium items-center text-white mb-4 md:mb-0"
-          >
-            <Image src="/svgs/Union.svg" alt="rosa" width={35} height={35} />
-            <span class="ml-3 text-2xl">Talona</span>
-            </Link>
-          <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center gap-x-8">
+      <header>
+        <div className="container mx-auto flex flex-col flex-wrap items-center p-6 px-1 md:flex-row">
+        <Link href="/" passHref className="mb-4 flex items-center md:mb-0">
+            <Image src="/svgs/Union.svg" alt="rosa" width={30} height={30} />
+            <span className="ml-3 text-2xl font-medium text-white">Talona</span>
+          </Link>
+          <nav className="flex flex-wrap items-center justify-center gap-x-8 text-lg md:ml-auto">
             <Link href="/Sobre">
-              <span className="text-purple-500 ">01.</span> Sobre Mim
+              <span className="text-yellow-500 ">01.</span> Sobre Mim
             </Link>
             <Link href="/Flores">
-              <span className="text-purple-500">02.</span>Flores
+              <span className="text-yellow-500">02.</span>Flores
             </Link>
             <Link href="/Projetos">
-              <span className="text-purple-400 ">03.</span>Projetos
+              <span className="text-yellow-500">03.</span>Projetos
             </Link>
             <Link href="/Links">
-              <span className="text-purple-500">04.</span>Meus Links
+              <span className="text-yellow-500 ">04.</span>Meus Links
             </Link>
-            <Link href="/">
-              <button class="inline-flex items-center bg-purple-700 border-0 py-1 px-3 focus:outline-none hover:bg-purple-600 rounded text-base mt-4 md:mt-0 ">
-                Home
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  class="w-4 h-4 ml-1"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M5 12h14M12 5l7 7-7 7"></path>
-                </svg>
-              </button>
-        
-            </Link>
+            <Link href="/" passHref>
+  <div className="mt-4 flex items-center rounded bg-yellow-500 px-3 py-1 text-lg text-black hover:bg-purple-600 focus:outline-none md:mt-0 cursor-pointer">
+    <span>Home</span>
+    <svg
+      fill="none"
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="2"
+      className="ml-1 h-5 w-5"
+    >
+      <path d="M5 12h14M12 5l7 7-7 7"></path>
+    </svg>
+  </div>
+</Link>
           </nav>
         </div>
       </header>

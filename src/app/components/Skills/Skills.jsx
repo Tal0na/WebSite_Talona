@@ -1,6 +1,8 @@
+import React from "react";
+
 const Skills = () => {
   return (
-    <div class=" py-6 sm:py-8 lg:py-12">
+    <div class="sm:py-20 lg:py-24">
       <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
         <div class="mb-10 md:mb-16">
           <h2 class="mb-4 text-center text-2xl font-bold text-purple-500 md:mb-6 lg:text-3xl">
@@ -58,7 +60,7 @@ const Skills = () => {
               Domino HTML5, CSS3 e JavaScript, traduzindo ideias em páginas web
               interativas e estilizadas. Minha habilidade técnica se combina com
               uma abordagem criativa para oferecer experiências digitais
-              impactantes e responsivas."
+              impactantes e responsivas.
             </p>
           </div>
           <div class="relative rounded-lg bg-zinc-900 p-5 pt-8">
