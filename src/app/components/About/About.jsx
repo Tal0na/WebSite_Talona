@@ -8,9 +8,10 @@ const About = () => {
         <h3 className="mt-16 h-6 pl-10 text-xl text-yellow-400">
           Oi, Meu Nome é !
         </h3>
-        <div className="font-poppins text-purple-r pl-10 text-6xl text-purple-600">
-          <span className="font-medium">Talona</span> <span>Costa</span>
-          <span className="font-medium">.</span>
+        <div className="font-poppins text-purple-r pl-10 text-6xl">
+          <span className="font-medium text-purple-600">Talona</span>
+          <span className="text-purple-600">Costa</span>
+          <span className="font-medium text-purple-600">.</span>
         </div>
         <h2 className="font-poppins pl-12 text-4xl ">
           Eu construo coisas para a web
