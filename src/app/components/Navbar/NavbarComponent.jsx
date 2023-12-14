@@ -126,16 +126,16 @@ const Navbar = () => {
         </Link>
 
         <nav className="flex flex-wrap items-center justify-center gap-x-8 text-lg md:ml-auto">
-          {/* Item de navegação com menu suspenso "Sobre Mim" */}
+          
           <NavItemWithDropdown
-            label="01. Sobre Mim"
+            label="01. Sobre"
             items={dropdownItemsSobre}
           />
 
-          {/* Item de navegação com menu suspenso "Setup" */}
+        
           <NavItemWithDropdown label="02. Setup" items={dropdownItemsSetup} />
 
-          {/* Botão "Flores" */}
+       
           <Link
   href="/Flores"
   className="group inline-flex h-10 items-center justify-center rounded-md bg-white px-4 transition-colors hover:bg-zinc-100 hover:text-zinc-900 
@@ -146,17 +146,17 @@ const Navbar = () => {
   <span className="text-yellow-500">03.</span> Flores
 </Link>
 
-          {/* Botão "Meus Links" */}
+        
           <Link href="/Links"
              className="group inline-flex h-10 items-center justify-center rounded-md bg-white px-4 transition-colors hover:bg-zinc-100 hover:text-zinc-900 
              focus:bg-zinc-100 focus:text-zinc-900 focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-zinc-100/50 
              data-[state=open]:bg-zinc-100/50 dark:bg-zinc-950 dark:hover:bg-zinc-800 dark:hover:text-zinc-50 dark:focus:bg-zinc-800 dark:focus:text-zinc-50 
              dark:data-[active]:bg-zinc-800/50 dark:data-[state=open]:bg-zinc-800/50">
-              <span className="text-yellow-500">04.</span> Meus Links
+              <span className="text-yellow-500">04.</span>Links
        
           </Link>
           <Link href="/" passHref>
-            <div className="mt-4 flex cursor-pointer items-center rounded bg-yellow-500 px-3 py-1 text-lg text-black hover:bg-purple-600 focus:outline-none md:mt-0">
+            <div className="mt-4 flex cursor-pointer items-center rounded bg-yellow-500 px-3 py-1 text-lg text-black transition duration-300 hover:bg-purple-600 focus:border-purple-300 focus:outline-none focus:ring active:bg-purple-700 md:mt-0">
               <span>Home</span>
               <svg
                 fill="none"
