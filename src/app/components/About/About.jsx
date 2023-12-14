@@ -5,7 +5,7 @@ const About = () => {
     <>
       <div className="bg-custom flex flex-col sm:pl-8  md:pl-16 lg:pl-32  xl:mt-8 xl:pl-48">
         <h3 className="mt-16 h-6 pl-10 text-xl text-yellow-400">
-          Oi, Meu Nome é !
+          Oi, Meu Nome é!
         </h3>
         <div className="font-poppins text-purple-r pl-10 text-6xl">
           <span className="font-medium text-purple-600">Talona</span>

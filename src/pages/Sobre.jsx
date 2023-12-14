@@ -1,4 +1,6 @@
 import React from "react"
+import Link from "next/link";
+import Image from "next/image";
 import Navbar from "../app/components/Navbar/NavbarComponent"
 
 export default function Sobre() {
@@ -7,8 +9,10 @@ export default function Sobre() {
       <Navbar />
       <div className="flex items-center justify-center h-screen">
         <div className="bg-purple-700 p-8 rounded-md shadow-md max-w-md">
-          <img
+          <Image
             src="/foto/perfil.jpg"
+            width={500}
+            height={500}
             alt="Tales Costa - Front-end Developer"
             className="w-20 h-20 mx-auto rounded-full mb-4"
           />
