@@ -28,13 +28,13 @@ const Stack = () => {
    <>
    <Navbar />
    <div className="py-6 sm:py-8 lg:py-12">
-      <h2 className="mb-4 text-center text-2xl font-bold text-purple-500 md:mb-6 lg:text-3xl">
+      <h2 className="mb-4 text-center text-2xl font-bold text-purple-600 md:mb-6 lg:text-3xl">
         Minhas Skills
       </h2>
       <div className="mt-12 flex flex-wrap justify-center">
         {skillsData.map(({ icon: Icon, name }, index) => (
           <div key={index} className="mx-2 my-2 w-24 text-center">
-            <div className="flex h-24 w-24 items-center justify-center rounded-full border-2 border-black bg-white">
+            <div className="flex h-24 w-24 items-center justify-center rounded-full border-2 border-white bg-black">
               <Icon color="#9400FF" size={40} />
             </div>
             <div className="mt-2 font-poppis text-xl">{name}</div>
