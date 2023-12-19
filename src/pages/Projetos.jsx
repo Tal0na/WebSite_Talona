@@ -17,12 +17,12 @@ const Projetos = () => {
     <>
       <Navbar />
 
-      <h1 className="font-poppins mb-20 mt-10 text-center text-3xl text-purple-400">
+      <h1 className="font-poppins mb-20 mt-10 text-center text-3xl text-purple-600">
         Aqui estão alguns dos meus projetos
       </h1>
 
       <div className="grid-rows-7 grid grid-cols-8 gap-3 p-4">
-        {/* Item 1 */}
+       
         <a
           href="https://coffe-com-codigo.vercel.app/"
           target="_blank"
@@ -68,9 +68,9 @@ const Projetos = () => {
         {/* Item 5 */}
         <a
           target="_blank"
-          href=""
+          href="#"
           className="col-span-2 col-start-7 row-span-2 flex transform flex-col items-center 
-          justify-center rounded-xl bg-purple-700 text-center text-white shadow-md transition-transform duration-300 hover:scale-105"
+          justify-center rounded-xl bg-yellow-500 text-center text-white shadow-md transition-transform duration-300 hover:scale-105"
         >
           <FontAwesomeIcon icon={faCertificate} className="mb-2 text-3xl" />
           <span className="mt-2 text-lg font-bold">
@@ -80,7 +80,7 @@ const Projetos = () => {
 
         {/* Item 6 */}
         <a
-          href=""
+          href="#"
           target="_blank"
           className="col-span-2 row-span-2 row-start-3 flex h-32 transform items-center justify-center 
           rounded-xl bg-purple-500 text-center text-white shadow-md transition-transform duration-300 hover:scale-105"
@@ -105,7 +105,7 @@ const Projetos = () => {
           href="https://portifolio-talona.vercel.app/"
           target="_blank"
           className="col-span-2 col-start-1 row-start-5 flex h-32 transform flex-col items-center 
-          justify-center rounded-xl bg-[#276dae] text-center text-white shadow-md transition-transform duration-300 hover:scale-105"
+          justify-center rounded-xl bg-orange-600 text-center text-white shadow-md transition-transform duration-300 hover:scale-105"
         >
           <FontAwesomeIcon icon={faTableColumns} className="mb-2 text-4xl" />
 
@@ -120,10 +120,10 @@ const Projetos = () => {
 
         {/* Item 9 */}
         <a
-          href="https://portifolio-talona.vercel.app/"
+          href="https://talona.vercel.app/Stack"
           target="_blank"
           className="col-span-2 col-start-7 row-span-2 row-start-3 flex transform flex-col 
-          items-center justify-center rounded-xl bg-yellow-500 text-center text-white shadow-md transition-transform duration-300 
+          items-center justify-center rounded-xl bg-red-800 text-center text-white shadow-md transition-transform duration-300 
           hover:scale-105"
         >
           <FontAwesomeIcon icon={faTools} className="mb-2 text-3xl" />
@@ -135,7 +135,7 @@ const Projetos = () => {
 
         {/* Item 10 */}
         <a
-          href=""
+          href="#"
           target="_blank"
           className="col-start-7 row-start-5 flex h-32 transform items-center justify-center rounded-xl bg-purple-500 
           text-center text-white shadow-md transition-transform duration-300 hover:scale-105"
@@ -145,7 +145,7 @@ const Projetos = () => {
 
         {/* Item 11 */}
         <a
-          href=""
+          href="#"
           target="_blank"
           className="col-start-8 row-start-5 flex transform items-center justify-center rounded-xl bg-purple-400 
           text-center text-white shadow-md transition-transform duration-300 hover:scale-105"
@@ -155,21 +155,20 @@ const Projetos = () => {
 
         {/* Item 12 */}
         <a
-          href="https://blog-talona.vercel.app/Links"
-          target="_blank"
+          href="https://talona.vercel.app/Links"
           className="col-span-2 row-span-2 row-start-6 flex h-32 transform flex-col items-center justify-center 
-          rounded-xl bg-purple-900 text-white shadow-md transition-transform duration-300 hover:scale-105"
+          rounded-xl bg-blue-600 text-white shadow-md transition-transform duration-300 hover:scale-105"
         >
           <spam className="mt-2 text-lg font-bold">
             Pagina com os meus links
           </spam>
 
-          <p className="mt-1 text-sm">meus projetos, redes sociais e mais.</p>
+          <p className="mt-1 text-sm">Redes sociais e mais.</p>
         </a>
 
         {/* Item 13 */}
         <a
-          href=""
+          href="#"
           target="_blank"
           className="col-start-3 row-span-2 row-start-6 flex transform items-center justify-center 
           rounded-xl bg-purple-400 text-center text-white shadow-md transition-transform duration-300 hover:scale-105"

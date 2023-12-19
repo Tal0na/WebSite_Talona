@@ -4,10 +4,10 @@ const About = () => {
   return (
     <>
       <div className="bg-custom flex flex-col sm:pl-8  md:pl-16 lg:pl-32  xl:mt-8 xl:pl-48">
-        <h3 className="mt-16 h-6 pl-10 text-xl text-yellow-400">
+        <h3 className="mt-40 h-6 pl-10 text-xl text-white">
           Oi, Meu Nome é!
         </h3>
-        <div className="font-poppins text-purple-r pl-10 text-6xl">
+        <div className="font-poppins pl-10 text-6xl">
           <span className="font-medium text-purple-600">Talona</span>
           <span className="text-purple-600">Costa</span>
           <span className="font-medium text-purple-600">.</span>
@@ -21,13 +21,13 @@ const About = () => {
           impactantes e funcionais.
         </p>
 
-        <div className="flex justify-start pb-8 pl-12">
+        <div className="flex justify-start pb-32 pl-12">
           <a
             target="_blank"
             href="https://portifolio-talona.vercel.app/"
-            className="my-4 rounded-md bg-yellow-500 px-6 py-3 text-center text-lg font-medium 
+            className="my-4 rounded-md bg-purple-700 px-6 py-3 text-center text-lg font-medium 
             text-black
-            transition duration-300 hover:bg-purple-600 focus:border-purple-300 focus:outline-none focus:ring active:bg-purple-700 "
+            transition duration-300 hover:bg-purple-600"
           >
             Meu Portfólio!
           </a>

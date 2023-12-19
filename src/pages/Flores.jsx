@@ -12,7 +12,7 @@ const Flores = () => {
     infinite: true,
     speed: 500,
     slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToScroll: 5,
     autoplay: true,
     autoplaySpeed: 3000,
   };
@@ -21,7 +21,7 @@ const Flores = () => {
     <>
       <Navbar />
 
-      <Slider {...settings} className="justfy-center m-8">
+      <Slider {...settings} className="justfy-center m-24 ">
         <div>
           <Image
             src="/svgs/florborda.svg"

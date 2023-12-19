@@ -37,14 +37,14 @@ const Contact = () => {
   }
 
   return (
-    <section className="body-font relative bg-black text-gray-400">
+    <section className="body-font mt-24 relative bg-black text-white text-sm">
       <div className="absolute inset-0 bg-black">
         <iframe
           title="map"
           width="100%"
           height="100%"
           src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=Belo%20Horizonte&ie=UTF8&t=&z=14&iwloc=B&output=embed"
-          style={{ filter: "grayscale(1) contrast(1.2) opacity(0.16)" }}
+          style={{ filter: "grayscale(1) contrast(1) opacity(0.4)" }}
         ></iframe>
       </div>
       <div className="container mx-auto flex px-5 py-24">
@@ -53,7 +53,7 @@ const Contact = () => {
             Me Chame
           </h2>
           <p className="mb-5 leading-relaxed">
-            Me mande um E-mail para me contatar
+            Mande um E-mail para me contatar
           </p>
 
           <form
@@ -69,7 +69,7 @@ const Contact = () => {
                 type="text"
                 id="name"
                 name="name"
-                className="w-full rounded border border-gray-700 bg-gray-950 px-3 py-1 text-base leading-8 text-gray-100 outline-none transition-colors duration-200 ease-in-out focus:border-purple-500 focus:ring-2 focus:ring-purple-900"
+                className="w-full rounded border border-purple-500 bg-gray-950 px-3 py-1 text-base leading-8 text-gray-100 outline-none transition-colors duration-200 ease-in-out focus:border-purple-500 focus:ring-2 focus:ring-purple-900"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
               />
@@ -83,7 +83,7 @@ const Contact = () => {
                 type="email"
                 id="email"
                 name="email"
-                className="w-full rounded border border-gray-700 bg-gray-950 px-3 py-1 text-base leading-8 text-gray-100 outline-none transition-colors duration-200 ease-in-out focus:border-purple-500 focus:ring-2 focus:ring-purple-900"
+                className="w-full rounded border border-purple-500 bg-gray-950 px-3 py-1 text-base leading-8 text-gray-100 outline-none transition-colors duration-200 ease-in-out focus:border-purple-500 focus:ring-2 focus:ring-purple-900"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
@@ -96,14 +96,14 @@ const Contact = () => {
               <textarea
                 id="message"
                 name="message"
-                className="h-32 w-full resize-none rounded border border-gray-700 bg-gray-950 px-3 py-1 text-base leading-6 text-gray-100 outline-none transition-colors duration-200 ease-in-out focus:border-purple-500 focus:ring-2 focus:ring-purple-900"
+                className="h-32 w-full resize-none rounded border border-purple-500 bg-gray-950 px-3 py-1 text-base leading-6 text-gray-100 outline-none transition-colors duration-200 ease-in-out focus:border-purple-500 focus:ring-2 focus:ring-purple-900"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
               ></textarea>
             </div>
 
             <input
-              className="rounded border-0 bg-yellow-500 px-6 py-2 text-lg text-white hover:bg-purple-600 focus:outline-none"
+              className="rounded border-0 bg-purple-700 px-6 py-2 text-lg text-white hover:bg-purple-600 focus:outline-none"
               type="submit"
               value="Enviar"
             />

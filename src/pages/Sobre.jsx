@@ -8,7 +8,7 @@ export default function Sobre() {
     <div>
       <Navbar />
       <div className="flex items-center justify-center h-screen">
-        <div className="bg-purple-700 p-8 rounded-md shadow-md max-w-md">
+        <div className="bg-purple-800 p-8 rounded-md shadow-md max-w-md">
           <Image
             src="/foto/perfil.jpg"
             width={500}

@@ -5,7 +5,7 @@ const Skills = () => {
     <div class="sm:py-20 lg:py-24">
       <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
         <div class="mb-10 md:mb-16">
-          <h2 class="mb-4 text-center text-2xl font-bold text-purple-500 md:mb-6 lg:text-3xl">
+          <h2 class="mb-4 text-center text-2xl font-bold text-purple-600 md:mb-6 lg:text-3xl">
             Minhas Skills
           </h2>
 
@@ -19,7 +19,7 @@ const Skills = () => {
 
         <div class="grid gap-8 sm:grid-cols-2 sm:gap-y-10 xl:grid-cols-3">
           <div class="relative rounded-lg bg-zinc-900 p-5 pt-8">
-            <h3 class="mb-3 text-lg font-semibold text-yellow-500 md:text-xl">
+            <h3 class="mb-3 text-lg font-semibold text-purple-500 md:text-xl">
               Design de interfaces
             </h3>
             <p class="text-white">
@@ -31,7 +31,7 @@ const Skills = () => {
           </div>
 
           <div class="relative rounded-lg bg-zinc-900 p-5 pt-8">
-            <h3 class="mb-3 text-lg font-semibold text-yellow-500 md:text-xl">
+            <h3 class="mb-3 text-lg font-semibold text-purple-500 md:text-xl">
               Usabilidade
             </h3>
             <p class="text-white">
@@ -42,7 +42,7 @@ const Skills = () => {
             </p>
           </div>
           <div class="relative rounded-lg bg-zinc-900 p-5 pt-8">
-            <h3 class="mb-3 text-lg font-semibold text-yellow-500 md:text-xl">
+            <h3 class="mb-3 text-lg font-semibold text-purple-500 md:text-xl">
               UX/UI
             </h3>
             <p class="text-white">
@@ -53,7 +53,7 @@ const Skills = () => {
             </p>
           </div>
           <div class="relative rounded-lg bg-zinc-900 p-5 pt-8">
-            <h3 class="mb-3 text-lg font-semibold text-yellow-500 md:text-xl">
+            <h3 class="mb-3 text-lg font-semibold text-purple-500 md:text-xl">
               HTML 5, CSS 3 e JavaScript
             </h3>
             <p class="text-white">
@@ -64,7 +64,7 @@ const Skills = () => {
             </p>
           </div>
           <div class="relative rounded-lg bg-zinc-900 p-5 pt-8">
-            <h3 class="mb-3 text-lg font-semibold text-yellow-500 md:text-xl">
+            <h3 class="mb-3 text-lg font-semibold text-purple-500 md:text-xl">
               Prototipagem
             </h3>
             <p class="text-white">
@@ -76,7 +76,7 @@ const Skills = () => {
             </p>
           </div>
           <div class="relative rounded-lg bg-zinc-900 p-5 pt-8">
-            <h3 class="mb-3 text-lg font-semibold text-yellow-500 md:text-xl">
+            <h3 class="mb-3 text-lg font-semibold text-purple-500 md:text-xl">
               React e TailWind
             </h3>
             <p class="text-white">

@@ -32,7 +32,7 @@ const NavItemWithDropdown = ({ label, items }) => {
 
     const newTimerId = setTimeout(() => {
       setIsDropdownOpen(isOpen);
-    }, 250); 
+    }, 250);
     setTimerId(newTimerId);
   };
 
@@ -44,7 +44,9 @@ const NavItemWithDropdown = ({ label, items }) => {
     return (
       <>
         <span
-          className={`text-yellow-500 ${number === "01" ? "text-white" : ""}`}
+          className={`text-purple-600 ${
+            number === "01" ? "text-purple-600" : ""
+          }`}
         >
           {number}.
         </span>
@@ -112,32 +114,31 @@ const Navbar = () => {
           <span className="ml-3 text-2xl font-medium text-white">Talona</span>
         </Link>
 
-        <nav className="flex flex-wrap items-center justify-center gap-x-8 text-lg md:ml-auto">
+        <nav className="flex flex-wrap items-center justify-center gap-x-2 text-lg md:ml-auto">
           <NavItemWithDropdown label="01. Sobre" items={dropdownItemsSobre} />
 
           <NavItemWithDropdown label="02. Setup" items={dropdownItemsSetup} />
 
           <Link
             href="/Flores"
-            className="group inline-flex h-10 items-center justify-center rounded-md bg-white px-4 transition-colors hover:bg-zinc-100 hover:text-zinc-900 
-  focus:bg-zinc-100 focus:text-zinc-900 focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-zinc-100/50 
-  data-[state=open]:bg-zinc-100/50 dark:bg-zinc-950 dark:hover:bg-zinc-800 dark:hover:text-zinc-50 dark:focus:bg-zinc-800 dark:focus:text-zinc-50 
-  dark:data-[active]:bg-zinc-800/50 dark:data-[state=open]:bg-zinc-800/50"
+            className="inline-flex h-10 items-center justify-center rounded-md 
+            px-4 text-white transition-colors hover:bg-zinc-800"
           >
-            <span className="text-yellow-500">03.</span> Flores
+            <span className="text-purple-600">03.</span> Flores
           </Link>
 
           <Link
             href="/Links"
-            className="group inline-flex h-10 items-center justify-center rounded-md bg-white px-4 transition-colors hover:bg-zinc-100 hover:text-zinc-900 
-             focus:bg-zinc-100 focus:text-zinc-900 focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-zinc-100/50 
-             data-[state=open]:bg-zinc-100/50 dark:bg-zinc-950 dark:hover:bg-zinc-800 dark:hover:text-zinc-50 dark:focus:bg-zinc-800 dark:focus:text-zinc-50 
-             dark:data-[active]:bg-zinc-800/50 dark:data-[state=open]:bg-zinc-800/50"
+            className="inline-flex h-10 items-center justify-center rounded-md 
+            px-4 text-white transition-colors hover:bg-zinc-800"
           >
-            <span className="text-yellow-500">04.</span>Links
+            <span className="text-purple-600">04.</span>Links
           </Link>
           <Link href="/" passHref>
-            <div className="mt-4 flex cursor-pointer items-center rounded bg-yellow-500 px-3 py-1 text-lg text-black transition duration-300 hover:bg-purple-600 focus:border-purple-300 focus:outline-none focus:ring active:bg-purple-700 md:mt-0">
+            <div
+              className="mt-4 flex cursor-pointer items-center rounded bg-purple-700 px-3 py-1 text-lg text-black 
+              transition duration-300 hover:bg-purple-600 md:mt-0"
+            >
               <span>Home</span>
               <svg
                 fill="none"
