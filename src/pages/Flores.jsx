@@ -4,12 +4,11 @@ import Image from "next/image";
 import Navbar from "../app/components/Navbar/NavbarComponent";
 
 const Flores = () => {
-
   return (
     <>
-      <Navbar />
-
-    
+      <div className="min-h-screen w-full bg-white dark:bg-black">
+        <Navbar />
+      </div>
     </>
   );
 };

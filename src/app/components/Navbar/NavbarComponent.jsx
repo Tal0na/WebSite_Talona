@@ -1,17 +1,18 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import ThemeButton from "../ThemeToggle";
 
 const DropdownMenu = ({ items }) => {
   return (
-    <div className="absolute right-0 mt-2 w-48 origin-top-right rounded-md bg-black  ring-1 ring-white ring-opacity-5 focus:outline-none">
+    <div className="absolute right-0 mt-2 w-48 origin-top-right rounded-md bg-white ring-1 ring-black ring-opacity-5 focus:outline-none dark:bg-black dark:ring-white">
       {items.map((item, index) => (
         <Link
           key={index}
           href={item.href || "#"}
           passHref
-          className="block rounded-md px-4 py-2 text-sm text-white hover:bg-zinc-800"
+          className="block rounded-md px-4 py-2 text-sm text-black hover:bg-zinc-200 dark:text-white dark:hover:bg-zinc-800"
         >
           {item.label}
         </Link>
@@ -50,7 +51,9 @@ const NavItemWithDropdown = ({ label, items }) => {
         >
           {number}.
         </span>
-        <span className={number === "01" ? "text-white" : ""}>{text}</span>
+        <span className={number === "01" ? "text-black dark:text-white" : ""}>
+          {text}
+        </span>
       </>
     );
   };
@@ -65,7 +68,7 @@ const NavItemWithDropdown = ({ label, items }) => {
       <button
         type="button"
         className="inline-flex h-10 items-center justify-center rounded-md 
-        px-4 text-white transition-colors hover:bg-zinc-800"
+        px-4 text-black transition-colors hover:bg-zinc-200 dark:text-white dark:hover:bg-zinc-800"
         onClick={() => handleDropdownToggle(!isDropdownOpen)}
       >
         {renderStyledLabel()}
@@ -94,6 +97,8 @@ const NavItemWithDropdown = ({ label, items }) => {
 };
 
 const Navbar = () => {
+  
+
   const dropdownItemsSobre = [
     { label: "Sobre Mim", href: "/Sobre" },
     { label: "Projetos", href: "/Projetos" },
@@ -109,6 +114,7 @@ const Navbar = () => {
   return (
     <header>
       <div className="container mx-auto flex flex-col flex-wrap items-center p-6 px-1 md:flex-row">
+    
         <Link href="/" passHref className="mb-4 flex items-center md:mb-0">
           <Image src="/svgs/logo.svg" alt="logo" width={100} height={100} />
         </Link>
@@ -121,7 +127,7 @@ const Navbar = () => {
           <Link
             href="/Flores"
             className="inline-flex h-10 items-center justify-center rounded-md 
-            px-4 text-white transition-colors hover:bg-zinc-800"
+            px-4 text-black transition-colors hover:bg-zinc-200 dark:text-white dark:hover:bg-zinc-800"
           >
             <span className="text-purple-600">03.</span> Flores
           </Link>
@@ -129,14 +135,14 @@ const Navbar = () => {
           <Link
             href="/Links"
             className="inline-flex h-10 items-center justify-center rounded-md 
-            px-4 text-white transition-colors hover:bg-zinc-800"
+            px-4 text-black transition-colors hover:bg-zinc-200 dark:text-white dark:hover:bg-zinc-800"
           >
             <span className="text-purple-600">04.</span>Links
           </Link>
           <Link href="/" passHref>
             <div
-              className="mt-4 flex cursor-pointer items-center rounded bg-purple-700 px-3 py-1 text-lg text-black 
-              transition duration-300 hover:bg-purple-600 md:mt-0"
+              className="mt-4 flex cursor-pointer items-center rounded bg-purple-700 px-3 py-1 text-lg text-white transition
+              duration-300 hover:bg-purple-600 dark:text-black md:mt-0"
             >
               <span>Home</span>
               <svg
@@ -151,6 +157,7 @@ const Navbar = () => {
               </svg>
             </div>
           </Link>
+          <ThemeButton />
         </nav>
       </div>
     </header>

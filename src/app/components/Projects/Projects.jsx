@@ -18,7 +18,7 @@ const Projects = () => {
           <div class="-m-4 flex flex-wrap">
             <div class="p-4 md:w-1/2 xl:w-1/3">
               <div class="rounded-lg border border-purple-500 border-opacity-75 p-6">
-                <div class="text-purple-r mb-4 inline-flex h-10 w-10 items-center justify-center rounded-full bg-gray-800">
+                <div class="text-purple-r mb-4 inline-flex h-10 w-10 items-center justify-center rounded-full dark:bg-gray-800 bg-gray-300">
                   <svg
                     fill="none"
                     stroke="currentColor"
@@ -31,10 +31,10 @@ const Projects = () => {
                     <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
                   </svg>
                 </div>
-                <h2 class="title-font mb-2 text-lg font-medium text-white">
+                <h2 class="title-font mb-2 text-lg font-medium dark:text-white text-black">
                   E-commerce
                 </h2>
-                <p class="text-base leading-relaxed">
+                <p class="text-base leading-relaxed dark:text-white text-black">
                   Uma plataforma e-commerce inovadora, conectando clientes e
                   produtos exclusivos.
                 </p>
@@ -42,7 +42,7 @@ const Projects = () => {
             </div>
             <div class="p-4 md:w-1/2 xl:w-1/3">
               <div class="rounded-lg border border-purple-500 border-opacity-75 p-6">
-                <div class="text-purple-r mb-4 inline-flex h-10 w-10 items-center justify-center rounded-full bg-gray-800">
+                <div class="text-purple-r mb-4 inline-flex h-10 w-10 items-center justify-center rounded-full dark:bg-gray-800 bg-gray-300">
                   <svg
                     fill="none"
                     stroke="currentColor"
@@ -57,10 +57,10 @@ const Projects = () => {
                     <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
                   </svg>
                 </div>
-                <h2 class="title-font mb-2 text-lg font-medium text-white">
+                <h2 class="title-font mb-2 text-lg font-medium dark:text-white text-black">
                   Dashboards
                 </h2>
-                <p class="text-base leading-relaxed">
+                <p class="text-base leading-relaxed dark:text-white text-black">
                   Dashboards intuitivos, transformando dados complexos em
                   insights acionáveis e visuais.
                 </p>
@@ -68,7 +68,7 @@ const Projects = () => {
             </div>
             <div class="p-4 md:w-1/2 xl:w-1/3">
               <div class="rounded-lg border border-purple-500 border-opacity-75 p-6">
-                <div class="text-purple-r mb-4 inline-flex h-10 w-10 items-center justify-center rounded-full bg-gray-800">
+                <div class="text-purple-r mb-4 inline-flex h-10 w-10 items-center justify-center rounded-full dark:bg-gray-800 bg-gray-300">
                   <svg
                     fill="none"
                     stroke="currentColor"
@@ -82,17 +82,17 @@ const Projects = () => {
                     <circle cx="12" cy="7" r="4"></circle>
                   </svg>
                 </div>
-                <h2 class="title-font mb-2 text-lg font-medium text-white">
+                <h2 class="title-font mb-2 text-lg font-medium dark:text-white text-black">
                   Portifolio
                 </h2>
-                <p class="text-base leading-relaxed">
+                <p class="text-base leading-relaxed dark:text-white text-black">
                 O portfólio é um espelho de uma jornada única, onde a criatividade e a técnica se entrelaçam.
                 </p>
               </div>
             </div>
             <div class="p-4 md:w-1/2 xl:w-1/3">
               <div class="rounded-lg border border-purple-500 border-opacity-75 p-6">
-                <div class="text-purple-r mb-4 inline-flex h-10 w-10 items-center justify-center rounded-full bg-gray-800">
+                <div class="text-purple-r mb-4 inline-flex h-10 w-10 items-center justify-center rounded-full dark:bg-gray-800 bg-gray-300">
                   <svg
                     fill="none"
                     stroke="currentColor"
@@ -105,17 +105,17 @@ const Projects = () => {
                     <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1zM4 22v-7"></path>
                   </svg>
                 </div>
-                <h2 class="title-font mb-2 text-lg font-medium text-white">
+                <h2 class="title-font mb-2 text-lg font-medium dark:text-white text-black">
                   Blog Pessoal
                 </h2>
-                <p class="text-base leading-relaxed">
+                <p class="text-base leading-relaxed dark:text-white text-black">
                 Explore um universo pessoal e apaixone-se por suas paixões através do poder de um blog.
                 </p>
               </div>
             </div>
             <div class="p-4 md:w-1/2 xl:w-1/3">
               <div class="rounded-lg border border-purple-500 border-opacity-75 p-6">
-                <div class="text-purple-r mb-4 inline-flex h-10 w-10 items-center justify-center rounded-full bg-gray-800">
+                <div class="text-purple-r mb-4 inline-flex h-10 w-10 items-center justify-center rounded-full dark:bg-gray-800 bg-gray-300">
                   <svg
                     fill="none"
                     stroke="currentColor"
@@ -128,10 +128,10 @@ const Projects = () => {
                     <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
                   </svg>
                 </div>
-                <h2 class="title-font mb-2 text-lg font-medium text-white">
+                <h2 class="title-font mb-2 text-lg font-medium dark:text-white text-black">
                   Gerenciamento de Tarefas
                 </h2>
-                <p class="text-base leading-relaxed">
+                <p class="text-base leading-relaxed dark:text-white text-black">
                   Otimize sua produtividade com meu aplicativo de gerenciamento
                   de tarefas.
                 </p>
@@ -139,7 +139,7 @@ const Projects = () => {
             </div>
             <div class="p-4 md:w-1/2 xl:w-1/3">
               <div class="rounded-lg border border-purple-500 border-opacity-75 p-6">
-                <div class="text-purple-r mb-4 inline-flex h-10 w-10 items-center justify-center rounded-full bg-gray-800">
+                <div class="text-purple-r mb-4 inline-flex h-10 w-10 items-center justify-center rounded-full dark:bg-gray-800 bg-gray-300">
                   <svg
                     fill="none"
                     stroke="currentColor"
@@ -152,17 +152,17 @@ const Projects = () => {
                     <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
                   </svg>
                 </div>
-                <h2 class="title-font mb-2 text-lg font-medium text-white">
+                <h2 class="title-font mb-2 text-lg font-medium dark:text-white text-black">
                   Rede Social para Nicho Específico
                 </h2>
-                <p class="text-base leading-relaxed">
+                <p class="text-base leading-relaxed dark:text-white text-black">
                   Conectando entusiastas em uma comunidade exclusiva através da
                   minha rede social.
                 </p>
               </div>
             </div>
           </div>
-          <button class="mx-auto mt-16 flex rounded border-0 bg-purple-700 px-8 py-2 text-lg text-black hover:bg-purple-600 focus:outline-none">
+          <button class="mx-auto mt-16 flex rounded border-0 bg-purple-700 px-8 py-2 text-lg dark:text-black text-white hover:bg-purple-600 focus:outline-none">
             Mais
           </button>
         </div>

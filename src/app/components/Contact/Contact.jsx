@@ -37,7 +37,7 @@ const Contact = () => {
   }
 
   return (
-    <section className="body-font mt-24 relative bg-black text-white text-sm">
+    <section className="body-font mt-24 relative  text-white text-sm">
       <div className="absolute inset-0 bg-black">
         <iframe
           title="map"

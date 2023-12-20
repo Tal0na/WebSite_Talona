@@ -7,7 +7,7 @@ import Skills from "./components/Skills/Skills";
 
 export default async function Home() {
   return (
-    <main>
+    <main className="dark:bg-black bg-white">
       <div>
         <Navbar />
         <About />

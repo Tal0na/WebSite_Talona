@@ -32,25 +32,27 @@ const EquipamentosList = () => {
 
   return (
     <>
+    <div className="min-h-screen w-full bg-white dark:bg-black">
       <Navbar />
       <div className=" p-8">
-        <h2 className="mb-4 text-2xl font-bold text-white">
+        <h2 className="mb-4 text-2xl font-bold dark:text-white text-black">
           Lista de Equipamentos
         </h2>
 
-        <h2 className="mt-8 py-4 text-2xl font-bold text-white">
+        <h2 className="mt-8 py-4 text-2xl font-bold dark:text-white text-black">
           Configuração do PC
         </h2>
         <pre className="font-roboto rounded-lg bg-purple-800 p-4 text-white">
           {configuracaoPC}
         </pre>
 
-        <h2 className="font-poppins mt-8 py-4 text-2xl font-bold text-white">
+        <h2 className="font-poppins mt-8 py-4 text-2xl font-bold dark:text-white text-black">
           Periféricos
         </h2>
         <pre className="font-roboto rounded-lg bg-purple-800 p-4 text-white">
           {perifericos}
         </pre>
+      </div>
       </div>
     </>
   );

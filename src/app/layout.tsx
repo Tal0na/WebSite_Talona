@@ -1,5 +1,5 @@
 import Head from 'next/head';
-
+import  Providers  from './providers'
 import { ReactNode } from 'react';
 import { Poppins, Roboto } from 'next/font/google';
 import './globals.css';
@@ -36,7 +36,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <meta property="og:image" content={metadata.ogImage} />
       </Head>
       <body>
-     {children}
+        <Providers>{children}</Providers>
       </body>
     </html>
     </>

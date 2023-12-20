@@ -5,7 +5,7 @@ import Navbar from "../app/components/Navbar/NavbarComponent"
 
 export default function Sobre() {
   return (
-    <div>
+    <div className="min-h-screen w-full bg-white dark:bg-black">
       <Navbar />
       <div className="flex items-center justify-center h-screen">
         <div className="bg-purple-800 p-8 rounded-md shadow-md max-w-md">
@@ -16,7 +16,7 @@ export default function Sobre() {
             alt="Tales Costa - Front-end Developer"
             className="w-20 h-20 mx-auto rounded-full mb-4"
           />
-          <h1 className="text-2xl font-bold mb-2">Tales Costa</h1>
+          <h1 className="text-2xl font-bold mb-2 dark:text-white">Tales Costa</h1>
           <p className="text-white mb-6">Front-end Developer From Brazil</p>
           <p className="text-white leading-relaxed">
             Sou um experiente desenvolvedor front-end, com habilidades sólidas
