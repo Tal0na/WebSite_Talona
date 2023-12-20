@@ -110,8 +110,7 @@ const Navbar = () => {
     <header>
       <div className="container mx-auto flex flex-col flex-wrap items-center p-6 px-1 md:flex-row">
         <Link href="/" passHref className="mb-4 flex items-center md:mb-0">
-          <Image src="/svgs/Union.svg" alt="rosa" width={30} height={30} />
-          <span className="ml-3 text-2xl font-medium text-white">Talona</span>
+          <Image src="/svgs/logo.svg" alt="logo" width={100} height={100} />
         </Link>
 
         <nav className="flex flex-wrap items-center justify-center gap-x-2 text-lg md:ml-auto">

@@ -7,14 +7,14 @@ const Footer = () => {
       <footer class="text-white  body-font">
         <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
           <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
-            <Image src="/svgs/Union.svg" alt="rosa" width={35} height={35} />
-            <span class="ml-3 text-xl">Talona</span>
+            <Image src="/svgs/logo.svg" alt="rosa" width={100} height={100} />
+            
           </a>
           <p class="text-sm text-white sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">
             &copy; {new Date().getFullYear()} &middot; Talona —
             <a
               href="https://twitter.com/Talonaa_"
-              class="text-gray-500 ml-1"
+              class="text-zinc-400 ml-1"
               target="_blank"
               rel="noopener noreferrer"
             >
