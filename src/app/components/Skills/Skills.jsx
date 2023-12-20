@@ -63,7 +63,7 @@ const Skills = () => {
               impactantes e responsivas.
             </p>
           </div>
-          <div class="relative rounded-lg bdark:bg-zinc-900 bg-zinc-200 p-5 pt-8">
+          <div class="relative rounded-lg dark:bg-zinc-900 bg-zinc-200 p-5 pt-8">
             <h3 class="mb-3 text-lg font-semibold text-purple-500 md:text-xl">
               Prototipagem
             </h3>
