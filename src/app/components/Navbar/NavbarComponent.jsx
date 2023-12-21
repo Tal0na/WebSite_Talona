@@ -3,11 +3,11 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import ThemeButton from "../ThemeToggle";
-import LogoComponent from '../logo/logotheme';
+import LogoComponent from "../logo/logotheme";
 
 const DropdownMenu = ({ items }) => {
   return (
-    <div className="absolute right-0 mt-2 w-48 origin-top-right rounded-md bg-white ring-1 ring-black ring-opacity-5 focus:outline-none dark:bg-black dark:ring-white">
+    <div className="fixed mt-2  flex origin-top-right flex-col rounded-md border-2 border-zinc-200 bg-white dark:border-zinc-500 dark:bg-black">
       {items.map((item, index) => (
         <Link
           key={index}
@@ -98,26 +98,20 @@ const NavItemWithDropdown = ({ label, items }) => {
 };
 
 const Navbar = () => {
-  
-
   const dropdownItemsSobre = [
     { label: "Sobre Mim", href: "/Sobre" },
     { label: "Projetos", href: "/Projetos" },
-    { label: "Item 3", href: "#" },
   ];
 
   const dropdownItemsSetup = [
     { label: "Equipamentos", href: "/Equipamentos" },
     { label: "Stack", href: "/Stack" },
-    { label: "Item 3", href: "#" },
   ];
 
   return (
     <header>
       <div className="container mx-auto flex flex-col flex-wrap items-center p-6 px-1 md:flex-row">
-    
         <Link href="/" passHref className="mb-4 flex items-center md:mb-0">
-          
           <LogoComponent />
         </Link>
 
@@ -144,7 +138,7 @@ const Navbar = () => {
           <Link href="/" passHref>
             <div
               className="mt-4 flex cursor-pointer items-center rounded bg-purple-700 px-3 py-1 text-lg text-white transition
-              duration-300 hover:bg-purple-600 dark:text-black md:mt-0"
+              duration-300 hover:bg-purple-600 md:mt-0 dark:text-black"
             >
               <span>Home</span>
               <svg
@@ -159,8 +153,8 @@ const Navbar = () => {
               </svg>
             </div>
           </Link>
-          <ThemeButton />
         </nav>
+        <ThemeButton />
       </div>
     </header>
   );
