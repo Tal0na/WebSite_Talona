@@ -88,13 +88,6 @@ const Links = () => {
           Twitch
         </a>
       </div>
-
-      <div
-        id="hashtag"
-        className="my-4 text-center text-2xl font-normal text-black  dark:text-white"
-      >
-        #Flower❤
-      </div>
     </div>
   );
 };

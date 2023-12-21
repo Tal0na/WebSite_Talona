@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import ThemeButton from "../ThemeToggle";
+import LogoComponent from '../logo/logotheme';
 
 const DropdownMenu = ({ items }) => {
   return (
@@ -116,7 +117,8 @@ const Navbar = () => {
       <div className="container mx-auto flex flex-col flex-wrap items-center p-6 px-1 md:flex-row">
     
         <Link href="/" passHref className="mb-4 flex items-center md:mb-0">
-          <Image src="/svgs/logo.svg" alt="logo" width={100} height={100} />
+          
+          <LogoComponent />
         </Link>
 
         <nav className="flex flex-wrap items-center justify-center gap-x-2 text-lg md:ml-auto">

@@ -1,5 +1,7 @@
+"use client";
 import React from "react";
 import Image from "next/image";
+import LogoComponent from '../logo/logotheme';
 
 const Footer = () => {
   return (
@@ -7,8 +9,8 @@ const Footer = () => {
       <footer class="dark:text-white text-black body-font">
         <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
           <a class="flex title-font font-medium items-center md:justify-start justify-center dark:text-white text-black">
-            <Image src="/svgs/logo.svg" alt="rosa" width={100} height={100} />
             
+            <LogoComponent />
           </a>
           <p class="text-sm dark:text-white text-black sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">
             &copy; {new Date().getFullYear()} &middot; Talona Costa —
