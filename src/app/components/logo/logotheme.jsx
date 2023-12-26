@@ -1,29 +1,31 @@
+'use client'
 import { useTheme } from 'next-themes';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 
 function LogoComponent() {
   const { resolvedTheme } = useTheme();
-  const [theme, setLocalTheme] = useState(resolvedTheme);
+  const [logoSrc, setLogoSrc] = useState('');
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    if (typeof window !== 'undefined') {
-      setLocalTheme(resolvedTheme);
-    }
+    setLogoSrc(resolvedTheme === 'dark' ? '/svgs/logolight.svg' : '/svgs/logodark.svg');
+    setLoading(false);
   }, [resolvedTheme]);
-  
-
-
-  const logoSrc = theme === 'dark' ? '/svgs/logolight.svg': '/svgs/logodark.svg';
 
   return (
-    <div >
-      <Image
-        src={logoSrc}
-        alt={theme === 'dark' ? 'logo (modo escuro)' : 'logo'}
-        width={100}
-        height={100}
-      />
+    <div>
+      {loading ? (
+        // Exibe um indicador de carregamento enquanto a imagem está sendo carregada
+        <div>Carregando...</div>
+      ) : (
+        <Image
+          src={logoSrc}
+          alt={resolvedTheme === 'dark' ? 'logo (modo escuro)' : 'logo (modo claro)'}
+          width={100}
+          height={100}
+        />
+      )}
     </div>
   );
 }

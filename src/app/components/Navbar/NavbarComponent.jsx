@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import ThemeButton from "../ThemeToggle";
+import ThemeButton from "../toggle/ThemeToggle";
 import LogoComponent from "../logo/logotheme";
 
 const DropdownMenu = ({ items }) => {
@@ -13,7 +13,7 @@ const DropdownMenu = ({ items }) => {
           key={index}
           href={item.href || "#"}
           passHref
-          className="block rounded-md px-4 py-2 text-sm text-black hover:bg-zinc-200 dark:text-white dark:hover:bg-zinc-800"
+          className="block rounded-md px-6 py-2 text-sm text-black hover:bg-zinc-200 dark:text-white dark:hover:bg-zinc-800"
         >
           {item.label}
         </Link>
