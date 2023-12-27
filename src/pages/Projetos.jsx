@@ -52,7 +52,7 @@ const Projetos = () => {
             target="_blank"
             href=""
             className="col-start-5 row-span-2 flex transform items-center justify-center 
-          rounded-xl bg-purple-300 text-center text-white shadow-md transition-transform duration-300 hover:scale-105"
+            rounded-xl bg-purple-300 text-center text-white shadow-md transition-transform duration-300 hover:scale-105"
           >
             <span className="text-lg font-bold">3</span>
           </a>

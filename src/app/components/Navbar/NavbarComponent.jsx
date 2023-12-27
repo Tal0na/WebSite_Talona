@@ -116,26 +116,33 @@ const Navbar = () => {
         </Link>
 
         <nav className="flex flex-wrap items-center justify-center gap-x-2 text-lg md:ml-auto">
-          <NavItemWithDropdown label="01. Sobre" items={dropdownItemsSobre} />
-
+          <NavItemWithDropdown label="01. About" items={dropdownItemsSobre} />
           <NavItemWithDropdown label="02. Setup" items={dropdownItemsSetup} />
 
           <Link
-            href="/Flores"
+            href="/Blog"
             className="inline-flex h-10 items-center justify-center rounded-md 
             px-4 text-black transition-colors hover:bg-zinc-200 dark:text-white dark:hover:bg-zinc-800"
           >
-            <span className="text-purple-600">03.</span> Flores
+            <span className="text-purple-600">03.</span> Blog
           </Link>
 
+         
+          <Link
+            href="/Blog"
+            className="inline-flex h-10 items-center justify-center rounded-md 
+            px-4 text-black transition-colors hover:bg-zinc-200 dark:text-white dark:hover:bg-zinc-800"
+          >
+            <span className="text-purple-600">04.</span> ...
+          </Link>
           <Link
             href="/Links"
             className="inline-flex h-10 items-center justify-center rounded-md 
             px-4 text-black transition-colors hover:bg-zinc-200 dark:text-white dark:hover:bg-zinc-800"
           >
-            <span className="text-purple-600">04.</span>Links
+            <span className="text-purple-600">05.</span>Links
           </Link>
-          <Link href="/" passHref>
+          <Link href="#" passHref>
             <div
               className="mt-4 flex cursor-pointer items-center rounded bg-purple-700 px-3 py-1 text-lg text-white transition
               duration-300 hover:bg-purple-600 md:mt-0 dark:text-black"
