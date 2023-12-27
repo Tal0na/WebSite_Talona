@@ -129,7 +129,7 @@ const Navbar = () => {
 
          
           <Link
-            href="/Blog"
+            href="/construindo"
             className="inline-flex h-10 items-center justify-center rounded-md 
             px-4 text-black transition-colors hover:bg-zinc-200 dark:text-white dark:hover:bg-zinc-800"
           >
@@ -142,7 +142,7 @@ const Navbar = () => {
           >
             <span className="text-purple-600">05.</span>Links
           </Link>
-          <Link href="#" passHref>
+          <Link href="/" passHref>
             <div
               className="mt-4 flex cursor-pointer items-center rounded bg-purple-700 px-3 py-1 text-lg text-white transition
               duration-300 hover:bg-purple-600 md:mt-0 dark:text-black"
