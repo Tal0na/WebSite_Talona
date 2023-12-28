@@ -1,8 +1,50 @@
-import React from "react";
+"use client";
 import styles from "../pages/styles.module.css";
 import Navbar from "../app/components/Navbar/NavbarComponent";
+import Link from "next/link";
+import React, { useEffect, useState } from "react";
 
 const Links = () => {
+  const [isCopied, setIsCopied] = useState(false);
+  const [linkText, setLinkText] = useState("Discord");
+  const [copiedMessage, setCopiedMessage] = useState(
+    "Copiado para a área de transferência!",
+  );
+
+  useEffect(() => {
+    const handleCopyToClipboard = () => {
+      const textToCopy = "talona_";
+      const tempInput = document.createElement("textarea");
+      tempInput.value = textToCopy;
+      document.body.appendChild(tempInput);
+      tempInput.select();
+      document.execCommand("copy");
+      document.body.removeChild(tempInput);
+
+      console.log(`Copied to clipboard: ${textToCopy}`);
+      setIsCopied(true);
+      setLinkText("Copiado para a área de transferência: talona_");
+      setCopiedMessage("");
+
+      setTimeout(() => {
+        setIsCopied(false);
+        setLinkText("Discord");
+        setCopiedMessage("Copiado para a área de transferência!");
+      }, 3000);
+    };
+
+    const discordLink = document.getElementById("discord-link");
+    if (discordLink) {
+      discordLink.addEventListener("click", handleCopyToClipboard);
+    }
+
+    return () => {
+      if (discordLink) {
+        discordLink.removeEventListener("click", handleCopyToClipboard);
+      }
+    };
+  }, []);
+
   return (
     <div className="min-h-screen w-full bg-white dark:bg-black">
       <Navbar />
@@ -13,25 +55,7 @@ const Links = () => {
         Aqui estão alguns links importantes para me encontrar online.
       </p>
       <div id="links" className="mx-auto max-w-[675px]">
-        <a
-          className="link rounded-10 text-decoration-none tap-highlight-transparent  font-roboto mx-10 my-3 
-          block transform rounded-lg border-2 border-black p-2 text-center text-lg text-black transition-transform duration-300 hover:scale-105 
-          hover:bg-zinc-600 hover:text-white dark:border-white dark:text-white dark:hover:bg-zinc-800 dark:hover:text-white"
-          href="https://github.com/Talonacosta"
-          target="_blank"
-        >
-          Github
-        </a>
-        <a
-          className="link rounded-10 text-decoration-none tap-highlight-transparent font-roboto mx-10 my-3 
-          block transform rounded-lg border-2 border-black p-2 text-center text-lg text-black transition-transform duration-300 
-          hover:scale-105 hover:bg-blue-600 hover:text-white dark:border-white dark:text-white dark:hover:text-white"
-          href="https://www.linkedin.com/in/talona-costa-b83054295/"
-          target="_blank"
-        >
-          Linkedin
-        </a>
-        <a
+        <Link
           className="link rounded-10 text-decoration-none tap-highlight-transparent font-roboto mx-10 my-3 
           block transform rounded-lg border-2 border-black p-2 text-center text-lg text-black transition-transform duration-300 
           hover:scale-105 hover:bg-blue-500 hover:text-white dark:border-white dark:text-white dark:hover:text-white"
@@ -39,36 +63,27 @@ const Links = () => {
           target="_blank"
         >
           Twitter / X
-        </a>
-        <a
-          className={`link rounded-10 text-decoration-none tap-highlight-transparent font-roboto mx-10 my-3 
-        block transform rounded-lg border-2 border-black p-2 text-center  text-lg text-black transition-transform duration-300 
-        hover:scale-105 hover:text-white dark:border-white dark:text-white dark:hover:text-white ${styles.instagram}`}
-          href="https://www.instagram.com/talonaa_/"
-          target="_blank"
-        >
-          Instagram
-        </a>
-        <a
-          className=" link rounded-10 text-decoration-none tap-highlight-transparent font-roboto mx-10 my-3 
+        </Link>
+        <Link
+          className="link rounded-10 text-decoration-none tap-highlight-transparent font-roboto mx-10 my-3 
           block transform rounded-lg border-2 border-black p-2 text-center text-lg text-black transition-transform duration-300 
-          hover:scale-105 hover:bg-blue-400 hover:text-white dark:border-white dark:text-white dark:hover:text-white"
-          id="discord-link"
-          onClick={() => copyToClipboard("talona_")}
-          href="#"
-        >
-          Discord
-        </a>
-        <a
-          className="link rounded-10  tap-highlight-transparent font-roboto mx-10 my-3 
-          block transform rounded-lg border-2 border-black p-2 text-center text-lg text-black transition-transform duration-300 hover:scale-105 
-          hover:bg-green-600 hover:text-white dark:border-white dark:text-white dark:hover:text-white "
-          href="https://open.spotify.com/user/12184323470?si=ae5fd5e22a9141b7&nd=1"
+          hover:scale-105 hover:bg-blue-600 hover:text-white dark:border-white dark:text-white dark:hover:text-white"
+          href="https://www.linkedin.com/in/talona-costa/"
           target="_blank"
         >
-          Spotify
-        </a>
-        <a
+          Linkedin
+        </Link>
+        <Link
+          className="link rounded-10 text-decoration-none tap-highlight-transparent  font-roboto mx-10 my-3 
+          block transform rounded-lg border-2 border-black p-2 text-center text-lg text-black transition-transform duration-300 hover:scale-105 
+          hover:bg-zinc-600 hover:text-white dark:border-white dark:text-white dark:hover:bg-zinc-800 dark:hover:text-white"
+          href="https://github.com/Talonacosta"
+          target="_blank"
+        >
+          Github
+        </Link>
+
+        <Link
           className="link rounded-10 text-decoration-none tap-highlight-transparent 
           font-roboto mx-10 my-3 block transform rounded-lg border-2 border-black bg-transparent p-2 
           text-center text-lg text-black transition-transform duration-300
@@ -77,8 +92,20 @@ const Links = () => {
           target="_blank"
         >
           Gmail
-        </a>
-        <a
+        </Link>
+        <div>
+          <a
+            className="link rounded-10 text-decoration-none tap-highlight-transparent font-roboto mx-10 my-3 
+        block transform rounded-lg border-2 border-black p-2 text-center text-lg text-black transition-transform duration-300 
+        hover:scale-105 hover:bg-blue-400 hover:text-white dark:border-white dark:text-white dark:hover:text-white"
+            id="discord-link"
+          >
+            {linkText}
+          </a>
+
+          {isCopied && <p>{copiedMessage}</p>}
+        </div>
+        <Link
           className="link rounded-10 text-decoration-none tap-highlight-transparent font-roboto mx-10 my-3 
           block transform rounded-lg border-2 border-black p-2 text-center text-lg text-black  transition-transform duration-300 
           hover:scale-105 hover:bg-purple-700 hover:text-white dark:border-white dark:text-white dark:hover:text-white"
@@ -86,7 +113,25 @@ const Links = () => {
           target="_blank"
         >
           Twitch
-        </a>
+        </Link>
+        <Link
+          className="link rounded-10  tap-highlight-transparent font-roboto mx-10 my-3 
+          block transform rounded-lg border-2 border-black p-2 text-center text-lg text-black transition-transform duration-300 hover:scale-105 
+          hover:bg-green-600 hover:text-white dark:border-white dark:text-white dark:hover:text-white "
+          href="https://open.spotify.com/user/12184323470?si=ae5fd5e22a9141b7&nd=1"
+          target="_blank"
+        >
+          Spotify
+        </Link>
+        <Link
+          className={`link rounded-10 text-decoration-none tap-highlight-transparent font-roboto mx-10 my-3 
+        block transform rounded-lg border-2 border-black p-2 text-center  text-lg text-black transition-transform duration-300 
+        hover:scale-105 hover:text-white dark:border-white dark:text-white dark:hover:text-white ${styles.instagram}`}
+          href="https://www.instagram.com/talonaa_/"
+          target="_blank"
+        >
+          Instagram
+        </Link>
       </div>
     </div>
   );

@@ -16,7 +16,6 @@ function LogoComponent() {
   return (
     <div>
       {loading ? (
-        // Exibe um indicador de carregamento enquanto a imagem está sendo carregada
         <div>Carregando...</div>
       ) : (
         <Image

@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faTools,
@@ -27,7 +28,7 @@ const Projetos = () => {
             href="https://coffe-com-codigo.vercel.app/"
             target="_blank"
             className="col-span-2 row-span-2 flex h-32 transform flex-col items-center
-                      justify-center rounded-xl border-2 border-[#4e3629] bg-[#e9d691] 
+                      justify-center rounded-xl border-2 border-[#4e3629] bg-[#e9d691]  dark:border-[#715244]
                       text-center text-[#4e3629] 
                       shadow-md transition-transform duration-300 hover:scale-105"
           >
@@ -41,10 +42,15 @@ const Projetos = () => {
           <a
             href=""
             target="_blank"
-            className="col-span-2 col-start-3 row-span-2 flex transform items-center justify-center 
-          rounded-xl bg-purple-400 text-center text-white shadow-md transition-transform duration-300 hover:scale-105"
+            className="col-span-2 col-start-3 row-span-2 flex h-32 transform flex-col items-center
+            justify-center rounded-xl border-2 border-black dark:border-white
+            text-center text-black
+            shadow-md transition-transform duration-300 hover:scale-105 bg-green-500 hover:bg-green-400"
           >
-            <span className="text-lg font-bold">2</span>
+             <span className="text-lg font-bold">Rotina-Verde</span>
+             <p className="mt-2 text-sm">
+             Organize seu dia com projetos leves e divertidos, personalizando sua rotina de maneira única e eficiente. 🌿
+            </p>
           </a>
 
           {/* Item 3 */}
@@ -103,9 +109,8 @@ const Projetos = () => {
           </a>
 
           {/* Item 8 */}
-          <a
-            href="https://portifolio-talona.vercel.app/"
-            target="_blank"
+          <Link
+            href="/Stack"
             className="col-span-2 col-start-1 row-start-5 flex h-32 transform flex-col items-center 
           justify-center rounded-xl bg-orange-600 text-center text-white shadow-md transition-transform duration-300 hover:scale-105"
           >
@@ -118,12 +123,12 @@ const Projetos = () => {
             <p className="mt-1 text-sm">
               Isso inclui HTML, CSS, JavaScript, React, Node.js, etc.
             </p>
-          </a>
+          </Link>
 
           {/* Item 9 */}
-          <a
-            href="https://talona.vercel.app/Stack"
-            target="_blank"
+          <Link
+            href="/Stack"
+            
             className="col-span-2 col-start-7 row-span-2 row-start-3 flex transform flex-col 
           items-center justify-center rounded-xl bg-red-800 text-center text-white shadow-md transition-transform duration-300 
           hover:scale-105"
@@ -135,7 +140,7 @@ const Projetos = () => {
             <p className="mt-1 text-sm">
               Descubra minhas ferramentas e recursos favoritos que uso.
             </p>
-          </a>
+          </Link>
 
           {/* Item 10 */}
           <a
@@ -158,8 +163,8 @@ const Projetos = () => {
           </a>
 
           {/* Item 12 */}
-          <a
-            href="https://talona.vercel.app/Links"
+          <Link
+            href="/Links"
             className="col-span-2 row-span-2 row-start-6 flex h-32 transform flex-col items-center justify-center 
           rounded-xl bg-blue-600 text-white shadow-md transition-transform duration-300 hover:scale-105"
           >
@@ -168,7 +173,7 @@ const Projetos = () => {
             </spam>
 
             <p className="mt-1 text-sm">Redes sociais e mais.</p>
-          </a>
+          </Link>
 
           {/* Item 13 */}
           <a
