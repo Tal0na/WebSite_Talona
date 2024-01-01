@@ -48,7 +48,7 @@ const Links = () => {
   return (
     <div className="min-h-screen w-full bg-white dark:bg-black">
       <Navbar />
-      <h1 className="text-purple-r mt-10 text-center text-3xl text-purple-600">
+      <h1 className="text-purple-r mt-10 text-center text-3xl text-purple-600 font-bold">
         Meus Links
       </h1>
       <p className="text-1xl my-4 text-center text-black dark:text-white  ">

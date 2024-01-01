@@ -4,7 +4,7 @@ import Navbar from "../app/components/Navbar/NavbarComponent";
 const PeripheralBlock = ({ name, description }) => (
   <div className="rounded-10 text-decoration-none tap-highlight-transparent  font-roboto 
   block transform rounded-lg border-2 border-black p-2 text-center text-lg text-black transition-transform duration-300 hover:scale-105 
-   hover:text-white dark:border-white dark:text-white  ">
+  hover:text-black dark:border-white dark:text-white  ">
     <h2 className="text-lg font-semibold mb-2 dark:hover:text-white">{name}</h2>
     <p>{description}</p>
   </div>
@@ -13,8 +13,8 @@ const PeripheralBlock = ({ name, description }) => (
 const ConfigBlock = ({ name, value }) => (
   <div className="rounded-10 text-decoration-none tap-highlight-transparent  font-roboto 
   block transform rounded-lg border-2 border-black p-2 text-center text-lg text-black transition-transform duration-300 hover:scale-105 
-   hover:text-white dark:border-white dark:text-white  ">
-    <h2 className="text-lg font-semibold mb-2 dark:hover:text-white">{name}</h2>
+  hover:text-blac dark:border-white dark:text-white">
+    <h2 className="text-lg font-semibold mb-2 dark:hover:text-white ">{name}</h2>
     <p>{value}</p>
   </div>
 );
@@ -53,7 +53,7 @@ const EquipamentosList = () => {
 
         <h1 className="text-3xl text-purple-600 font-semibold my-6">Periféricos</h1>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
           {peripherals.map((peripheral, index) => (
             <PeripheralBlock key={index} {...peripheral} />
           ))}
