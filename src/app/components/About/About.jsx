@@ -36,7 +36,7 @@ const About = () => {
   "
               >
                 <span className="font-poppins flex  h-full items-center justify-center text-lg font-medium text-white dark:text-black ">
-                  Meu Portfólio!
+                  Meu Blog!
                 </span>
               </div>
             </div>
