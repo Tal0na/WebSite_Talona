@@ -21,7 +21,7 @@ const About = () => {
             className="text-1xl font-roboto text-paragraph-bg pl-12 leading-relaxed
          text-zinc-600 dark:text-zinc-300"
           >
-            Sou um desenvolvedor web designer apaixonado por combinar <br />
+            Sou desenvolvedor web designer apaixonado por combinar <br />
             criatividade e tecnologia para criar experiências digitais <br />
             impactantes e funcionais.
           </p>
