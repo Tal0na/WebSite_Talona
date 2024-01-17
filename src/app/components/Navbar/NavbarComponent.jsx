@@ -104,8 +104,9 @@ const Navbar = () => {
   ];
 
   const dropdownItemsSetup = [
-    { label: "Equipamentos", href: "/Equipamentos" },
     { label: "Stack", href: "/Stack" },
+    { label: "Equipamentos", href: "/Equipamentos" },
+    { label: "Gaming", href: "/Gaming" },
   ];
 
   return (
