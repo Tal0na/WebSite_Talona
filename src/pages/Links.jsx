@@ -67,7 +67,7 @@ const Links = () => {
         <Link
           className="link rounded-10 text-decoration-none tap-highlight-transparent font-roboto mx-10 my-3 block transform rounded-lg
           border-2 border-black p-2 text-center text-lg text-black shadow-md shadow-zinc-300 transition-transform duration-300 hover:scale-105 
-          hover:bg-blue-600 hover:text-white dark:border-white dark:text-white dark:shadow-zinc-600 dark:hover:text-white"
+          hover:bg-[#0A66C2] hover:text-white dark:border-white dark:text-white dark:shadow-zinc-600 dark:hover:text-white"
           href="https://www.linkedin.com/in/talona-costa/"
           target="_blank"
         >
@@ -87,7 +87,7 @@ const Links = () => {
           className="link rounded-10 text-decoration-none tap-highlight-transparent 
           font-roboto mx-10 my-3 block transform rounded-lg border-2 border-black bg-transparent p-2 
           text-center text-lg text-black shadow-md shadow-zinc-300 transition-transform duration-300 hover:scale-105
-          hover:bg-red-600 hover:text-white dark:border-white dark:text-white dark:shadow-zinc-600 dark:hover:text-white"
+          hover:bg-[#db4a39] hover:text-white dark:border-white dark:text-white dark:shadow-zinc-600 dark:hover:text-white"
           href="mailto:talonacostaa@gmail.com"
           target="_blank"
         >
@@ -108,7 +108,7 @@ const Links = () => {
         <Link
           className="link rounded-10 text-decoration-none tap-highlight-transparent font-roboto mx-10 my-3 block transform rounded-lg
           border-2 border-black p-2 text-center text-lg text-black shadow-md shadow-zinc-300 transition-transform  duration-300 hover:scale-105 
-          hover:bg-purple-700 hover:text-white dark:border-white dark:text-white dark:shadow-zinc-600 dark:hover:text-white"
+          hover:bg-[#9146ff] hover:text-white dark:border-white dark:text-white dark:shadow-zinc-600 dark:hover:text-white"
           href="https://www.twitch.tv/talona_"
           target="_blank"
         >
@@ -116,7 +116,8 @@ const Links = () => {
         </Link>
         <Link
           className="link rounded-10  tap-highlight-transparent font-roboto mx-10 my-3 block transform rounded-lg
-          border-2 border-black p-2 text-center text-lg text-black shadow-md shadow-zinc-300 transition-transform duration-300 hover:scale-105 hover:bg-green-600 
+          border-2 border-black p-2 text-center text-lg text-black shadow-md shadow-zinc-300 
+          transition-transform duration-300 hover:scale-105 hover:bg-[#1ED760]
           hover:text-white dark:border-white dark:text-white dark:shadow-zinc-600 dark:hover:text-white "
           href="https://open.spotify.com/user/12184323470?si=ae5fd5e22a9141b7&nd=1"
           target="_blank"

@@ -3,7 +3,7 @@ import Link from "next/link";
 const Projects = () => {
   return (
     <>
-      <section className="body-font ">
+      <section className="body-font">
         <div className="container mx-auto px-5 py-24">
           <div className="mb-20 flex w-full flex-col flex-wrap items-center text-center">
             <h1 className="title-font mb-2 text-2xl font-medium text-purple-600 sm:text-3xl">

@@ -25,22 +25,22 @@ const About = () => {
             criatividade e tecnologia para criar experiências digitais <br />
             impactantes e funcionais.
           </p>
-          <Link href="/Blog" passHref>
-            <div className="flex justify-start py-4 pb-32 pl-12">
+
+          <div className="flex justify-start py-4 pb-32 pl-12">
+            <Link href="/Blog" passHref>
               <div
                 className="button h-16 w-40 cursor-pointer select-none rounded-lg border-b-[1px]
-    border-purple-400  bg-purple-700
-    transition-all
-    duration-150 [box-shadow:0_10px_0_0_#9333ea,0_15px_0_0_#27272a] active:translate-y-2
-    active:border-b-[0px] active:[box-shadow:0_0px_0_0_#9333ea,0_0px_0_0_#27272a]
-  "
+          border-purple-400 bg-purple-700
+          shadow-md transition-all duration-150
+          hover:bg-purple-600 active:translate-y-4
+          active:border-b-[0px] active:shadow-none "
               >
-                <span className="font-poppins flex  h-full items-center justify-center text-lg font-medium text-white dark:text-black ">
-                  Meu Blog!
+                <span className="font-poppins flex h-full items-center justify-center text-lg font-medium text-white dark:text-black">
+                  Meu blog!
                 </span>
               </div>
-            </div>
-          </Link>
+            </Link>
+          </div>
         </div>
       </div>
     </>

@@ -121,7 +121,7 @@ const Navbar = () => {
           <NavItemWithDropdown label="02. Setup" items={dropdownItemsSetup} />
 
           <Link
-            href="/Blog"
+            href="/Blog/HomeBlog"
             className="inline-flex h-10 items-center justify-center rounded-md 
             px-4 text-black transition-colors hover:bg-zinc-200 dark:text-white dark:hover:bg-zinc-800"
           >

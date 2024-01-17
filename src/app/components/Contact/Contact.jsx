@@ -77,7 +77,7 @@ const Contact = () => {
 
             <div className="relative mb-4">
               <label htmlFor="email" className="text-sm leading-7 text-white">
-                Email
+                E-mail
               </label>
               <input
                 type="email"
@@ -109,7 +109,7 @@ const Contact = () => {
             />
           </form>
           <p className="mt-3 text-xs text-gray-400 text-opacity-90">
-            Clique no botão para confimar a mensagem
+            Clique no botão para confimar a mensagem.
           </p>
         </div>
       </div>
