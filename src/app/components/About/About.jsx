@@ -35,7 +35,8 @@ const About = () => {
           hover:bg-purple-600 active:translate-y-4
           active:border-b-[0px] active:shadow-none "
               >
-                <span className="font-poppins flex h-full items-center justify-center text-lg font-medium text-white dark:text-black">
+                <span className="font-poppins flex h-full items-center justify-center text-lg font-medium 
+                text-white dark:text-black">
                   Meu blog!
                 </span>
               </div>
