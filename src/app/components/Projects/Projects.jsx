@@ -9,16 +9,19 @@ const Projects = () => {
             <h1 className="title-font mb-2 text-2xl font-medium text-purple-600 sm:text-3xl">
               Um pouco da minha experiencia
             </h1>
-            <p className="w-full leading-relaxed text-opacity-80 lg:w-1/2">
+            <p className="w-full leading-relaxed text-black text-opacity-80 lg:w-1/2 dark:text-white">
               Meus trabalhos públicos abrangem diversas áreas, de tecnologia a
               desenvolvimento social. Busco impacto positivo e soluções
               criativas em cada projeto.
             </p>
           </div>
-          <div className="-m-4 flex flex-wrap">
-            <div className="p-4 md:w-1/2 xl:w-1/3">
-              <div className="rounded-lg border border-purple-500 border-opacity-75 p-6">
-                <div className="text-purple-r mb-4 inline-flex h-10 w-10 items-center justify-center rounded-full bg-gray-300 dark:bg-gray-800">
+          <div className="-m-4 flex flex-wrap ">
+            <div className="p-4 md:w-1/2 xl:w-1/3 ">
+              <div className="rounded-lg border border-purple-500 border-opacity-75 p-6 shadow-md shadow-zinc-300 dark:bg-zinc-950 dark:shadow-zinc-600">
+                <div
+                  className="text-purple-r mb-4 inline-flex h-10 w-10 items-center justify-center rounded-full 
+                bg-gray-300 dark:bg-zinc-900 "
+                >
                   <svg
                     fill="none"
                     stroke="currentColor"
@@ -41,8 +44,8 @@ const Projects = () => {
               </div>
             </div>
             <div className="p-4 md:w-1/2 xl:w-1/3">
-              <div className="rounded-lg border border-purple-500 border-opacity-75 p-6">
-                <div className="text-purple-r mb-4 inline-flex h-10 w-10 items-center justify-center rounded-full bg-gray-300 dark:bg-gray-800">
+              <div className="rounded-lg border border-purple-500 border-opacity-75 p-6 shadow-md shadow-zinc-300 dark:bg-zinc-950 dark:shadow-zinc-600">
+                <div className="text-purple-r mb-4 inline-flex h-10 w-10 items-center justify-center rounded-full bg-gray-300 dark:bg-zinc-900">
                   <svg
                     fill="none"
                     stroke="currentColor"
@@ -67,8 +70,8 @@ const Projects = () => {
               </div>
             </div>
             <div className="p-4 md:w-1/2 xl:w-1/3">
-              <div className="rounded-lg border border-purple-500 border-opacity-75 p-6">
-                <div className="text-purple-r mb-4 inline-flex h-10 w-10 items-center justify-center rounded-full bg-gray-300 dark:bg-gray-800">
+              <div className="rounded-lg border border-purple-500 border-opacity-75 p-6 shadow-md shadow-zinc-300 dark:bg-zinc-950 dark:shadow-zinc-600">
+                <div className="text-purple-r mb-4 inline-flex h-10 w-10 items-center justify-center rounded-full bg-gray-300 dark:bg-zinc-900">
                   <svg
                     fill="none"
                     stroke="currentColor"
@@ -92,8 +95,8 @@ const Projects = () => {
               </div>
             </div>
             <div className="p-4 md:w-1/2 xl:w-1/3">
-              <div className="rounded-lg border border-purple-500 border-opacity-75 p-6">
-                <div className="text-purple-r mb-4 inline-flex h-10 w-10 items-center justify-center rounded-full bg-gray-300 dark:bg-gray-800">
+              <div className="rounded-lg border border-purple-500 border-opacity-75 p-6 shadow-md shadow-zinc-300 dark:bg-zinc-950 dark:shadow-zinc-600">
+                <div className="text-purple-r mb-4 inline-flex h-10 w-10 items-center justify-center rounded-full bg-gray-300 dark:bg-zinc-900">
                   <svg
                     fill="none"
                     stroke="currentColor"
@@ -116,8 +119,8 @@ const Projects = () => {
               </div>
             </div>
             <div className="p-4 md:w-1/2 xl:w-1/3">
-              <div className="rounded-lg border border-purple-500 border-opacity-75 p-6">
-                <div className="text-purple-r mb-4 inline-flex h-10 w-10 items-center justify-center rounded-full bg-gray-300 dark:bg-gray-800">
+              <div className="rounded-lg border border-purple-500 border-opacity-75 p-6 shadow-md shadow-zinc-300 dark:bg-zinc-950 dark:shadow-zinc-600">
+                <div className="text-purple-r mb-4 inline-flex h-10 w-10 items-center justify-center rounded-full bg-gray-300 dark:bg-zinc-900">
                   <svg
                     fill="none"
                     stroke="currentColor"
@@ -140,7 +143,7 @@ const Projects = () => {
               </div>
             </div>
             <div className="p-4 md:w-1/2 xl:w-1/3">
-              <div className="rounded-lg border border-purple-500 border-opacity-75 p-6">
+              <div className="rounded-lg border border-purple-500 border-opacity-75 p-6 shadow-md shadow-zinc-300 dark:bg-zinc-950 dark:shadow-zinc-600">
                 <div className="text-purple-r mb-4 inline-flex h-10 w-10 items-center justify-center rounded-full bg-gray-300 dark:bg-gray-800">
                   <svg
                     fill="none"
@@ -154,7 +157,7 @@ const Projects = () => {
                     <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
                   </svg>
                 </div>
-                <h2 className="title-font mb-2 text-lg font-medium text-black dark:text-white">
+                <h2 className="title-font mb-2 text-lg font-medium text-black dark:text-white ">
                   Rede Social para Nicho Específico
                 </h2>
                 <p className="text-base leading-relaxed text-black dark:text-white">
@@ -165,7 +168,7 @@ const Projects = () => {
             </div>
           </div>
           <Link href="/Projetos" passHref>
-            <button className="mx-auto mt-16 flex rounded border-0 bg-purple-700 px-8 py-2 text-lg text-white hover:bg-purple-600 focus:outline-none dark:text-black">
+            <button className="mx-auto mt-16 flex rounded border-0  bg-purple-700 px-8 py-2 text-lg text-white hover:bg-purple-600 focus:outline-none dark:text-black">
               Mais
             </button>
           </Link>

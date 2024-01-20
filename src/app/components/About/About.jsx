@@ -31,9 +31,9 @@ const About = () => {
               <div
                 className="button h-16 w-40 cursor-pointer select-none rounded-lg border-b-[1px]
           border-purple-400 bg-purple-700
-          shadow-md transition-all duration-150
+           transition-all duration-150
           hover:bg-purple-600 active:translate-y-4
-          active:border-b-[0px] active:shadow-none "
+          active:border-b-[0px] active:shadow-none dark:shadow-zinc-600 shadow-md shadow-zinc-300"
               >
                 <span className="font-poppins flex h-full items-center justify-center text-lg font-medium 
                 text-white dark:text-black">

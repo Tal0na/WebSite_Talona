@@ -27,7 +27,7 @@ const ThemeButton = () => {
       <label
         htmlFor="checkbox"
         className={`cursor-pointer relative w-12 h-7 transition-transform duration-400 rounded-full ${
-          resolvedTheme === "dark" ? "bg-zinc-800" : "bg-zinc-300"
+          resolvedTheme === "dark" ? "bg-zinc-800" : "bg-zinc-200 "
         }`}
       >
         <div

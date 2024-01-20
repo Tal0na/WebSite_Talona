@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import Image from "next/image";
 import LogoComponent from '../logo/logotheme';
 
 const Footer = () => {
@@ -13,7 +12,7 @@ const Footer = () => {
             <LogoComponent />
           </a>
           <p className="text-sm dark:text-white text-black sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">
-            &copy; {new Date().getFullYear()} &middot; Talona Costa —
+            &copy; 2023 - {new Date().getFullYear()} &middot; Talona Costa —
             <a
               href="https://twitter.com/Talonaa_"
               className="dark:text-zinc-400 text-zinc-600 ml-1"

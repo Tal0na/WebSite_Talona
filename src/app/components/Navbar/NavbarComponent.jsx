@@ -128,7 +128,6 @@ const Navbar = () => {
             <span className="text-purple-600">03.</span> Blog
           </Link>
 
-         
           <Link
             href="/construindo"
             className="inline-flex h-10 items-center justify-center rounded-md 
@@ -155,14 +154,14 @@ const Navbar = () => {
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth="2"
-                className="ml-1 h-5 w-5"
+                className="ml-1 h-6 w-6"
               >
                 <path d="M5 12h14M12 5l7 7-7 7"></path>
               </svg>
             </div>
           </Link>
         </nav>
-        <ThemeButton />
+        <ThemeButton/>
       </div>
     </header>
   );

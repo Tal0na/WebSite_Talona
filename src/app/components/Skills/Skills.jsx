@@ -18,8 +18,8 @@ const Skills = () => {
         </div>
 
         <div className="grid gap-8 sm:grid-cols-2 sm:gap-y-10 xl:grid-cols-3">
-          <div className="relative rounded-lg dark:bg-zinc-900 bg-zinc-200 p-5 pt-8">
-            <h3 className="mb-3 text-lg font-semibold text-purple-500 md:text-xl">
+          <div className="relative rounded-lg dark:bg-zinc-950 bg-zinc-100 p-5 pt-8 dark:shadow-zinc-600 shadow-md shadow-zinc-300">
+            <h3 className="mb-3 text-lg font-semibold text-purple-500 md:text-xl ">
               Design de interfaces
             </h3>
             <p className="dark:text-white text-black">
@@ -30,7 +30,7 @@ const Skills = () => {
             </p>
           </div>
 
-          <div className="relative rounded-lg dark:bg-zinc-900 bg-zinc-200 p-5 pt-8">
+          <div className="relative rounded-lg dark:bg-zinc-950 bg-zinc-100 p-5 pt-8 dark:shadow-zinc-600 shadow-md shadow-zinc-300">
             <h3 className="mb-3 text-lg font-semibold text-purple-500 md:text-xl">
               Usabilidade
             </h3>
@@ -41,7 +41,7 @@ const Skills = () => {
               facilidade de uso.
             </p>
           </div>
-          <div className="relative rounded-lg dark:bg-zinc-900 bg-zinc-200 p-5 pt-8">
+          <div className="relative rounded-lg dark:bg-zinc-950 bg-zinc-100 p-5 pt-8 dark:shadow-zinc-600 shadow-md shadow-zinc-300">
             <h3 className="mb-3 text-lg font-semibold text-purple-500 md:text-xl">
               UX/UI
             </h3>
@@ -52,7 +52,7 @@ const Skills = () => {
               envolvente para os usuários.
             </p>
           </div>
-          <div className="relative rounded-lg dark:bg-zinc-900 bg-zinc-200 p-5 pt-8">
+          <div className="relative rounded-lg dark:bg-zinc-950 bg-zinc-100 p-5 pt-8 dark:shadow-zinc-600 shadow-md shadow-zinc-300">
             <h3 className="mb-3 text-lg font-semibold text-purple-500 md:text-xl">
               HTML 5, CSS 3 e JavaScript
             </h3>
@@ -63,7 +63,7 @@ const Skills = () => {
               impactantes e responsivas.
             </p>
           </div>
-          <div className="relative rounded-lg dark:bg-zinc-900 bg-zinc-200 p-5 pt-8">
+          <div className="relative rounded-lg dark:bg-zinc-950 bg-zinc-100 p-5 pt-8 dark:shadow-zinc-600 shadow-md shadow-zinc-300">
             <h3 className="mb-3 text-lg font-semibold text-purple-500 md:text-xl">
               Prototipagem
             </h3>
@@ -75,7 +75,7 @@ const Skills = () => {
               e alinhadas às necessidades do usuário.
             </p>
           </div>
-          <div className="relative rounded-lg dark:bg-zinc-900 bg-zinc-200 p-5 pt-8">
+          <div className="relative rounded-lg dark:bg-zinc-950 bg-zinc-100 p-5 pt-8 dark:shadow-zinc-600 shadow-md shadow-zinc-300">
             <h3 className="mb-3 text-lg font-semibold text-purple-500 md:text-xl">
               React e TailWind
             </h3>

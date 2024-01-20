@@ -42,7 +42,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           <meta property="og:title" content={metadata.title} />
           <meta property="og:description" content={metadata.description} />
           <meta property="og:image" content={`${process.env.NEXT_PUBLIC_BASE_URL}${metadata.ogImage}`} />
-          <link rel="icon" href="/public/foto/logotopo.png" />
+         
           <title>{metadata.title}</title>
         </Head>
         <body>
