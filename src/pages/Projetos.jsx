@@ -1,22 +1,26 @@
-import React from "react";
-import Link from "next/link";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from "react"
+import { useEffect } from 'react';
+import Link from "next/link"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faTools,
   faCertificate,
   faTableColumns,
-} from "@fortawesome/free-solid-svg-icons";
+} from "@fortawesome/free-solid-svg-icons"
 import {
   faGithub,
   faSpotify,
   faYoutube,
-} from "@fortawesome/free-brands-svg-icons";
-import Navbar from "../app/components/Navbar/NavbarComponent";
+} from "@fortawesome/free-brands-svg-icons"
+import Navbar from "../app/components/Navbar/NavbarComponent"
 
 const Projetos = () => {
+  useEffect(() => {
+    document.title = "Projetos"
+  }, [])
   return (
     <>
-      <div className="min-h-screen w-full bg-white dark:bg-black">
+      <div className="min-h-screen w-full dark:bg-[#121212] bg-[#f9f9f9]">
         <Navbar />
 
         <h1 className="font-poppins mb-20 mt-10 text-center text-3xl text-purple-600">
@@ -47,9 +51,10 @@ const Projetos = () => {
             text-center text-black
             shadow-md transition-transform duration-300 hover:scale-105 bg-green-500 hover:bg-green-400"
           >
-             <span className="text-lg font-bold">Rotina-Verde</span>
-             <p className="mt-2 text-sm">
-             Organize seu dia com projetos leves e divertidos, personalizando sua rotina de maneira única e eficiente. 🌿
+            <span className="text-lg font-bold">Rotina-Verde</span>
+            <p className="mt-2 text-sm">
+              Organize seu dia com projetos leves e divertidos, personalizando
+              sua rotina de maneira única e eficiente. 🌿
             </p>
           </a>
 
@@ -128,7 +133,6 @@ const Projetos = () => {
           {/* Item 9 */}
           <Link
             href="/Stack"
-            
             className="col-span-2 col-start-7 row-span-2 row-start-3 flex transform flex-col 
           items-center justify-center rounded-xl bg-red-800 text-center text-white shadow-md transition-transform duration-300 
           hover:scale-105"
@@ -213,7 +217,7 @@ const Projetos = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Projetos;
+export default Projetos

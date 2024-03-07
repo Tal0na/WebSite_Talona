@@ -1,25 +1,25 @@
-import React from "react";
+import React from "react"
 
 const Skills = () => {
   return (
     <div className="sm:py-20 lg:py-24">
       <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
         <div className="mb-10 md:mb-16">
-          <h2 className="mb-4 text-center text-2xl font-bold text-purple-600 md:mb-6 lg:text-3xl">
+          <h2 className="mb-4 text-center text-2xl font-bold dark:text-purple-300 text-purple-400 md:mb-6 lg:text-3xl">
             Minhas Skills
           </h2>
 
           <p className="mx-auto max-w-screen-md text-center dark:text-white text-black md:text-lg">
-            Com habilidades afiadas e uma paixão por aprendizado contínuo, estou
-            sempre pronto para enfrentar desafios e contribuir de maneira
-            impactante, seja nas áreas de tecnologia, criatividade ou resolução
-            de problemas.
+            Com habilidades afiadas e uma sede insaciável por aprender, estou
+            sempre pronto para enfrentar desafios e fazer contribuições
+            significativas, seja na tecnologia, na criatividade ou na resolução
+            de problemas do dia a dia.
           </p>
         </div>
 
         <div className="grid gap-8 sm:grid-cols-2 sm:gap-y-10 xl:grid-cols-3">
-          <div className="relative rounded-lg dark:bg-zinc-950 bg-zinc-100 p-5 pt-8 dark:shadow-zinc-600 shadow-md shadow-zinc-300">
-            <h3 className="mb-3 text-lg font-semibold text-purple-500 md:text-xl ">
+          <div className="relative rounded-lg dark:bg-[#1E1E1E] bg-[#f3f3f3] p-5 pt-8 dark:shadow-zinc-600 shadow-md shadow-zinc-300">
+            <h3 className="mb-3 text-lg font-semibold dark:text-purple-300 text-purple-400 md:text-xl ">
               Design de interfaces
             </h3>
             <p className="dark:text-white text-black">
@@ -30,8 +30,8 @@ const Skills = () => {
             </p>
           </div>
 
-          <div className="relative rounded-lg dark:bg-zinc-950 bg-zinc-100 p-5 pt-8 dark:shadow-zinc-600 shadow-md shadow-zinc-300">
-            <h3 className="mb-3 text-lg font-semibold text-purple-500 md:text-xl">
+          <div className="relative rounded-lg dark:bg-[#1E1E1E] bg-[#f3f3f3] p-5 pt-8 dark:shadow-zinc-600 shadow-md shadow-zinc-300">
+            <h3 className="mb-3 text-lg font-semibold dark:text-purple-300 text-purple-400 md:text-xl">
               Usabilidade
             </h3>
             <p className="dark:text-white text-black">
@@ -41,8 +41,8 @@ const Skills = () => {
               facilidade de uso.
             </p>
           </div>
-          <div className="relative rounded-lg dark:bg-zinc-950 bg-zinc-100 p-5 pt-8 dark:shadow-zinc-600 shadow-md shadow-zinc-300">
-            <h3 className="mb-3 text-lg font-semibold text-purple-500 md:text-xl">
+          <div className="relative rounded-lg dark:bg-[#1E1E1E] bg-[#f3f3f3] p-5 pt-8 dark:shadow-zinc-600 shadow-md shadow-zinc-300">
+            <h3 className="mb-3 text-lg font-semibold dark:text-purple-300 text-purple-400 md:text-xl">
               UX/UI
             </h3>
             <p className="dark:text-white text-black">
@@ -52,8 +52,8 @@ const Skills = () => {
               envolvente para os usuários.
             </p>
           </div>
-          <div className="relative rounded-lg dark:bg-zinc-950 bg-zinc-100 p-5 pt-8 dark:shadow-zinc-600 shadow-md shadow-zinc-300">
-            <h3 className="mb-3 text-lg font-semibold text-purple-500 md:text-xl">
+          <div className="relative rounded-lg dark:bg-[#1E1E1E] bg-[#f3f3f3] p-5 pt-8 dark:shadow-zinc-600 shadow-md shadow-zinc-300">
+            <h3 className="mb-3 text-lg font-semibold dark:text-purple-300 text-purple-400 md:text-xl">
               HTML 5, CSS 3 e JavaScript
             </h3>
             <p className="dark:text-white text-black">
@@ -63,8 +63,8 @@ const Skills = () => {
               impactantes e responsivas.
             </p>
           </div>
-          <div className="relative rounded-lg dark:bg-zinc-950 bg-zinc-100 p-5 pt-8 dark:shadow-zinc-600 shadow-md shadow-zinc-300">
-            <h3 className="mb-3 text-lg font-semibold text-purple-500 md:text-xl">
+          <div className="relative rounded-lg dark:bg-[#1E1E1E] bg-[#f3f3f3] p-5 pt-8 dark:shadow-zinc-600 shadow-md shadow-zinc-300">
+            <h3 className="mb-3 text-lg font-semibold dark:text-purple-300 text-purple-400 md:text-xl">
               Prototipagem
             </h3>
             <p className="dark:text-white text-black">
@@ -75,8 +75,11 @@ const Skills = () => {
               e alinhadas às necessidades do usuário.
             </p>
           </div>
-          <div className="relative rounded-lg dark:bg-zinc-950 bg-zinc-100 p-5 pt-8 dark:shadow-zinc-600 shadow-md shadow-zinc-300">
-            <h3 className="mb-3 text-lg font-semibold text-purple-500 md:text-xl">
+          <div
+            className="relative rounded-lg dark:bg-[#1E1E1E] bg-[#f3f3f3] p-5 
+          pt-8 dark:shadow-zinc-600 shadow-md shadow-zinc-300"
+          >
+            <h3 className="mb-3 text-lg font-semibold text-purple-300 md:text-xl">
               React e TailWind
             </h3>
             <p className="dark:text-white text-black">
@@ -89,7 +92,7 @@ const Skills = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Skills;
+export default Skills

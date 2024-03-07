@@ -1,14 +1,13 @@
-"use client";
-import React from "react";
-import LogoComponent from '../logo/logotheme';
+"use client"
+import React from "react"
+import LogoComponent from "../logo/logotheme"
 
 const Footer = () => {
   return (
     <>
-      <footer className="dark:text-white text-black body-font">
-        <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+      <footer className=" dark:bg-[#121212] bg-[#f9f9f9] border-t border-gray-300 dark:border-zinc-600">
+        <div className="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
           <a className="flex title-font font-medium items-center md:justify-start justify-center dark:text-white text-black">
-            
             <LogoComponent />
           </a>
           <p className="text-sm dark:text-white text-black sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">
@@ -17,16 +16,23 @@ const Footer = () => {
               href="https://twitter.com/Talonaa_"
               className="dark:text-zinc-400 text-zinc-600 ml-1"
               target="_blank"
+              alt="Link twitter @talonaa_"
               rel="noopener noreferrer"
+              title="Visite meu perfil no Twitter"
+              aria-label="Link para o perfil @Talonaa_ no Twitter"
+              aria-describedby="descricao-link-twitter"
             >
               @Talona
             </a>
           </p>
           <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-           
             <a
               href="https://twitter.com/Talonaa_"
               target="_blank"
+              alt="Link twitter @talonaa_"
+              title="Visite meu perfil no Twitter"
+              aria-label="Link para o perfil @Talonaa_ no Twitter"
+              aria-describedby="descricao-link-twitter"
               className="ml-3 dark:text-white text-black"
             >
               <svg
@@ -43,6 +49,10 @@ const Footer = () => {
             <a
               href="https://www.instagram.com/talonaa_/"
               target="_blank"
+              alt="Link instagram @talonaa_"
+              title="Visite meu perfil no instagram"
+              aria-label="Link para o perfil @Talonaa_ no instagram"
+              aria-describedby="descricao-link-instagram"
               className="ml-3 dark:text-white text-black"
             >
               <svg
@@ -61,6 +71,10 @@ const Footer = () => {
             <a
               href="https://www.linkedin.com/in/talona-costa/"
               target="_blank"
+              title="Visite meu perfil no linkedin"
+              aria-label="Link para o perfil talona-costa no linkedin"
+              aria-describedby="descricao-link-linkedin"
+              alt="Link linkedin talona-costa"
               className="ml-3 dark:text-white text-black"
             >
               <svg
@@ -83,6 +97,10 @@ const Footer = () => {
             <a
               href="https://github.com/Talonacosta"
               target="_blank"
+              alt="Link github Talonacosta"
+              title="Visite meu perfil no github"
+              aria-label="Link para o perfil Talonacosta no lgithub"
+              aria-describedby="descricao-link-github"
               className="ml-3 dark:text-white text-black"
             >
               <svg
@@ -100,7 +118,7 @@ const Footer = () => {
         </div>
       </footer>
     </>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

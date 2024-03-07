@@ -1,12 +1,12 @@
-import React from "react";
-import Link from "next/link";
+import React from "react"
+import Link from "next/link"
 const Projects = () => {
   return (
     <>
       <section className="body-font">
         <div className="container mx-auto px-5 py-24">
           <div className="mb-20 flex w-full flex-col flex-wrap items-center text-center">
-            <h1 className="title-font mb-2 text-2xl font-medium text-purple-600 sm:text-3xl">
+            <h1 className="title-font mb-2 text-2xl font-medium dark:text-purple-300 text-purple-400 sm:text-3xl">
               Um pouco da minha experiencia
             </h1>
             <p className="w-full leading-relaxed text-black text-opacity-80 lg:w-1/2 dark:text-white">
@@ -17,10 +17,13 @@ const Projects = () => {
           </div>
           <div className="-m-4 flex flex-wrap ">
             <div className="p-4 md:w-1/2 xl:w-1/3 ">
-              <div className="rounded-lg border border-purple-500 border-opacity-75 p-6 shadow-md shadow-zinc-300 dark:bg-zinc-950 dark:shadow-zinc-600">
+              <div
+                className="rounded-lg border border-purple-400 dark:border-purple-300  border-opacity-75 p-6 
+              shadow-md shadow-zinc-300 dark:dark:bg-[#0C0C0C] bg-[#f5f5f5] dark:shadow-zinc-600"
+              >
                 <div
-                  className="text-purple-r mb-4 inline-flex h-10 w-10 items-center justify-center rounded-full 
-                bg-gray-300 dark:bg-zinc-900 "
+                  className="text-purple-r mb-4 inline-flex h-10 w-10 items-center justify-center 
+                rounded-full bg-purple-400 dark:bg-purple-300"
                 >
                   <svg
                     fill="none"
@@ -44,8 +47,14 @@ const Projects = () => {
               </div>
             </div>
             <div className="p-4 md:w-1/2 xl:w-1/3">
-              <div className="rounded-lg border border-purple-500 border-opacity-75 p-6 shadow-md shadow-zinc-300 dark:bg-zinc-950 dark:shadow-zinc-600">
-                <div className="text-purple-r mb-4 inline-flex h-10 w-10 items-center justify-center rounded-full bg-gray-300 dark:bg-zinc-900">
+              <div
+                className="rounded-lg border border-purple-400 dark:border-purple-300  border-opacity-75 p-6 
+              shadow-md shadow-zinc-300 dark:dark:bg-[#0C0C0C] bg-[#f5f5f5] dark:shadow-zinc-600"
+              >
+                <div
+                  className="text-purple-r mb-4 inline-flex h-10 w-10 items-center justify-center 
+                rounded-full bg-purple-400 dark:bg-purple-300"
+                >
                   <svg
                     fill="none"
                     stroke="currentColor"
@@ -70,8 +79,14 @@ const Projects = () => {
               </div>
             </div>
             <div className="p-4 md:w-1/2 xl:w-1/3">
-              <div className="rounded-lg border border-purple-500 border-opacity-75 p-6 shadow-md shadow-zinc-300 dark:bg-zinc-950 dark:shadow-zinc-600">
-                <div className="text-purple-r mb-4 inline-flex h-10 w-10 items-center justify-center rounded-full bg-gray-300 dark:bg-zinc-900">
+              <div
+                className="rounded-lg border border-purple-400 dark:border-purple-300  border-opacity-75 p-6 
+              shadow-md shadow-zinc-300 dark:dark:bg-[#0C0C0C] bg-[#f5f5f5] dark:shadow-zinc-600"
+              >
+                <div
+                  className="text-purple-r mb-4 inline-flex h-10 w-10 items-center justify-center 
+                rounded-full bg-purple-400 dark:bg-purple-300"
+                >
                   <svg
                     fill="none"
                     stroke="currentColor"
@@ -95,8 +110,14 @@ const Projects = () => {
               </div>
             </div>
             <div className="p-4 md:w-1/2 xl:w-1/3">
-              <div className="rounded-lg border border-purple-500 border-opacity-75 p-6 shadow-md shadow-zinc-300 dark:bg-zinc-950 dark:shadow-zinc-600">
-                <div className="text-purple-r mb-4 inline-flex h-10 w-10 items-center justify-center rounded-full bg-gray-300 dark:bg-zinc-900">
+              <div
+                className="rounded-lg border border-purple-400 dark:border-purple-300  border-opacity-75 p-6 
+              shadow-md shadow-zinc-300 dark:dark:bg-[#0C0C0C] bg-[#f5f5f5] dark:shadow-zinc-600"
+              >
+                <div
+                  className="text-purple-r mb-4 inline-flex h-10 w-10 items-center justify-center 
+                rounded-full bg-purple-400 dark:bg-purple-300"
+                >
                   <svg
                     fill="none"
                     stroke="currentColor"
@@ -119,8 +140,14 @@ const Projects = () => {
               </div>
             </div>
             <div className="p-4 md:w-1/2 xl:w-1/3">
-              <div className="rounded-lg border border-purple-500 border-opacity-75 p-6 shadow-md shadow-zinc-300 dark:bg-zinc-950 dark:shadow-zinc-600">
-                <div className="text-purple-r mb-4 inline-flex h-10 w-10 items-center justify-center rounded-full bg-gray-300 dark:bg-zinc-900">
+              <div
+                className="rounded-lg border border-purple-400 dark:border-purple-300  border-opacity-75 p-6 
+              shadow-md shadow-zinc-300 dark:dark:bg-[#0C0C0C] bg-[#f5f5f5] dark:shadow-zinc-600"
+              >
+                <div
+                  className="text-purple-r mb-4 inline-flex h-10 w-10 items-center justify-center 
+                rounded-full bg-purple-400 dark:bg-purple-300"
+                >
                   <svg
                     fill="none"
                     stroke="currentColor"
@@ -137,14 +164,20 @@ const Projects = () => {
                   Gerenciamento de Tarefas
                 </h2>
                 <p className="text-base leading-relaxed text-black dark:text-white">
-                  Otimize sua produtividade com meu aplicativo de gerenciamento
-                  de tarefas.
+                  Potencialize sua produtividade diária com meu aplicativo de
+                  gerenciamento de tarefas.
                 </p>
               </div>
             </div>
             <div className="p-4 md:w-1/2 xl:w-1/3">
-              <div className="rounded-lg border border-purple-500 border-opacity-75 p-6 shadow-md shadow-zinc-300 dark:bg-zinc-950 dark:shadow-zinc-600">
-                <div className="text-purple-r mb-4 inline-flex h-10 w-10 items-center justify-center rounded-full bg-gray-300 dark:bg-gray-800">
+              <div
+                className="rounded-lg border border-purple-400 dark:border-purple-300  border-opacity-75 p-6 
+              shadow-md shadow-zinc-300 dark:dark:bg-[#0C0C0C] bg-[#f5f5f5] dark:shadow-zinc-600"
+              >
+                <div
+                  className="text-purple-r mb-4 inline-flex h-10 w-10 items-center justify-center 
+                rounded-full bg-purple-400 dark:bg-purple-300"
+                >
                   <svg
                     fill="none"
                     stroke="currentColor"
@@ -168,14 +201,18 @@ const Projects = () => {
             </div>
           </div>
           <Link href="/Projetos" passHref>
-            <button className="mx-auto mt-16 flex rounded border-0  bg-purple-700 px-8 py-2 text-lg text-white hover:bg-purple-600 focus:outline-none dark:text-black">
+            <button
+              className="mx-auto mt-16 flex rounded border-0  
+            bg-purple-400 hover:bg-purple-500 dark:bg-purple-300 dark:hover:bg-purple-400  px-8 py-2 text-lg 
+            text-white dark:text-black font-semibold focus:outline-none"
+            >
               Mais
             </button>
           </Link>
         </div>
       </section>
     </>
-  );
-};
+  )
+}
 
-export default Projects;
+export default Projects

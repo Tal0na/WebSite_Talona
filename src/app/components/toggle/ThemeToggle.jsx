@@ -1,22 +1,22 @@
-"use clinet";
-import React, { useEffect, useState } from "react";
-import { useTheme } from "next-themes";
+"use clinet"
+import React, { useEffect, useState } from "react"
+import { useTheme } from "next-themes"
 
 const ThemeButton = () => {
-  const { resolvedTheme, setTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
+  const { resolvedTheme, setTheme } = useTheme()
+  const [mounted, setMounted] = useState(false)
 
-  useEffect(() => setMounted(true), []);
+  useEffect(() => setMounted(true), [])
 
   if (!mounted) {
-    return null;
+    return null
   }
 
   const toggleTheme = () => {
-    setTheme(resolvedTheme === "dark" ? "light" : "dark");
-  };
+    setTheme(resolvedTheme === "dark" ? "light" : "dark")
+  }
 
-  return  (
+  return (
     <div className="flex items-center space-x-2">
       <input
         type="checkbox"
@@ -27,7 +27,7 @@ const ThemeButton = () => {
       <label
         htmlFor="checkbox"
         className={`cursor-pointer relative w-12 h-7 transition-transform duration-400 rounded-full ${
-          resolvedTheme === "dark" ? "bg-zinc-800" : "bg-zinc-200 "
+          resolvedTheme === "dark" ? "bg-zinc-800" : "bg-zinc-300 "
         }`}
       >
         <div
@@ -37,7 +37,7 @@ const ThemeButton = () => {
         ></div>
       </label>
     </div>
-  );
-};
+  )
+}
 
-export default ThemeButton;
+export default ThemeButton
