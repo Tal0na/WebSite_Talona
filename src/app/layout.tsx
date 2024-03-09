@@ -19,11 +19,11 @@ const customFontRoboto = Roboto({
 })
 
 export const metadata = {
-  title: "Talona - Design e Desenvolvimento Web",
+  title: "Talona Costa",
   description:
-    "Explore meu site para experiências web excepcionais. Contate-nos para colaborações inovadoras!",
+    "Explore meu site para experiências Web excepcionais. criando experiências digitais impactantes e funcionais solucionando problemas complexos de maneira inovadora e funcional.",
   keywords:
-    "design web, desenvolvimento web, portfólio, inovação ,Talona ,talona",
+    " desenvolvimento web, portfólio, inovação ,Talona, talona, Talonacosta ,talonacosta ,design web, inteligência artificial, IA, ia,  Android",
   author: "Tales Costa",
   ogImage: "/foto/florborda.png",
 }

@@ -13,7 +13,7 @@ const ThemeButton = () => {
  }
 
   return (
-    <button
+    <div
       aria-label="Toggle Dark Mode"
       type="button"
       className={`dark:text-white text-black px-4 py-2 rounded`}
@@ -24,7 +24,7 @@ const ThemeButton = () => {
           {resolvedTheme === "dark" ? "Light" : "Dark"}
         </>
   
-    </button>
+    </div>
   );
 };
 

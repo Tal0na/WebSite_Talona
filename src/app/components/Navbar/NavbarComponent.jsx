@@ -115,12 +115,12 @@ const Navbar = () => {
 
   return (
     <header>
-      <div className="container mx-auto flex flex-col flex-wrap items-center p-6 px-1 md:flex-row">
+      <nav className="container mx-auto flex flex-col flex-wrap items-center p-6 px-1 md:flex-row">
         <Link href="/" passHref className="mb-4 flex items-center md:mb-0">
           <LogoComponent />
         </Link>
 
-        <nav className="flex flex-wrap items-center justify-center gap-x-2  text-lg md:ml-auto">
+        <div className="flex flex-wrap items-center justify-center gap-x-2  text-lg md:ml-auto">
           <NavItemWithDropdown label="01. About" items={dropdownItemsSobre} />
           <NavItemWithDropdown label="02. Setup" items={dropdownItemsSetup} />
 
@@ -174,8 +174,8 @@ const Navbar = () => {
             </div>
           </Link>
           <ThemeButton />
-        </nav>
-      </div>
+        </div>
+      </nav>
     </header>
   )
 }
