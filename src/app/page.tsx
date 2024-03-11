@@ -8,14 +8,14 @@ import Skills from "./components/Skills/Skills"
 export default async function Home() {
   return (
     <>
-      <Navbar />
-      <body className="dark:bg-[#121212] bg-[#f9f9f9]">
+      <main className="dark:bg-[#121212] bg-[#f9f9f9]">
+        <Navbar />
         <About />
         <Skills />
         <Projects />
         <Contact />
         <Footer />
-      </body>
+      </main>
     </>
   )
 }

@@ -1,7 +1,8 @@
-import Head from "next/head"
+
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import Providers from "./providers"
+import { Metadata } from 'next'
 import { ReactNode } from "react"
 import { Poppins, Roboto } from "next/font/google"
 import "./globals.css"
@@ -18,14 +19,34 @@ const customFontRoboto = Roboto({
   weight: ["400", "500"],
 })
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Talona Costa",
   description:
-    "Explore meu site para experiências Web excepcionais. criando experiências digitais impactantes e funcionais solucionando problemas complexos de maneira inovadora e funcional.",
-  keywords:
-    " desenvolvimento web, portfólio, inovação ,Talona, talona, Talonacosta ,talonacosta ,design web, inteligência artificial, IA, ia,  Android",
-  author: "Tales Costa",
-  ogImage: "/foto/florborda.png",
+    "Explore meu site para experiências Web excepcionais. Criando experiências digitais impactantes e funcionais solucionando problemas complexos de maneira inovadora e funcional.",
+  keywords: [
+    'desenvolvimento web', 
+    'portfólio', 
+    'inovação', 
+    'Talona', 
+    'talona', 
+    'Talonacosta', 
+    'talonacosta', 
+    'design web', 
+    'inteligência artificial', 
+    'IA', 
+    'ia',  
+    'Android',
+  ],
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: true,
+    }
+  }
 }
 
 export default function RootLayout({ children }: { children: ReactNode }) {
@@ -35,21 +56,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         lang="pt-BR"
         className={`${customFontPoppins.variable} ${customFontRoboto.variable}`}
       >
-        <Head>
-          <meta charSet="utf-8" />
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <meta name="description" content={metadata.description} />
-          <meta name="keywords" content={metadata.keywords} />
-          <meta name="author" content={metadata.author} />
-          <meta property="og:title" content={metadata.title} />
-          <meta property="og:description" content={metadata.description} />
-          <meta
-            property="og:image"
-            content={`${process.env.NEXT_PUBLIC_BASE_URL}${metadata.ogImage}`}
-          />
-
-          <title>{metadata.title}</title>
-        </Head>
         <body>
           <Providers>
             {children}

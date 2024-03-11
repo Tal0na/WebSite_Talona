@@ -25,7 +25,7 @@ const About = () => {
             className=" font-roboto text-paragraph-bg pl-12 leading-relaxed
          text-zinc-600 dark:text-zinc-300"
           >
-            criando experiências digitais impactantes e funcionais <br />
+            Criando experiências digitais impactantes e funcionais <br />
             solucionando problemas complexos de maneira inovadora e funcional.
           </p>
           <div className="flex justify-start py-2 pb-32 pl-12">
