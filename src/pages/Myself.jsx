@@ -10,7 +10,7 @@ const Myself = () => {
     <div className="min-h-screen w-full dark:bg-[#121212] bg-[#f9f9f9] font-indie">
       <Navbar />
       <div className="flex flex-col p-8 text-black dark:text-white">
-        <div className="border-b border-gray-300 dark:border-zinc-600">
+        <div className="border-b border-gray-300 dark:border-zinc-400">
           <h1 className="text-center mt-10 text-2xl font-bold dark:text-purple-300 text-purple-400">
             Um espaço para me expressar
           </h1>
@@ -21,21 +21,21 @@ const Myself = () => {
         </div>
         <div className="py-8">
           <div className="mt-4 relative">
-            <span className="border-b border-gray-300 dark:border-zinc-600 relative ">
+            <span className="border-b border-gray-300 dark:border-zinc-400 relative ">
               Talona - 07/03/2024
             </span>
           </div>
           <br />
-          <span className="border-b border-gray-300 dark:border-zinc-600 relative ">
+          <span className="border-b border-gray-300 dark:border-zinc-400 relative ">
             Faculdade
           </span>
           <br />
-          <span className="border-b border-gray-300 dark:border-zinc-600 relative">
+          <span className="border-b border-gray-300 dark:border-zinc-400 relative">
             Começo
           </span>
           <br />
           
-          <span className="border-b border-gray-300 dark:border-zinc-600 relative ">
+          <span className="border-b border-gray-300 dark:border-zinc-400 relative ">
             Rodeado de amigos e família, tomo um café, enquanto a música
             suavemente preenche o ambiente, criando uma atmosfera acolhedora e
             relaxante. Conversas animadas e risadas ecoam ao meu redor, enchendo
@@ -48,7 +48,7 @@ const Myself = () => {
           </span>
         </div>
       </div>
-      <footer className="border-t border-gray-400 text-gray-600 text-xs p-4 absolute bottom-0 w-full">
+      <footer className="border-t border-gray-300 dark:border-zinc-400 dark:text-zinc-300 text-gray-600 text-xs p-4 absolute bottom-0 w-full">
         @talona
       </footer>
     </div>
