@@ -116,7 +116,7 @@ const Navbar = () => {
   return (
     <header>
       <nav className="container mx-auto flex flex-col flex-wrap items-center p-6 px-1 md:flex-row">
-        <Link href="/" passHref className="mb-4 flex items-center md:mb-0">
+        <Link href="/" passHref className="flex items-center md:mb-0">
           <LogoComponent />
         </Link>
 
@@ -126,7 +126,7 @@ const Navbar = () => {
 
           <Link
             href="/Blog/HomeBlog"
-            className="inline-flex h-10 items-center justify-center rounded-md 
+            className="inline-flex items-center justify-center rounded-md 
             px-4 text-black transition-colors hover:bg-zinc-200 dark:text-white dark:hover:bg-zinc-800"
           >
             <span className="dark:text-purple-300 text-purple-400 font-semibold text-lg">
@@ -137,7 +137,7 @@ const Navbar = () => {
 
           <Link
             href="/Myself"
-            className="inline-flex h-10 items-center justify-center rounded-md 
+            className="inline-flex items-center justify-center rounded-md 
             px-4 text-black transition-colors hover:bg-zinc-200 dark:text-white dark:hover:bg-zinc-800"
           >
             <span className="dark:text-purple-300 text-purple-400 font-semibold text-lg">
@@ -147,7 +147,7 @@ const Navbar = () => {
           </Link>
           <Link
             href="/Links"
-            className="inline-flex h-10 items-center justify-center rounded-md 
+            className="inline-flex items-center justify-center rounded-md 
             px-4 text-black transition-colors hover:bg-zinc-200 dark:text-white dark:hover:bg-zinc-800"
           >
             <span className="dark:text-purple-300 text-purple-400 font-semibold text-lg">

@@ -120,21 +120,24 @@ const Contact = () => {
                 id="message"
                 name="message"
                 className="h-32 w-full resize-none rounded border border-purple-400 bg-zinc-100 dark:bg-black 
-                px-3 py-1 text-base leading-6 text-gray-100 outline-none 
-                transition-colors duration-200 ease-in-out focus:border-purple-300 focus:ring-2 focus:ring-purple-500"
+                px-3 py-1 text-base leading-6 text-gray-100 outline-none transition-colors duration-200 
+                
+                ease-in-out focus:border-purple-400 focus:ring-1 
+                focus:ring-purple-500"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
               ></textarea>
             </div>
 
             <input
-              className="rounded border-0 bg-purple-400 px-6 py-2 text-lg text-white hover:bg-purple-500 focus:border-purple-400 focus:ring-1 
+              className="rounded border-0 bg-purple-400 px-6 py-2 text-lg 
+              text-white hover:bg-purple-500 focus:border-purple-400 focus:ring-1 
               focus:ring-purple-500"
               type="submit"
               value="Enviar"
             />
           </form>
-          <p className="mt-3 text-xs text-gray-600 text-opacity-90">
+          <p className="mt-3 text-xs text-zinc-400 text-opacity-90">
             Clique no botão para confimar a mensagem.
           </p>
         </div>
