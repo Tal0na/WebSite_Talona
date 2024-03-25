@@ -4,18 +4,28 @@ const post3 = () => {
     <div className="min-h-screen dark:bg-[#121212] bg-[#f9f9f9]">
       <Navbar />
       <main className="container mx-auto p-6 text-black dark:text-white">
-        <div className="text-center text-4xl  text-black dark:text-white">
+        <div className="text-center text-4xl">
           <h1 className="my-10 text-center text-4xl dark:text-purple-300 text-purple-400">
-          Personalizando o VS Code
+            Tecnologia e Gadgets
           </h1>
         </div>
         <div className="text-xl my-4 text-center text-black dark:text-white p-8">
-        Personalizando a Experiência: Dicas para Customizar o Visual Studio Code
+          Recomendando apenas o que eu comprei e curtir.
         </div>
-        
-  </main>
-</div>
+        <div className="my-2">
+          Moondrop Viagem Espacial TWS Fone De Ouvido
+          , Cancelamento De Ruído,
+           Bluetooth 5.3
+        </div>
+
+        <div className="my-2">
+          KZ ZSN PRO 1BA 1DD 
+          Híbrido Drive In Ear Fones De Ouvido HIFI Metal
+          Bass Earbud 
+        </div>
+      </main>
+    </div>
   )
 }
 
-  export default post3;
+export default post3

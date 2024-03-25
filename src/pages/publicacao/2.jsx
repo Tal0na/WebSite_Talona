@@ -34,6 +34,17 @@ const post2 = () => {
       <br />
       Experimente estas dicas e ajuste o VS Code de acordo com suas preferências pessoais. Com a quantidade certa de personalização, você pode tornar sua experiência de codificação ainda mais eficiente e agradável.
     </p> 
+
+    <p className="my-2">
+      <a
+        href="https://gist.github.com/Talonacosta/dc781481e94f17c7eadd2c85a5a85859"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-blue-500 hover:text-blue-700 underline"
+      >
+        Link do meu settings.jason
+      </a>
+    </p>
         
   </main>
 </div>

@@ -17,32 +17,32 @@ const HomeBlog = () => {
     {
       titulo: "Personalizando o VS Code",
       subtitulo:
-        "Personalizando a Experiência: Dicas para Customizar o Visual Studio Code",
+        "Personalizando a Experiência: Dicas para Customizar o Visual Studio Code.",
       link: "/publicacao/2",
     },
     {
       titulo: "Tecnologia e Gadgets",
-      subtitulo: "Subtítulo da Publicação 3",
+      subtitulo: "Recomendando apenas o que eu comprei e curtir.",
       link: "/publicacao/3",
     },
     {
       titulo: "Entretenimento Digital",
-      subtitulo: "Subtítulo da Publicação 4",
+      subtitulo: "Quais são os conteúdos que mais me interessam na internet",
       link: "/publicacao/4",
     },
     {
       titulo: "Hobbies e Passatempos",
-      subtitulo: "Compartilhe seus hobbies favoritos, como jardinagem, artesanato, fotografia, colecionismo, jogos de tabuleiro ou qualquer outra atividade que você goste de fazer durante o tempo livre.",
+      subtitulo: "Meus hobbies favoritos, Atividade que eu gosto de fazer durante o tempo livre.",
       link: "/publicacao/5",
     },
     {
       titulo: "Desenvolvimento de Software",
-      subtitulo: "Discuta linguagens de programação, frameworks, bibliotecas, técnicas de desenvolvimento de software, metodologias ágeis e melhores práticas de codificação.",
+      subtitulo: "Discutindo linguagens de programação, frameworks, bibliotecas, técnicas de desenvolvimento de software, metodologias ágeis e melhores práticas de codificação.",
       link: "/publicacao/6",
     },
     {
       titulo: "Gaming",
-      subtitulo: "Subtítulo da Publicação 7",
+      subtitulo: "Meus jogos preferidos",
       link: "/publicacao/7",
     },
     {
@@ -52,12 +52,12 @@ const HomeBlog = () => {
     },
     {
       titulo: "Futuro da Tecnologia",
-      subtitulo: "Explore especulações sobre o futuro da tecnologia, como a colonização de Marte, veículos autônomos, medicina de precisão e outras tendências futuristas.",
+      subtitulo: "Explorando especulações sobre o futuro da tecnologia, veículos autônomos, medicina de precisão e outras tendências futuristas.",
       link: "/publicacao/9",
     },
     {
       titulo: "Dicas",
-      subtitulo: "Compartilhe dicas úteis e tutoriais passo a passo sobre como usar software, aplicativos, ferramentas de produtividade e plataformas online.",
+      subtitulo: "Compartilhando dicas úteis e tutoriais passo a passo sobre como usar software, aplicativos, ferramentas de produtividade e plataformas online.",
       link: "/publicacao/10",
     },
   ]
@@ -79,7 +79,7 @@ const HomeBlog = () => {
       <main className="container mx-auto ">
         
         <section>
-          <div className="mt-10 grid gap-4 sm:grid-cols-2 sm:gap-y-10 xl:grid-cols-3 ">
+          <div className="mt-10  grid gap-4 sm:grid-cols-2 sm:gap-y-10 xl:grid-cols-3 ">
             {publicacoes.map((publicacao, index) => (
               <Link key={index} href={publicacao.link}>
                 <div className="px-4 w-300 h-300">
@@ -88,9 +88,9 @@ const HomeBlog = () => {
                      dark:bg-[#1E1E1E] bg-zinc-100  dark:shadow-zinc-600 shadow-md shadow-zinc-300 transition-transform duration-300 hover:scale-105 
            dark:border-white text-black dark:text-white  dark:hover:text-white hover:text-black"
                   >
-                    <article className="mb-4 ">
+                    <article className="mb-4">
                       <h3 className="text-xl font-medium">{publicacao.titulo}</h3>
-                      <p className="mt-2 text-zinc-700 dark:text-zinc-300 " >
+                      <p className="mt-2 text-zinc-700 dark:text-zinc-300">
                         {publicacao.subtitulo}
                       </p>
                     </article>
