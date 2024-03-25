@@ -1,223 +1,116 @@
 import React from "react"
-import { useEffect } from 'react';
 import Link from "next/link"
+import Navbar from "../app/components/Navbar/NavbarComponent"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import {
-  faTools,
-  faCertificate,
-  faTableColumns,
-} from "@fortawesome/free-solid-svg-icons"
 import {
   faGithub,
   faSpotify,
   faYoutube,
-} from "@fortawesome/free-brands-svg-icons"
-import Navbar from "../app/components/Navbar/NavbarComponent"
+  faTableColumns,
+  faCertificate,
+  faTools,
+} from "@fortawesome/free-solid-svg-icons"
 
-const Projetos = () => {
-  useEffect(() => {
-    document.title = "Projetos"
-  }, [])
+const ProjectsPage = () => {
   return (
-    <>
-      <div className="min-h-screen w-full dark:bg-[#121212] bg-[#f9f9f9]">
-        <Navbar />
+    <div className="min-h-screen w-full dark:bg-[#121212] bg-[#f9f9f9] font-indie">
+      <Navbar />
 
-        <h1 className="font-poppins mb-20 mt-10 text-center text-3xl text-purple-600">
+      <div className="max-w-7xl mx-auto px-4 py-12">
+        <h1 className="text-3xl font-bold text-center dark:text-purple-300 text-purple-400 mb-10">
           Aqui estão alguns dos meus projetos
         </h1>
 
-        <div className="grid grid-cols-8 grid-rows-2 gap-3 p-4">
-          <a
-            href="https://coffe-com-codigo.vercel.app/"
-            target="_blank"
-            className="col-span-2 row-span-2 flex h-32 transform flex-col items-center
-                      justify-center rounded-xl border-2 border-[#4e3629] bg-[#e9d691]  dark:border-[#715244]
-                      text-center text-[#4e3629] 
-                      shadow-md transition-transform duration-300 hover:scale-105"
-          >
-            <span className="text-lg font-bold">Coffe Com Codigo</span>
-            <p className="mt-2 text-sm">
-              Projetos Leves e Divertidos para Acompanhar Seu Café Matinal ☕️
-            </p>
-          </a>
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 text-black">
+          <ProjectCard
+            title="Coffe Com Codigo"
+            description="Projetos Leves e Divertidos para Acompanhar Seu Café Matinal ☕️"
+            link="https://coffe-com-codigo.vercel.app/"
+            icon={faCertificate}
+          />
 
-          {/* Item 2 */}
-          <a
-            href=""
-            target="_blank"
-            className="col-span-2 col-start-3 row-span-2 flex h-32 transform flex-col items-center
-            justify-center rounded-xl border-2 border-black dark:border-white
-            text-center text-black
-            shadow-md transition-transform duration-300 hover:scale-105 bg-green-500 hover:bg-green-400"
-          >
-            <span className="text-lg font-bold">Rotina-Verde</span>
-            <p className="mt-2 text-sm">
-              Organize seu dia com projetos leves e divertidos, personalizando
-              sua rotina de maneira única e eficiente. 🌿
-            </p>
-          </a>
+          <ProjectCard
+            title="Rotina-Verde"
+            description="Organize seu dia com projetos leves e divertidos, personalizando sua rotina de maneira única e eficiente. 🌿"
+            link="#"
+            icon={faTableColumns}
+          />
 
-          {/* Item 3 */}
-          <a
-            target="_blank"
-            href=""
-            className="col-start-5 row-span-2 flex transform items-center justify-center 
-            rounded-xl bg-purple-300 text-center text-white shadow-md transition-transform duration-300 hover:scale-105"
-          >
-            <span className="text-lg font-bold">3</span>
-          </a>
+          <ProjectCard
+            title="GitHub Repository"
+            description="Todos os meus projetos no Github"
+            link="https://github.com/Talonacosta?tab=repositories"
+            icon={faGithub}
+          />
 
-          {/* Item 4 */}
-          <a
-            target="_blank"
-            href=""
-            className="col-start-6 row-span-2 flex transform items-center justify-center 
-          rounded-xl bg-purple-500 text-center text-white shadow-md transition-transform duration-300 hover:scale-105"
-          >
-            <span className="text-lg font-bold">4</span>
-          </a>
+          <ProjectCard
+            title="Habilidades e Tecnologias"
+            description="Isso inclui HTML, CSS, JavaScript, React, Node.js, etc."
+            link="/Stack"
+            icon={faTableColumns}
+          />
 
-          {/* Item 5 */}
-          <a
-            target="_blank"
-            href="#"
-            className="col-span-2 col-start-7 row-span-2 flex transform flex-col items-center 
-          justify-center rounded-xl bg-yellow-500 text-center text-white shadow-md transition-transform duration-300 hover:scale-105"
-          >
-            <FontAwesomeIcon icon={faCertificate} className="mb-2 text-3xl" />
-            <span className="mt-2 text-lg font-bold">
-              Certificação e ou Conquista
-            </span>
-          </a>
+          <ProjectCard
+            title="Certificação e ou Conquista"
+            description=""
+            link="#"
+            icon={faCertificate}
+          />
 
-          {/* Item 6 */}
-          <a
-            href="#"
-            target="_blank"
-            className="col-span-2 row-span-2 row-start-3 flex h-32 transform items-center justify-center 
-          rounded-xl bg-purple-500 text-center text-white shadow-md transition-transform duration-300 hover:scale-105"
-          >
-            <span className="text-lg font-bold">6</span>
-          </a>
+          <ProjectCard
+            title="Ferramentas e Recursos"
+            description="Descubra minhas ferramentas e recursos favoritos que uso."
+            link="#"
+            icon={faTools}
+          />
 
-          {/* Item 7 */}
-          <a
-            href="https://github.com/Talonacosta?tab=repositories"
-            target="_blank"
-            className="col-span-4 col-start-3 row-span-3 row-start-3 flex transform flex-col items-center 
-        justify-center rounded-xl bg-purple-600 text-center text-white shadow-md transition-transform duration-300 hover:scale-105"
-          >
-            <FontAwesomeIcon icon={faGithub} className="mb-2 text-4xl" />
-            <span className="text-lg font-bold">GitHub Repository</span>
-            <p className="mt-1 text-lg">Todos os meus projetos no Github</p>
-          </a>
+          <ProjectCard
+            title="Minhas Playlist"
+            description="Clone UI Spotify"
+            link="https://minhas-playlists.vercel.app/"
+            icon={faSpotify}
+          />
 
-          {/* Item 8 */}
-          <Link
-            href="/Stack"
-            className="col-span-2 col-start-1 row-start-5 flex h-32 transform flex-col items-center 
-          justify-center rounded-xl bg-orange-600 text-center text-white shadow-md transition-transform duration-300 hover:scale-105"
-          >
-            <FontAwesomeIcon icon={faTableColumns} className="mb-2 text-4xl" />
+          <ProjectCard
+            title="Vídeos Eternizados"
+            description="Clone UI YouTube - Destacando o conteúdo de alguns canais."
+            link="https://eternizar-videos.vercel.app/"
+            icon={faYoutube}
+          />
 
-            <span className="mt-2 text-lg font-bold">
-              Habilidades e Tecnologias
-            </span>
+          <ProjectCard
+            title="Página com os meus links"
+            description="Redes sociais e mais."
+            link="/Links"
+            icon={faSpotify}
+          />
 
-            <p className="mt-1 text-sm">
-              Isso inclui HTML, CSS, JavaScript, React, Node.js, etc.
-            </p>
-          </Link>
-
-          {/* Item 9 */}
-          <Link
-            href="/Stack"
-            className="col-span-2 col-start-7 row-span-2 row-start-3 flex transform flex-col 
-          items-center justify-center rounded-xl bg-red-800 text-center text-white shadow-md transition-transform duration-300 
-          hover:scale-105"
-          >
-            <FontAwesomeIcon icon={faTools} className="mb-2 text-3xl" />
-            <span className="mt-2 text-lg font-bold">
-              Ferramentas e Recursos
-            </span>
-            <p className="mt-1 text-sm">
-              Descubra minhas ferramentas e recursos favoritos que uso.
-            </p>
-          </Link>
-
-          {/* Item 10 */}
-          <a
-            href="#"
-            target="_blank"
-            className="col-start-7 row-start-5 flex h-32 transform items-center justify-center rounded-xl bg-purple-500 
-          text-center text-white shadow-md transition-transform duration-300 hover:scale-105"
-          >
-            <span className="text-lg font-bold">10</span>
-          </a>
-
-          {/* Item 11 */}
-          <a
-            href="#"
-            target="_blank"
-            className="col-start-8 row-start-5 flex transform items-center justify-center rounded-xl bg-purple-400 
-          text-center text-white shadow-md transition-transform duration-300 hover:scale-105"
-          >
-            <span className="text-lg font-bold">11</span>
-          </a>
-
-          {/* Item 12 */}
-          <Link
-            href="/Links"
-            className="col-span-2 row-span-2 row-start-6 flex h-32 transform flex-col items-center justify-center 
-          rounded-xl bg-blue-600 text-white shadow-md transition-transform duration-300 hover:scale-105"
-          >
-            <spam className="mt-2 text-lg font-bold">
-              Pagina com os meus links
-            </spam>
-
-            <p className="mt-1 text-sm">Redes sociais e mais.</p>
-          </Link>
-
-          {/* Item 13 */}
-          <a
-            href="#"
-            target="_blank"
-            className="col-start-3 row-span-2 row-start-6 flex transform items-center justify-center 
-          rounded-xl bg-purple-400 text-center text-white shadow-md transition-transform duration-300 hover:scale-105"
-          >
-            <span className="text-lg font-bold">13</span>
-          </a>
-
-          {/* Item 14 */}
-          <a
-            href="https://minhas-playlists.vercel.app/"
-            target="_blank"
-            className="col-span-3 col-start-4 row-span-2 row-start-6 flex transform flex-col 
-          items-center justify-center rounded-xl bg-[#1DB954] text-center text-white shadow-md transition-transform duration-300 hover:scale-105"
-          >
-            <FontAwesomeIcon icon={faSpotify} className="mb-2 text-3xl" />
-            <span className="mt-2 text-lg font-bold">Minhas Playlist</span>
-            <p className="mt-1 text-sm">Clone UI Spotify</p>
-          </a>
-
-          {/* Item 15 */}
-          <a
-            href="https://eternizar-videos.vercel.app/"
-            target="_blank"
-            className="col-span-2 col-start-7 row-span-2 row-start-6 flex transform flex-col 
-          items-center justify-center rounded-xl bg-red-500 text-center shadow-md transition-transform duration-300 hover:scale-105"
-          >
-            <FontAwesomeIcon icon={faYoutube} className="mb-2 text-3xl" />
-            <span className="mt-2 text-xl font-bold">Vídeos Eternizados</span>
-            <p className="mt-1 text-sm">
-              Clone UI YouTube - Destacando o conteúdo de alguns canais .
-            </p>
-          </a>
+          {/* Adicione mais cards para os outros projetos aqui */}
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
-export default Projetos
+const ProjectCard = ({ title, description, link, icon }) => {
+  return (
+    <div className="bg-white rounded-xl shadow-md p-6 flex flex-col items-center justify-center">
+      <FontAwesomeIcon
+        icon={icon}
+        className="text-3xl mb-2 dark:text-purple-300 text-purple-400"
+      />
+      <h2 className="text-lg font-bold text-center mb-2">{title}</h2>
+      <p className="text-sm text-center">{description}</p>
+      <Link href={link} passHref>
+        <div
+          className="mt-4 dark:bg-purple-300 bg-purple-400 text-white px-4 py-2 rounded-full inline-block 
+        hover:bg-purple-400 dark:hover:bg-purple-500 transition-transform duration-300 hover:scale-105"
+        >
+          Ver Projeto
+        </div>
+      </Link>
+    </div>
+  )
+}
+
+export default ProjectsPage

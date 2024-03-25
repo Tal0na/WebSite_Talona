@@ -40,7 +40,7 @@ const About = () => {
         dark:shadow-zinc-800 shadow-md shadow-zinc-300"
             >
               <div
-                className="font-poppins flex h-full items-center justify-center text-lg font-medium 
+                className="font-poppins flex h-full items-center justify-center text-lg font-semibold
                 text-white dark:text-black"
               >
                 Continue!
