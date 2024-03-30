@@ -13,15 +13,13 @@ const post3 = () => {
           Recomendando apenas o que eu comprei e curtir.
         </div>
         <div className="my-2">
-          Moondrop Viagem Espacial TWS Fone De Ouvido
-          , Cancelamento De Ruído,
-           Bluetooth 5.3
+          Moondrop Viagem Espacial TWS Fone De Ouvido , Cancelamento De Ruído,
+          Bluetooth 5.3
         </div>
-
+        <br />
         <div className="my-2">
-          KZ ZSN PRO 1BA 1DD 
-          Híbrido Drive In Ear Fones De Ouvido HIFI Metal
-          Bass Earbud 
+          KZ ZSN PRO 1BA 1DD Híbrido Drive In Ear Fones De Ouvido HIFI Metal
+          Bass Earbud
         </div>
       </main>
     </div>
