@@ -169,13 +169,15 @@ const HomeBlog = () => {
         <section>
           {filtrarPublicacoes().map(({ tema, publicacoes }) => (
             <div key={tema}>
-              <h2 className="text-xl font-bold mb-4">{tema}</h2>
+              <h2 className="text-xl font-bold mb-4 text-black dark:text-white">{tema}</h2>
               <div className="grid gap-4 sm:grid-cols-2 sm:gap-y-10 xl:grid-cols-3">
                 {publicacoes.map((publicacao) => (
                   <Link key={publicacao.id} href={publicacao.link}>
                    
                       <div className="px-4 w-300 h-300">
-                        <div className="relative rounded-lg p-5 pt-8 dark:bg-[#1E1E1E] bg-zinc-100 dark:shadow-zinc-600 shadow-md shadow-zinc-300 transition-transform duration-300 hover:scale-105 dark:border-white text-black dark:text-white dark:hover:text-white hover:text-black">
+                        <div className="relative rounded-lg p-5 pt-8 dark:bg-[#1E1E1E] bg-zinc-100 
+                        dark:shadow-zinc-600 shadow-md shadow-zinc-300 transition-transform duration-300 hover:scale-105 dark:border-white 
+                        text-black dark:text-white dark:hover:text-white hover:text-black">
                           <article className="mb-4">
                             <h3 className="text-xl font-medium">{publicacao.titulo}</h3>
                             <p className="mt-2 text-zinc-700 dark:text-zinc-300">{publicacao.subtitulo}</p>
