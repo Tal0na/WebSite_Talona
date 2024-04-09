@@ -83,7 +83,7 @@ const Links = () => {
           className="dark:bg-[#1e1e1e] bg-[#f3f3f3] link rounded-10 text-decoration-none tap-highlight-transparent  font-roboto mx-10 my-3 block transform rounded-lg
           border border-black border-opacity-75 p-2 text-center text-lg text-black shadow-md shadow-zinc-300 transition-transform duration-300 hover:scale-105 hover:bg-zinc-600 
           hover:text-white dark:border-white dark:text-white dark:shadow-zinc-600 dark:hover:bg-zinc-800 dark:hover:text-white"
-          href="https://github.com/Talonacosta"
+          href="https://github.com/Tal0na"
           target="_blank"
           aria-label="Link para o perfil do Github Talonacosta"
         >
