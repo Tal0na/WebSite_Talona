@@ -74,7 +74,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <meta property="twitter:url" content="https://talonacosta.vercel.app/" />
       <meta property="twitter:title" content="Talona Site" />
       <meta property="twitter:description" content="Explore meu site para experiências Web excepcionais." />
-      <meta property="twitter:image" content="https://i.imgur.com/JJYGpJT.png" />
+      <meta property="twitter:image" content="https://i.imgur.com/Cz74nIx.png" />
       <html
         lang="pt-BR"
         className={`${customFontPoppins.variable} ${customFontRoboto.variable}`}
