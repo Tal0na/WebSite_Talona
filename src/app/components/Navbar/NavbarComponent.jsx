@@ -7,7 +7,7 @@ import LogoComponent from "../logo/logotheme"
 const DropdownMenu = ({ items }) => {
   return (
     <div
-      className="fixed mt-2  flex origin-top-right flex-col rounded-md 
+      className="fixed mt-1 flex origin-top-right flex-col rounded-md 
     border border-purple-400 dark:border-purple-300 border-opacity-75 
     bg-[#f9f9f9]  dark:bg-[#121212]"
     >
@@ -120,27 +120,25 @@ const Navbar = () => {
           <LogoComponent />
         </Link>
 
-        <div className="flex flex-wrap items-center justify-center gap-x-2  text-lg md:ml-auto">
+        <div className="flex flex-wrap items-center justify-center gap-x-1  text-lg md:ml-auto">
           <NavItemWithDropdown label="01. About" items={dropdownItemsSobre} />
           <NavItemWithDropdown label="02. Setup" items={dropdownItemsSetup} />
-
           <Link
             href="/Blog/HomeBlog"
             className="inline-flex items-center justify-center rounded-md 
             px-4 text-black transition-colors hover:bg-zinc-200 dark:text-white dark:hover:bg-zinc-800"
           >
-            <span className="dark:text-purple-300 text-purple-400 font-semibold text-lg">
+            <span className="dark:text-purple-300 text-purple-400 font-semibold text-lg py-1">
               03.
             </span>{" "}
             Blog
           </Link>
-
           <Link
             href="/Myself"
             className="inline-flex items-center justify-center rounded-md 
             px-4 text-black transition-colors hover:bg-zinc-200 dark:text-white dark:hover:bg-zinc-800"
           >
-            <span className="dark:text-purple-300 text-purple-400 font-semibold text-lg">
+            <span className="dark:text-purple-300 text-purple-400 font-semibold text-lg py-1">
               04.
             </span>{" "}
             Myself
@@ -150,11 +148,12 @@ const Navbar = () => {
             className="inline-flex items-center justify-center rounded-md 
             px-4 text-black transition-colors hover:bg-zinc-200 dark:text-white dark:hover:bg-zinc-800"
           >
-            <span className="dark:text-purple-300 text-purple-400 font-semibold text-lg">
+            <span className="dark:text-purple-300 text-purple-400 font-semibold text-lg py-1">
               05.
             </span>
             Links
-          </Link>          <Link href="/" passHref>
+          </Link>{" "}
+          <Link href="/" passHref>
             <div
               className=" flex cursor-pointer items-center rounded dark:bg-purple-300 bg-purple-400 px-3 py-1 
               dark:text-black text-white transition
