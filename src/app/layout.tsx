@@ -29,7 +29,7 @@ const customFontRoboto = Roboto({
 export const metadata: ExtendedMetadata = {
   title: "Talona Costa",
   description:
-    "Explore meu site para experiências Web excepcionais. Criando experiências digitais impactantes e funcionais solucionando problemas complexos de maneira inovadora e funcional.",
+    "Explore meu site para conhecer mais sobre mim.",
   keywords: [
     'desenvolvimento web', 
     'portfólio', 
@@ -67,13 +67,13 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <meta property="og:type" content="website" />
       <meta property="og:url" content="https://talonacosta.vercel.app/" />
       <meta property="og:title" content="Talona Site" />
-      <meta property="og:description" content="Explore meu site para experiências Web excepcionais. Criando experiências digitais impactantes e funcionais solucionando problemas complexos de maneira inovadora e funcional." />
+      <meta property="og:description" content="Explore meu site para experiências Web excepcionais. " />
       <meta property="og:image" content="https://i.imgur.com/Cz74nIx.png" />
 
       <meta property="twitter:card" content="summary_large_image" />
       <meta property="twitter:url" content="https://talonacosta.vercel.app/" />
       <meta property="twitter:title" content="Talona Site" />
-      <meta property="twitter:description" content="Explore meu site para experiências Web excepcionais. Criando experiências digitais impactantes e funcionais solucionando problemas complexos de maneira inovadora e funcional." />
+      <meta property="twitter:description" content="Explore meu site para experiências Web excepcionais." />
       <meta property="twitter:image" content="https://i.imgur.com/Cz74nIx.png" />
       <html
         lang="pt-BR"
