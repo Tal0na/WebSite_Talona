@@ -47,11 +47,26 @@ export const metadata: Metadata = {
       noimageindex: true,
     }
   }
+
+  
 }
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <>
+  
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://talonacosta.vercel.app/" />
+<meta property="og:title" content="Talona Site" />
+<meta property="og:description" content="Explore meu site para experiências Web excepcionais. Criando experiências digitais impactantes e funcionais solucionando problemas complexos de maneira inovadora e funcional." />
+<meta property="og:image" content="/public/foto/Frame 60.png" />
+
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://talonacosta.vercel.app/" />
+<meta property="twitter:title" content="Talona Site" />
+<meta property="twitter:description" content="Explore meu site para experiências Web excepcionais. Criando experiências digitais impactantes e funcionais solucionando problemas complexos de maneira inovadora e funcional." />
+<meta property="twitter:image" content="/public/foto/Frame 60.png" />
+
       <html
         lang="pt-BR"
         className={`${customFontPoppins.variable} ${customFontRoboto.variable}`}
