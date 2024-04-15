@@ -24,20 +24,16 @@ export default function Sobre() {
             className="w-20 h-20 mx-auto rounded-full mb-4"
           />
 
-          <h1 className="font-poppins  text-3xl">
-            <span className="font-medium dark:text-purple-300 text-purple-400">
-              Talona 
-            </span>
-            <span className="dark:text-purple-300 text-purple-400">Costa</span>
-            <span className="font-medium dark:text-purple-300 text-purple-400">
-              .
+          <h1 className="font-poppins text-3xl">
+            <span className="font-medium dark:text-purple-300 text-purple-400 ">
+              Talona Costa.
             </span>
           </h1>
-          <h2 className="text-lg font-semibold mb-2 text-blcak dark:text-white">
-            Developer
+          <h2 className="text-lg font-semibold mb-2 text-blcak dark:text-white pl-1">
+          Sou um Engenheiro de Software
           </h2>
 
-          <p className="text-black dark:text-white mb-6 text-lg">
+          <p className="text-black dark:text-white mb-6 text-lg pl-1">
             Sou um experiente desenvolvedor de software, com habilidades sólidas
             em diversas linguagens de programação e tecnologias de
             desenvolvimento. Comprometido com a qualidade, tenho experiência em

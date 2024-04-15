@@ -21,7 +21,7 @@ const ProjectsPage = () => {
           Aqui estão alguns dos meus projetos
         </h1>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 text-black">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 text-black dark:text-white ">
           <ProjectCard
             title="Coffe Com Codigo"
             description="Projetos Leves e Divertidos para Acompanhar Seu Café Matinal ☕️"
@@ -39,7 +39,7 @@ const ProjectsPage = () => {
           <ProjectCard
             title="GitHub Repository"
             description="Todos os meus projetos no Github"
-            link="https://github.com/Talonacosta?tab=repositories"
+            link="https://github.com/Tal0na?tab=repositories"
             icon={faGithub}
           />
 
@@ -82,7 +82,6 @@ const ProjectsPage = () => {
             title="Página com os meus links"
             description="Redes sociais e mais."
             link="/Links"
-            icon={faSpotify}
           />
 
           {/* Adicione mais cards para os outros projetos aqui */}
@@ -94,16 +93,16 @@ const ProjectsPage = () => {
 
 const ProjectCard = ({ title, description, link, icon }) => {
   return (
-    <div className="bg-white rounded-xl shadow-md p-6 flex flex-col items-center justify-center">
+    <div className="bg-white dark:bg-black rounded-xl shadow-md p-6 flex flex-col items-center justify-center">
       <FontAwesomeIcon
         icon={icon}
-        className="text-3xl mb-2 dark:text-purple-300 text-purple-400"
+        className="text-lg mb-2 dark:text-purple-300 text-purple-400"
       />
       <h2 className="text-lg font-bold text-center mb-2">{title}</h2>
       <p className="text-sm text-center">{description}</p>
       <Link href={link} passHref>
         <div
-          className="mt-4 dark:bg-purple-300 bg-purple-400 text-white px-4 py-2 rounded-full inline-block 
+          className="mt-4 dark:bg-purple-300 bg-purple-400 text-white dark:text-black px-4 py-2 rounded-full inline-block 
         hover:bg-purple-400 dark:hover:bg-purple-500 transition-transform duration-300 hover:scale-105"
         >
           Ver Projeto
