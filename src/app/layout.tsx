@@ -75,6 +75,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <meta property="twitter:title" content="Talona Site" />
       <meta property="twitter:description" content="Explore meu site para experiências Web excepcionais." />
       <meta property="twitter:image" content="https://i.imgur.com/Cz74nIx.png" />
+
+      <meta name="google-site-verification" content="TJfWJ0lzJo2y8hJBiJU0frm_SjaudSntNLDr9lV8E3w" />
       <html
         lang="pt-BR"
         className={`${customFontPoppins.variable} ${customFontRoboto.variable}`}
