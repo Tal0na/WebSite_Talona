@@ -50,7 +50,7 @@ const Links = () => {
   }, [])
 
   return (
-    <div className="min-h-screen  dark:bg-[#121212] bg-[#f9f9f9]">
+    <div className="min-h-screen w-full dark:bg-[#121212] bg-[#f9f9f9]">
       <Navbar />
       <h1 className="text-purple-r mt-10 text-center text-3xl font-bold dark:text-purple-300 text-purple-400">
         Meus Links

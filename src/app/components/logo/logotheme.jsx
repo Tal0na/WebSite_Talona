@@ -15,9 +15,7 @@ function LogoComponent() {
 
   return (
     <div>
-      {loading ? (
-        <div>Carregando...</div>
-      ) : (
+      {!loading && (
         <Image
           src={logoSrc}
           alt={resolvedTheme === 'dark' ? 'logo (modo escuro)' : 'logo (modo claro)'}

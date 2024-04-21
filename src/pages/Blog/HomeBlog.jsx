@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import Link from "next/link";
-import Navbar from "../../app/components/Navbar/NavbarComponent";
+import React, { useState } from "react"
+import Link from "next/link"
+import Navbar from "../../app/components/Navbar/NavbarComponent"
 
 const publicacoesPorTema = [
   {
@@ -59,8 +59,7 @@ const publicacoesPorTema = [
       {
         id: 4,
         titulo: "Entretenimento Digital",
-        subtitulo:
-          "Quais são os conteúdos que mais me interessam na internet",
+        subtitulo: "Quais são os conteúdos que mais me interessam na internet",
         link: "/publicacao/4",
       },
       {
@@ -91,41 +90,45 @@ const publicacoesPorTema = [
       },
     ],
   },
-];
+]
 
 const HomeBlog = () => {
-  const [filtroTema, setFiltroTema] = useState("");
-  const [termoPesquisa, setTermoPesquisa] = useState("");
+  const [filtroTema, setFiltroTema] = useState("")
+  const [termoPesquisa, setTermoPesquisa] = useState("")
 
   const handleButtonClick = (tema) => {
-    setFiltroTema(tema);
-  };
+    setFiltroTema(tema)
+  }
 
   const resetFiltro = () => {
-    setFiltroTema("");
-  };
+    setFiltroTema("")
+  }
 
   const handleInputChange = (event) => {
-    setTermoPesquisa(event.target.value);
-  };
+    setTermoPesquisa(event.target.value)
+  }
 
   const filtrarPublicacoes = () => {
-    let publicacoesFiltradas = publicacoesPorTema;
+    let publicacoesFiltradas = publicacoesPorTema
     if (filtroTema) {
       publicacoesFiltradas = publicacoesPorTema.filter(
         (item) => item.tema === filtroTema
-      );
+      )
     }
     if (termoPesquisa) {
-      publicacoesFiltradas = publicacoesFiltradas.map((item) => ({
-        ...item,
-        publicacoes: item.publicacoes.filter((publicacao) =>
-          publicacao.titulo.toLowerCase().includes(termoPesquisa.toLowerCase())
-        ),
-      })).filter((item) => item.publicacoes.length > 0);
+      publicacoesFiltradas = publicacoesFiltradas
+        .map((item) => ({
+          ...item,
+          publicacoes: item.publicacoes.filter((publicacao) =>
+            publicacao.titulo
+              .toLowerCase()
+              .includes(termoPesquisa.toLowerCase())
+          ),
+        }))
+        .filter((item) => item.publicacoes.length > 0)
     }
-    return publicacoesFiltradas;
-  };
+    return publicacoesFiltradas
+  }
 
   return (
     <div className="min-h-screen dark:bg-[#121212] bg-[#f9f9f9]">
@@ -169,22 +172,28 @@ const HomeBlog = () => {
         <section>
           {filtrarPublicacoes().map(({ tema, publicacoes }) => (
             <div key={tema}>
-              <h2 className="text-xl font-bold mb-4 text-black dark:text-white">{tema}</h2>
+              <h2 className="text-xl font-bold mb-4 text-black dark:text-white">
+                {tema}
+              </h2>
               <div className="grid gap-4 sm:grid-cols-2 sm:gap-y-10 xl:grid-cols-3">
                 {publicacoes.map((publicacao) => (
                   <Link key={publicacao.id} href={publicacao.link}>
-                   
-                      <div className="px-4 w-300 h-300">
-                        <div className="relative rounded-lg p-5 pt-8 dark:bg-[#1E1E1E] bg-zinc-100 
+                    <div className="px-4 w-300 h-300">
+                      <div
+                        className="relative rounded-lg p-5 pt-8 dark:bg-[#1E1E1E] bg-zinc-100 
                         dark:shadow-zinc-600 shadow-md shadow-zinc-300 transition-transform duration-300 hover:scale-105 dark:border-white 
-                        text-black dark:text-white dark:hover:text-white hover:text-black">
-                          <article className="mb-4">
-                            <h3 className="text-xl font-medium">{publicacao.titulo}</h3>
-                            <p className="mt-2 text-zinc-700 dark:text-zinc-300">{publicacao.subtitulo}</p>
-                          </article>
-                        </div>
+                        text-black dark:text-white dark:hover:text-white hover:text-black"
+                      >
+                        <article className="mb-4">
+                          <h3 className="text-xl font-medium">
+                            {publicacao.titulo}
+                          </h3>
+                          <p className="mt-2 text-zinc-700 dark:text-zinc-300">
+                            {publicacao.subtitulo}
+                          </p>
+                        </article>
                       </div>
-                 
+                    </div>
                   </Link>
                 ))}
               </div>
@@ -193,7 +202,7 @@ const HomeBlog = () => {
         </section>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default HomeBlog;
+export default HomeBlog

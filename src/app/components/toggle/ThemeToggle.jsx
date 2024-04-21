@@ -1,3 +1,4 @@
+
 "use clinet"
 import React, { useEffect, useState } from "react"
 import { useTheme } from "next-themes"
@@ -15,7 +16,6 @@ const ThemeButton = () => {
   const toggleTheme = () => {
     setTheme(resolvedTheme === "dark" ? "light" : "dark")
   }
-
   return (
     <div className="flex items-center space-x-2">
       <input

@@ -115,7 +115,7 @@ const Navbar = () => {
 
   return (
     <header>
-      <nav className="container mx-auto flex flex-col flex-wrap items-center p-6 px-1 md:flex-row">
+      <nav className="container mx-auto flex flex-col flex-wrap items-center p-6 px-2 md:flex-row">
         <Link href="/" passHref className="flex items-center md:mb-0">
           <LogoComponent />
         </Link>
