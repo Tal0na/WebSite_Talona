@@ -7,6 +7,8 @@ import { ReactNode } from "react"
 import { Poppins, Roboto } from "next/font/google"
 import "./globals.css"
 
+
+
 interface ExtendedMetadata extends Metadata {
   image: {
     url: string;
@@ -61,6 +63,7 @@ export const metadata: ExtendedMetadata = {
   }
 }
 
+
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
 <>
@@ -86,6 +89,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             {children}
             <Analytics />
             <SpeedInsights />
+           
           </Providers>
         </body>
       </html>
