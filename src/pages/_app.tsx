@@ -10,11 +10,29 @@ import { useRouter } from 'next/router';
 // Inicialização do Google Analytics
 ReactGA.initialize('G-44JJVVPVM6');
 
+// Função para rastrear mudanças de página
 function trackPageviews() {
   const router = useRouter();
 
   useEffect(() => {
+    // Adicionando script do Google Tag Manager
+    const script1 = document.createElement('script');
+    script1.src = 'https://www.googletagmanager.com/gtag/js?id=G-44JJVVPVM6';
+    script1.async = true;
+    document.head.appendChild(script1);
+
+    // Adicionando script de configuração do Google Analytics
+    const script2 = document.createElement('script');
+    script2.innerHTML = `
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-44JJVVPVM6');
+    `;
+    document.head.appendChild(script2);
+
     const handleRouteChange = (url: string) => {
+      // Rastreamento de página
       ReactGA.pageview(url);
     };
 
@@ -28,7 +46,7 @@ function trackPageviews() {
 
 interface MyAppProps {
   Component: ComponentType<any>;
-  pageProps: any; // Define pageProps como any
+  pageProps: any;
 }
 
 function MyApp({ Component, pageProps }: MyAppProps) {
