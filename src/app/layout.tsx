@@ -67,11 +67,15 @@ export const metadata: ExtendedMetadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
 <>
+
+<meta name="description" content="Explore meu site para conhecer mais sobre mim." />
+      
       <meta property="og:type" content="website" />
       <meta property="og:url" content="https://talonacosta.vercel.app/" />
       <meta property="og:title" content="Talona Site" />
       <meta property="og:description" content="Explore meu site para experiências Web excepcionais." />
       <meta property="og:image" content="https://i.imgur.com/Cz74nIx.png" />
+
 
       <meta property="twitter:card" content="summary_large_image" />
       <meta property="twitter:url" content="https://talonacosta.vercel.app/" />
