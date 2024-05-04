@@ -39,7 +39,7 @@ const Stack = () => {
         {skillsData.map(({ icon: Icon, name }, index) => (
           <div key={index} className="mx-2 my-2 w-24 text-center transition-transform duration-300 hover:scale-105">
             <div className="flex h-24 w-24 items-center justify-center rounded-full border border-opacity-75 dark:border-white border-black dark:bg-[#1e1e1e] bg-[#f3f3f3] ">
-              <Icon color="#d8b4fe" size={35} />
+              <Icon color="#615AA8" size={35} />
             </div>
             <div className="mt-2 font-poppis text-xl dark:text-white text-black">{name}</div> 
           </div>

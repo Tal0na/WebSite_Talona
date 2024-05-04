@@ -20,7 +20,7 @@ function MyApp({ Component, pageProps }: MyAppProps) {
       disableTransitionOnChange
     >
       <Head>
-        <link rel="icon" href="/foto/logotopo.png" />
+        <link rel="icon" href="/ico/favicon-32x32.png" />
       </Head>
       <div>
         <Component {...pageProps} />

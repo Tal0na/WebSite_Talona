@@ -1,6 +1,5 @@
 import Navbar from "./components/Navbar/NavbarComponent"
 import About from "./components/About/About"
-
 import Footer from "./components/Footer/Footer"
 
 export default async function Home() {

@@ -2,18 +2,16 @@
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import Providers from "./providers"
-import { Metadata } from 'next'
+import { Metadata } from "next"
 import { ReactNode } from "react"
 import { Poppins, Roboto } from "next/font/google"
 import "./globals.css"
 
-
-
 interface ExtendedMetadata extends Metadata {
   image: {
-    url: string;
-    alt: string;
-  };
+    url: string
+    alt: string
+  }
 }
 
 const customFontPoppins = Poppins({
@@ -30,21 +28,20 @@ const customFontRoboto = Roboto({
 
 export const metadata: ExtendedMetadata = {
   title: "Talona Costa",
-  description:
-    "Explore meu site para conhecer mais sobre mim.",
+  description: "Explore meu site para conhecer mais sobre mim.",
   keywords: [
-    'desenvolvimento web', 
-    'portfólio', 
-    'inovação', 
-    'Talona', 
-    'talona', 
-    'Talonacosta', 
-    'talonacosta', 
-    'design web', 
-    'inteligência artificial', 
-    'IA', 
-    'ia',  
-    'Android',
+    "desenvolvimento web",
+    "portfólio",
+    "inovação",
+    "Talona",
+    "talona",
+    "Talonacosta",
+    "talonacosta",
+    "design web",
+    "inteligência artificial",
+    "IA",
+    "ia",
+    "Android",
   ],
   robots: {
     index: true,
@@ -54,36 +51,49 @@ export const metadata: ExtendedMetadata = {
       index: true,
       follow: true,
       noimageindex: true,
-    }
+    },
   },
-  // Adicionando a propriedade image
   image: {
     url: "https://i.imgur.com/Cz74nIx.png",
     alt: "logo talona",
-  }
+  },
 }
-
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-<>
-
-<meta name="description" content="Explore meu site para conhecer mais sobre mim." />
+    <>
       
+      <meta
+        name="description"
+        content="Explore meu site para conhecer mais sobre mim."
+      />
+
       <meta property="og:type" content="website" />
       <meta property="og:url" content="https://talonacosta.vercel.app/" />
       <meta property="og:title" content="Talona Site" />
-      <meta property="og:description" content="Explore meu site para experiências Web excepcionais." />
+      <meta
+        property="og:description"
+        content="Explore meu site para experiências Web excepcionais."
+      />
       <meta property="og:image" content="https://i.imgur.com/Cz74nIx.png" />
-
 
       <meta property="twitter:card" content="summary_large_image" />
       <meta property="twitter:url" content="https://talonacosta.vercel.app/" />
       <meta property="twitter:title" content="Talona Site" />
-      <meta property="twitter:description" content="Explore meu site para experiências Web excepcionais." />
-      <meta property="twitter:image" content="https://i.imgur.com/Cz74nIx.png" />
+      <meta
+        property="twitter:description"
+        content="Explore meu site para experiências Web excepcionais."
+      />
+      <meta
+        property="twitter:image"
+        content="https://i.imgur.com/Cz74nIx.png"
+      />
 
-      <meta name="google-site-verification" content="TJfWJ0lzJo2y8hJBiJU0frm_SjaudSntNLDr9lV8E3w" />
+      <meta
+        name="google-site-verification"
+        content="TJfWJ0lzJo2y8hJBiJU0frm_SjaudSntNLDr9lV8E3w"
+      />
+       
       <html
         lang="pt-BR"
         className={`${customFontPoppins.variable} ${customFontRoboto.variable}`}
