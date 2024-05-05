@@ -54,7 +54,7 @@ export const metadata: ExtendedMetadata = {
     },
   },
   image: {
-    url: "https://i.imgur.com/Cz74nIx.png",
+    url: "https://i.imgur.com/dPFFq18.png",
     alt: "logo talona",
   },
 }
