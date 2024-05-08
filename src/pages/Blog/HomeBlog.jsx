@@ -144,24 +144,28 @@ const HomeBlog = () => {
       <div className="my-10 text-2xl m-10 text-black dark:text-white">
         Últimas Publicações
       </div>
+
+      
       <div className="container mx-auto">
-        <div className="flex justify-center space-x-4 mb-6">
-          <button
-            className="px-4 py-2 dark:bg-[#1E1E1E] bg-zinc-100 dark:shadow-zinc-600 shadow-md shadow-zinc-300 transition-transform duration-300 hover:scale-105 dark:border-white text-black dark:text-white dark:hover:text-white hover:text-black"
-            onClick={resetFiltro}
-          >
-            Todas
-          </button>
-          {publicacoesPorTema.map((item) => (
-            <button
-              key={item.tema}
-              className="px-4 py-2 dark:bg-[#1E1E1E] bg-zinc-100 dark:shadow-zinc-600 shadow-md shadow-zinc-300 transition-transform duration-300 hover:scale-105 dark:border-white text-black dark:text-white dark:hover:text-white hover:text-black"
-              onClick={() => handleButtonClick(item.tema)}
-            >
-              {item.tema}
-            </button>
-          ))}
-        </div>
+  <div className="flex justify-center space-x-4 flex-wrap mb-6">
+    <button
+      className="flex-grow max-w-[200px] px-4 py-2 dark:bg-[#1E1E1E] bg-zinc-100 dark:shadow-zinc-600 shadow-md shadow-zinc-300 transition-transform duration-300 hover:scale-105 dark:border-white text-black dark:text-white dark:hover:text-white hover:text-black mb-2"
+      onClick={resetFiltro}
+    >
+      Todas
+    </button>
+    {publicacoesPorTema.map((item) => (
+      <button
+        key={item.tema}
+        className="flex-grow max-w-[200px] px-4 py-2 dark:bg-[#1E1E1E] bg-zinc-100 dark:shadow-zinc-600 shadow-md shadow-zinc-300 transition-transform duration-300 hover:scale-105 dark:border-white text-black dark:text-white dark:hover:text-white hover:text-black mb-2"
+        onClick={() => handleButtonClick(item.tema)}
+      >
+        {item.tema}
+      </button>
+    ))}
+  </div>
+
+
         <input
           type="text"
           placeholder="Pesquisar..."

@@ -146,9 +146,8 @@ const Links = () => {
           Instagram
         </Link>
       </div>
-      <h3 className="text-1xl my-4 text-center text-black dark:text-white">@Talona</h3>
-    </div>
-      
+      <h3 className="text-1xl mt-1 text-center text-black dark:text-white">@Talona</h3>
+    </div>  
   )
 }
 export default Links
