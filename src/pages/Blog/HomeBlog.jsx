@@ -145,26 +145,24 @@ const HomeBlog = () => {
         Últimas Publicações
       </div>
 
-      
       <div className="container mx-auto">
-  <div className="flex justify-center space-x-4 flex-wrap mb-6">
-    <button
-      className="flex-grow max-w-[200px] px-4 py-2 dark:bg-[#1E1E1E] bg-zinc-100 dark:shadow-zinc-600 shadow-md shadow-zinc-300 transition-transform duration-300 hover:scale-105 dark:border-white text-black dark:text-white dark:hover:text-white hover:text-black mb-2"
-      onClick={resetFiltro}
-    >
-      Todas
-    </button>
-    {publicacoesPorTema.map((item) => (
-      <button
-        key={item.tema}
-        className="flex-grow max-w-[200px] px-4 py-2 dark:bg-[#1E1E1E] bg-zinc-100 dark:shadow-zinc-600 shadow-md shadow-zinc-300 transition-transform duration-300 hover:scale-105 dark:border-white text-black dark:text-white dark:hover:text-white hover:text-black mb-2"
-        onClick={() => handleButtonClick(item.tema)}
-      >
-        {item.tema}
-      </button>
-    ))}
-  </div>
-
+        <div className="flex justify-center space-x-4 flex-wrap mb-6">
+          <button
+            className="flex-grow max-w-[200px] px-4 py-2 dark:bg-[#1E1E1E] bg-zinc-100 rounded-md dark:shadow-zinc-300 shadow-md shadow-zinc-300 transition-transform duration-300 hover:scale-105 dark:border-white text-black dark:text-white dark:hover:text-white hover:text-black mb-2"
+            onClick={resetFiltro}
+          >
+            Todas
+          </button>
+          {publicacoesPorTema.map((item) => (
+            <button
+              key={item.tema}
+              className="flex-grow max-w-[200px] px-4 py-2 dark:bg-[#1E1E1E] bg-zinc-100 rounded-md dark:shadow-zinc-400 shadow-md shadow-zinc-300 transition-transform duration-300 hover:scale-105 dark:border-white text-black dark:text-white dark:hover:text-white hover:text-black mb-2"
+              onClick={() => handleButtonClick(item.tema)}
+            >
+              {item.tema}
+            </button>
+          ))}
+        </div>
 
         <input
           type="text"
@@ -176,7 +174,7 @@ const HomeBlog = () => {
         <section>
           {filtrarPublicacoes().map(({ tema, publicacoes }) => (
             <div key={tema}>
-              <h2 className="text-xl font-bold mb-4 text-black dark:text-white">
+              <h2 className="text-xl font-bold mb-4 text-black dark:text-white mt-6">
                 {tema}
               </h2>
               <div className="grid gap-4 sm:grid-cols-2 sm:gap-y-10 xl:grid-cols-3">

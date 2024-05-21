@@ -4,49 +4,9 @@ import Navbar from "../app/components/Navbar/NavbarComponent"
 import Link from "next/link"
 import React, { useEffect, useState } from "react"
 
-
 const Links = () => {
   useEffect(() => {
-    document.title = 'Links';
-  }, []);
-  const [isCopied, setIsCopied] = useState(false)
-  const [linkText, setLinkText] = useState("Discord")
-  const [copiedMessage, setCopiedMessage] = useState(
-    "Copiado para a área de transferência!"
-  )
-
-  useEffect(() => {
-    const handleCopyToClipboard = () => {
-      const textToCopy = "talona_"
-      const tempInput = document.createElement("textarea")
-      tempInput.value = textToCopy
-      document.body.appendChild(tempInput)
-      tempInput.select()
-      document.execCommand("copy")
-      document.body.removeChild(tempInput)
-
-      console.log(`Copied to clipboard: ${textToCopy}`)
-      setIsCopied(true)
-      setLinkText("Copiado para a área de transferência: talona_")
-      setCopiedMessage("")
-
-      setTimeout(() => {
-        setIsCopied(false)
-        setLinkText("Discord")
-        setCopiedMessage("Copiado para a área de transferência!")
-      }, 5000)
-    }
-
-    const discordLink = document.getElementById("discord-link")
-    if (discordLink) {
-      discordLink.addEventListener("click", handleCopyToClipboard)
-    }
-
-    return () => {
-      if (discordLink) {
-        discordLink.removeEventListener("click", handleCopyToClipboard)
-      }
-    }
+    document.title = "Links"
   }, [])
 
   return (
@@ -101,19 +61,18 @@ const Links = () => {
         >
           Gmail
         </Link>
-        <div>
-          <a
-            className="dark:bg-[#1e1e1e] bg-[#f3f3f3] link rounded-10 text-decoration-none tap-highlight-transparent font-roboto mx-10 my-3 block transform rounded-lg
+
+        <Link
+          className="dark:bg-[#1e1e1e] bg-[#f3f3f3] link rounded-10 text-decoration-none tap-highlight-transparent font-roboto mx-10 my-3 block transform rounded-lg
             border border-black border-opacity-75 p-2 text-center text-lg text-black shadow-md shadow-zinc-300 transition-transform duration-300 hover:scale-105 
         hover:bg-blue-400 hover:text-white dark:border-white dark:text-white dark:shadow-zinc-600 dark:hover:text-white"
-            id="discord-link"
-            aria-label="Nick Name / apelido para perfil do Discord talona_"
-          >
-            {linkText}
-          </a>
+          aria-label="Nick Name / apelido para perfil do Discord talona_"
+          href="https://discord.com/channels/@talona_/"
+          target="_blank"
+        >
+          Discord
+        </Link>
 
-          {isCopied && <p>{copiedMessage}</p>}
-        </div>
         <Link
           className="dark:bg-[#1e1e1e] bg-[#f3f3f3] link rounded-10 text-decoration-none tap-highlight-transparent font-roboto mx-10 my-3 block transform rounded-lg
           border border-black border-opacity-75 p-2 text-center text-lg text-black shadow-md shadow-zinc-300 transition-transform  duration-300 hover:scale-105 
@@ -146,8 +105,10 @@ const Links = () => {
           Instagram
         </Link>
       </div>
-      <h3 className="text-1xl mt-1 text-center text-black dark:text-white">@Talona</h3>
-    </div>  
+      <h3 className="text-1xl mt-1 text-center text-black dark:text-white">
+        @Talona
+      </h3>
+    </div>
   )
 }
 export default Links
