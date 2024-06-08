@@ -8,7 +8,7 @@ const DropdownMenu = ({ items }) => {
   return (
     <div
       className="fixed mt-1 flex origin-top-right flex-col rounded-md 
-    border border-purple-400 dark:border-purple-300 border-opacity-75 
+    border border-violet-500 dark:border-violet-600 border-opacity-75 
     bg-[#f9f9f9]  dark:bg-[#121212]"
     >
       {items.map((item, index) => (
@@ -50,8 +50,8 @@ const NavItemWithDropdown = ({ label, items }) => {
     return (
       <>
         <span
-          className={`dark:text-purple-300 text-purple-400 ${
-            number === "01" ? "dark:text-purple-300 text-purple-400" : ""
+          className={`dark:text-violet-500 text-violet-600 font-semibold ${
+            number === "01" ? "dark:text-violet-500 text-violet-600 font-semibold" : ""
           }`}
         >
           {number}.
@@ -128,7 +128,7 @@ const Navbar = () => {
             className="inline-flex items-center justify-center rounded-md 
             px-4 text-black transition-colors hover:bg-zinc-200 dark:text-white dark:hover:bg-zinc-800"
           >
-            <span className="dark:text-purple-300 text-purple-400 font-semibold text-lg py-1">
+            <span className="dark:text-violet-500 text-violet-600 font-semibold text-lg py-1">
               03.
             </span>{" "}
             Blog
@@ -138,7 +138,7 @@ const Navbar = () => {
             className="inline-flex items-center justify-center rounded-md 
             px-4 text-black transition-colors hover:bg-zinc-200 dark:text-white dark:hover:bg-zinc-800"
           >
-            <span className="dark:text-purple-300 text-purple-400 font-semibold text-lg py-1">
+            <span className="dark:text-violet-500 text-violet-600 font-semibold text-lg py-1">
               04.
             </span>{" "}
             Myself
@@ -148,16 +148,16 @@ const Navbar = () => {
             className="inline-flex items-center justify-center rounded-md 
             px-4 text-black transition-colors hover:bg-zinc-200 dark:text-white dark:hover:bg-zinc-800"
           >
-            <span className="dark:text-purple-300 text-purple-400 font-semibold text-lg py-1">
+            <span className="dark:text-violet-500 text-violet-600 font-semibold text-lg py-1">
               05.
             </span>
             Links
           </Link>{" "}
           <Link href="/" passHref>
             <div
-              className=" flex cursor-pointer items-center rounded dark:bg-purple-300 bg-purple-400 px-3 py-1 
+              className=" flex cursor-pointer items-center rounded dark:bg-violet-600 bg-violet-500 px-3 py-1 
               dark:text-black text-white transition
-              duration-300 dark:hover:bg-purple-400 hover:bg-purple-500 text-lg font-semibold "
+              duration-300 hover:bg-violet-600 dark:hover:bg-violet-700 text-lg font-semibold "
             >
               <span>Home</span>
               <svg

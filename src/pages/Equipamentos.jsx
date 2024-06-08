@@ -55,7 +55,7 @@ const EquipamentosList = () => {
     <div className="min-h-screen w-full dark:bg-[#121212] bg-[#f9f9f9]">
       <Navbar />
       <div className="container mx-auto p-4 my-8">
-        <h1 className="text-3xl dark:text-purple-300 text-purple-400 font-semibold my-6">
+        <h1 className="text-3xl dark:text-violet-500 text-violet-600 font-semibold my-6">
           Configurações do PC
         </h1>
 
@@ -65,7 +65,7 @@ const EquipamentosList = () => {
           ))}
         </div>
 
-        <h1 className="text-3xl dark:text-purple-300 text-purple-400 font-semibold my-6">
+        <h1 className="text-3xl dark:text-violet-500 text-violet-600 font-semibold my-6">
           Periféricos
         </h1>
 

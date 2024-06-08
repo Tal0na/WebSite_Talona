@@ -9,18 +9,18 @@ const About = () => {
           Oi, Meu nome é!
         </h2>
         <h1 className="font-poppins pl-10 text-6xl">
-          <span className="font-medium dark:text-purple-300 text-purple-400">
+          <span className="font-medium dark:text-violet-500 text-violet-600">
             Talona
           </span>
-          <span className="dark:text-purple-300 text-purple-400">Costa</span>
-          <span className="font-medium dark:text-purple-300 text-purple-400">
+          <span className="dark:text-violet-500 text-violet-600">Costa</span>
+          <span className="font-medium dark:text-violet-500 text-violet-600">
             .
           </span>
         </h1>
         <h3 className="font-poppins pl-12 text-3xl text-zinc-800 dark:text-zinc-100">
           Sou um Engenheiro de Software
         </h3>
-        <p className="font-roboto pl-12 text-zinc-500 dark:text-zinc-500 font-light mb-2">
+        <p className="font-roboto pl-12 text-zinc-700 dark:text-zinc-300 font-light mb-2">
           Solucionando problemas complexos de maneira inovadora, funcional e
           eficiente. <br />
           Desenvolvendo soluções escaláveis e robustas para desafios
@@ -31,8 +31,8 @@ const About = () => {
           <Link href="/Sobre" passHref>
             <div
               className="button h-12 w-40 cursor-pointer select-none rounded-lg border-b-[1px]
-          border-purple-200 bg-purple-400 dark:bg-purple-300 transition-all duration-150
-          hover:bg-purple-500 dark:hover:bg-purple-400 active:translate-y-3
+          border-violet-200 dark:bg-violet-600 bg-violet-500 transition-all duration-150
+          hover:bg-violet-600 dark:hover:bg-violet-700 active:translate-y-3
         dark:shadow-zinc-800 shadow-md shadow-zinc-300"
             >
               <div

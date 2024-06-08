@@ -12,7 +12,7 @@ const Links = () => {
   return (
     <div className="min-h-screen w-full dark:bg-[#121212] bg-[#f9f9f9]">
       <Navbar />
-      <h1 className="text-purple-r mt-10 text-center text-3xl font-bold dark:text-purple-300 text-purple-400">
+      <h1 className="text-purple-r mt-10 text-center text-3xl font-bold dark:text-violet-500 text-violet-600">
         Meus Links
       </h1>
       <p className="text-1xl my-4 text-center text-black dark:text-white font-Poppins">

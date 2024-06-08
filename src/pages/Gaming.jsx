@@ -10,7 +10,7 @@ const Gaming = () => {
     <div className="min-h-screen w-full dark:bg-[#121212] bg-[#f9f9f9]">
       <Navbar />
       <div className="container mx-auto my-8 p-4">
-        <h1 className="my-6 text-3xl font-semi bold dark:text-purple-300 text-purple-400">
+        <h1 className="my-6 text-3xl font-semi bold dark:text-violet-500 text-violet-600">
           Valorant
         </h1>
         <div className="flex">
@@ -29,7 +29,7 @@ const Gaming = () => {
             <p>Hz 1000</p>
           </div>
         </div>
-        <h1 className="my-6 text-3xl font-semi bold dark:text-purple-300 text-purple-400">
+        <h1 className="my-6 text-3xl font-semi bold dark:text-violet-500 text-violet-600">
           Counter Strike 2
         </h1>
         <div className="flex">
@@ -49,7 +49,7 @@ const Gaming = () => {
           </div>
         </div>
 
-        <h1 className="my-6 text-3xl font-semi bold dark:text-purple-300 text-purple-400">
+        <h1 className="my-6 text-3xl font-semi bold dark:text-violet-500 text-violet-600">
           pipipi popopo
         </h1>
         <div className="flex">

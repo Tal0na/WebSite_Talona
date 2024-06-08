@@ -23,14 +23,18 @@ export default function Sobre() {
             alt="Tales Costa - Developer"
             className="w-20 h-20 mx-auto rounded-full mb-4"
           />
-
           <h1 className="font-poppins text-3xl">
-            <span className="font-medium dark:text-purple-300 text-purple-400 ">
-              Talona Costa.
+            <span className="font-medium dark:text-violet-500 text-violet-600">
+              Talona
+            </span>
+            <span className="dark:text-violet-500 text-violet-600">Costa</span>
+            <span className="font-medium dark:text-violet-500 text-violet-600">
+              .
             </span>
           </h1>
+
           <h2 className="text-lg font-semibold mb-2 text-blcak dark:text-white pl-1">
-          Sou um Engenheiro de Software
+            Sou um Engenheiro de Software
           </h2>
 
           <p className="text-black dark:text-white mb-6 text-lg pl-1">
