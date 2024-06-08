@@ -30,8 +30,9 @@ const About = () => {
         <div className="flex justify-start py-2 pb-32 pl-12">
           <Link href="/Sobre" passHref>
             <div
-              className="button h-12 w-40 cursor-pointer select-none rounded-lg border-b-[1px]
-          border-violet-200 dark:bg-violet-600 bg-violet-500 transition-all duration-150
+              className="button h-12 w-40 cursor-pointer select-none 
+           rounded-lg border-b-[1px] dark:border-violet-500 border-violet-400 
+          dark:bg-violet-600 bg-violet-500 transition-all duration-150
           hover:bg-violet-600 dark:hover:bg-violet-700 active:translate-y-3
         dark:shadow-zinc-800 shadow-md shadow-zinc-300"
             >
