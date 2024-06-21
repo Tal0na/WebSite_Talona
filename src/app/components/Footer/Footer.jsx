@@ -16,7 +16,7 @@ const Footer = () => {
             &copy; 2023 - {new Date().getFullYear()} &middot; Talona Costa —
             <a
               href="https://twitter.com/Talonaa_"
-              className="dark:text-sky-700 text-sky-600 ml-1"
+              className="text-blue-500 ml-1"
               target="_blank"
               alt="Link twitter @talonaa_"
               rel="noopener noreferrer"

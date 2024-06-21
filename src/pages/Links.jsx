@@ -2,7 +2,18 @@
 import styles from "../pages/styles.module.css"
 import Navbar from "../app/components/Navbar/NavbarComponent"
 import Link from "next/link"
-import React, { useEffect, useState } from "react"
+import React, { useEffect } from "react"
+import {
+  FaTwitter,
+  FaLinkedin,
+  FaGithub,
+  FaInstagram,
+  FaFacebook,
+  FaDiscord,
+  FaTwitch,
+  FaSpotify,
+} from "react-icons/fa"
+import { SiGmail } from "react-icons/si"
 
 const Links = () => {
   useEffect(() => {
@@ -27,7 +38,7 @@ const Links = () => {
           target="_blank"
           aria-label="Link para o perfil do Twitter / X @Talonaa_"
         >
-          Twitter / X
+          <FaTwitter className="inline-block mr-2" />Twitter / X
         </Link>
         <Link
           className="dark:bg-[#1e1e1e] bg-[#f3f3f3] link rounded-10 text-decoration-none tap-highlight-transparent font-roboto mx-10 my-3 block transform rounded-lg
@@ -37,7 +48,7 @@ const Links = () => {
           target="_blank"
           aria-label="Link para o perfil do linkedin talona-costa"
         >
-          Linkedin
+          <FaLinkedin className="inline-block mr-2" /> Linkedin
         </Link>
         <Link
           className="dark:bg-[#1e1e1e] bg-[#f3f3f3] link rounded-10 text-decoration-none tap-highlight-transparent  font-roboto mx-10 my-3 block transform rounded-lg
@@ -47,7 +58,7 @@ const Links = () => {
           target="_blank"
           aria-label="Link para o perfil do Github Talonacosta"
         >
-          Github
+          <FaGithub className="inline-block mr-2" /> GitHub
         </Link>
 
         <Link
@@ -59,7 +70,7 @@ const Links = () => {
           target="_blank"
           aria-label="Link para o Gmail talonacostaa@gmail.com"
         >
-          Gmail
+          <SiGmail className="inline-block mr-2" /> Gmail
         </Link>
 
         <Link
@@ -70,7 +81,7 @@ const Links = () => {
           href="https://discord.com/channels/@talona_/"
           target="_blank"
         >
-          Discord
+          <FaDiscord className="inline-block mr-2" /> Discord
         </Link>
 
         <Link
@@ -81,7 +92,7 @@ const Links = () => {
           target="_blank"
           aria-label="Link para o perfil do Twitch talona_"
         >
-          Twitch
+          <FaTwitch className="inline-block mr-2" /> Twitch
         </Link>
         <Link
           className="dark:bg-[#1e1e1e] bg-[#f3f3f3] link rounded-10  tap-highlight-transparent font-roboto mx-10 my-3 block transform rounded-lg
@@ -92,7 +103,7 @@ const Links = () => {
           target="_blank"
           aria-label="Link para o perfil do Spotify"
         >
-          Spotify
+          <FaSpotify className="inline-block mr-2" /> Spotify
         </Link>
         <Link
           className={`dark:bg-[#1e1e1e] bg-[#f3f3f3] link rounded-10 text-decoration-none tap-highlight-transparent font-roboto mx-10 my-3 block transform rounded-lg
@@ -102,7 +113,7 @@ const Links = () => {
           target="_blank"
           aria-label="Link para o perfil do Instagram @talonaa_"
         >
-          Instagram
+          <FaInstagram className="inline-block mr-2" /> Instagram
         </Link>
       </div>
       <h3 className="text-1xl mt-1 text-center text-black dark:text-white">
