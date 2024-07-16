@@ -62,7 +62,7 @@ export const metadata: ExtendedMetadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <>
-      
+
       <meta
         name="description"
         content="Explore meu site para conhecer mais sobre mim."
@@ -75,7 +75,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         property="og:description"
         content="Explore meu site para experiências Web excepcionais."
       />
-      <meta property="og:image" content="https://i.imgur.com/dPFFq18.png" />
+      <meta property="og:image" content="https://i.imgur.com/Cz74nIx.png" />
 
       <meta property="twitter:card" content="summary_large_image" />
       <meta property="twitter:url" content="https://talonacosta.vercel.app/" />
@@ -93,7 +93,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         name="google-site-verification"
         content="TJfWJ0lzJo2y8hJBiJU0frm_SjaudSntNLDr9lV8E3w"
       />
-       
+
       <html
         lang="pt-BR"
         className={`${customFontPoppins.variable} ${customFontRoboto.variable}`}
