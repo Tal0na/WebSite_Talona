@@ -60,6 +60,7 @@ const EquipamentosList = () => {
   }, [])
   const peripherals = [
     { name: "Celular", description: "Xiaomi 13 Lite" },
+    { name: "Fone TWS", description: "MOONDROP SPACE TRAVEL" },
     { name: "Mouse", description: "vgn dragonfly f1 pro max" },
     { name: "Microfone", description: "Mic USB" },
     { name: "Headset", description: "KZ ZSN PRO Fone Intra Auricular" },
