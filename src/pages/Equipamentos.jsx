@@ -1,11 +1,12 @@
 import React from "react"
-import { useEffect } from 'react';
+import { useEffect } from "react"
 import Navbar from "../app/components/Navbar/NavbarComponent"
 
 const PeripheralBlock = ({ name, description }) => (
   <div
     className=" dark:bg-[#1e1e1e] bg-[#f3f3f3] rounded-10 text-decoration-none tap-highlight-transparent  font-roboto 
-  block transform rounded-lg border border-black border-opacity-75 p-2 text-center text-lg text-black transition-transform duration-300 hover:scale-105 
+  block transform rounded-lg border border-black border-opacity-75 p-2 text-center text-lg text-black transition-transform 
+  duration-300 hover:scale-105 
   hover:text-blac dark:border-white dark:text-white"
   >
     <h2 className="text-lg font-semibold mb-2 hover:dark:text-white ">
@@ -18,7 +19,8 @@ const PeripheralBlock = ({ name, description }) => (
 const ConfigBlock = ({ name, value }) => (
   <div
     className=" dark:bg-[#1e1e1e] bg-[#f3f3f3] rounded-10 text-decoration-none tap-highlight-transparent  font-roboto 
-  block transform rounded-lg border border-black border-opacity-75 p-2 text-center text-lg text-black transition-transform duration-300 hover:scale-105 
+  block transform rounded-lg border border-black border-opacity-75 p-2 text-center text-lg text-black transition-transform 
+  duration-300 hover:scale-105 
   hover:text-blac dark:border-white dark:text-white"
   >
     <h2 className="text-lg font-semibold mb-2 hover:dark:text-white ">
@@ -31,33 +33,31 @@ const ConfigBlock = ({ name, value }) => (
 const ServidorBlock = ({ name, value }) => (
   <div
     className="dark:bg-[#1e1e1e] bg-[#f3f3f3] rounded-10 text-decoration-none tap-highlight-transparent font-roboto 
-    block transform rounded-lg border border-black border-opacity-75 p-2 text-center text-lg text-black transition-transform duration-300 hover:scale-105 
+    block transform rounded-lg border border-black border-opacity-75 p-2 text-center text-lg text-black transition-transform 
+    duration-300 hover:scale-105 
     hover:text-black dark:border-white dark:text-white"
   >
-    <h2 className="text-lg font-semibold mb-2 hover:dark:text-white">
-      {name}
-    </h2>
+    <h2 className="text-lg font-semibold mb-2 hover:dark:text-white">{name}</h2>
     <p>{value}</p>
   </div>
-);
+)
 
 const OldBlock = ({ name, value }) => (
   <div
     className="dark:bg-[#1e1e1e] bg-[#f3f3f3] rounded-10 text-decoration-none tap-highlight-transparent font-roboto 
-    block transform rounded-lg border border-black border-opacity-75 p-2 text-center text-lg text-black transition-transform duration-300 hover:scale-105 
+    block transform rounded-lg border border-black border-opacity-75 p-2 text-center text-lg text-black transition-transform 
+    duration-300 hover:scale-105 
     hover:text-black dark:border-white dark:text-white"
   >
-    <h2 className="text-lg font-semibold mb-2 hover:dark:text-white">
-      {name}
-    </h2>
+    <h2 className="text-lg font-semibold mb-2 hover:dark:text-white">{name}</h2>
     <p>{value}</p>
   </div>
-);
+)
 
 const EquipamentosList = () => {
   useEffect(() => {
-    document.title = 'Equipamentos';
-  }, []);
+    document.title = "Equipamentos"
+  }, [])
   const peripherals = [
     { name: "Celular", description: "Xiaomi 13 Lite" },
     { name: "Mouse", description: "vgn dragonfly f1 pro max" },
@@ -65,7 +65,7 @@ const EquipamentosList = () => {
     { name: "Headset", description: "KZ ZSN PRO Fone Intra Auricular" },
     { name: "Teclado", description: "Kumara Outemu Brown" },
     { name: "Monitores", description: '21" LG UltraWide / 27 2.5k 144hz"' },
-    { name: "Barra de som", description: 'LG Sk1d' },
+    { name: "Barra de som", description: "LG Sk1d" },
     { name: "Mousepad", description: "HyperX L" },
     { name: "Webcam", description: "Logitech C920" },
   ]
@@ -75,7 +75,9 @@ const EquipamentosList = () => {
     { name: "Processador", value: "Ryzen7 5700x3d" },
     { name: "Placa mãe", value: "MSI B550M Pro-VDH WiFi" },
     { name: "Memórias RAM", value: "2x16GB 2666mhz" },
+    { name: "CPU cooler", value: "Hyper H410R White Edition" },
     { name: "Fonte", value: "MSI MAG A650BN" },
+    { name: "Gabinete", value: "Mancer Goblin Branco" },
     { name: "SSD", value: "480GB" },
     { name: "HD", value: "1TB" },
   ]
@@ -140,7 +142,6 @@ const EquipamentosList = () => {
             <OldBlock key={index} {...Old} />
           ))}
         </div>
-
       </div>
     </div>
   )
