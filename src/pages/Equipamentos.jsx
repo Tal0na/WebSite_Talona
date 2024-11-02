@@ -32,10 +32,10 @@ const ConfigBlock = ({ name, value }) => (
 
 const ServidorBlock = ({ name, value }) => (
   <div
-    className="dark:bg-[#1e1e1e] bg-[#f3f3f3] rounded-10 text-decoration-none tap-highlight-transparent font-roboto 
-    block transform rounded-lg border border-black border-opacity-75 p-2 text-center text-lg text-black transition-transform 
-    duration-300 hover:scale-105 
-    hover:text-black dark:border-white dark:text-white"
+    className="dark:bg-[#1e1e1e] bg-[#f3f3f3] rounded-10 text-decoration-none tap-highlight-transparent  font-roboto 
+  block transform rounded-lg border border-black border-opacity-75 p-2 text-center text-lg text-black transition-transform 
+  duration-300 hover:scale-105 
+  hover:text-blac dark:border-white dark:text-white"
   >
     <h2 className="text-lg font-semibold mb-2 hover:dark:text-white">{name}</h2>
     <p>{value}</p>
@@ -44,10 +44,10 @@ const ServidorBlock = ({ name, value }) => (
 
 const OldBlock = ({ name, value }) => (
   <div
-    className="dark:bg-[#1e1e1e] bg-[#f3f3f3] rounded-10 text-decoration-none tap-highlight-transparent font-roboto 
-    block transform rounded-lg border border-black border-opacity-75 p-2 text-center text-lg text-black transition-transform 
-    duration-300 hover:scale-105 
-    hover:text-black dark:border-white dark:text-white"
+    className="dark:bg-[#1e1e1e] bg-[#f3f3f3] rounded-10 text-decoration-none tap-highlight-transparent  font-roboto 
+  block transform rounded-lg border border-black border-opacity-75 p-2 text-center text-lg text-black transition-transform 
+  duration-300 hover:scale-105 
+  hover:text-blac dark:border-white dark:text-white"
   >
     <h2 className="text-lg font-semibold mb-2 hover:dark:text-white">{name}</h2>
     <p>{value}</p>
