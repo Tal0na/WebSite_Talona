@@ -18,7 +18,7 @@ const About = () => {
           </span>
         </h1>
         <h3 className="font-poppins pl-12 text-3xl text-zinc-800 dark:text-zinc-100">
-          Sou um Engenheiro de Software
+          Sou um Desenvolvedor de Soluções de Software
         </h3>
         <p className="font-roboto pl-12 text-zinc-700 dark:text-zinc-300 font-light mb-2">
           Solucionando problemas complexos de maneira inovadora, funcional e
