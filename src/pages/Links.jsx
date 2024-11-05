@@ -8,7 +8,6 @@ import {
   FaLinkedin,
   FaGithub,
   FaInstagram,
-  FaFacebook,
   FaDiscord,
   FaTwitch,
   FaSpotify,
@@ -38,7 +37,8 @@ const Links = () => {
           target="_blank"
           aria-label="Link para o perfil do Twitter / X @Talonaa_"
         >
-          <FaTwitter className="inline-block mr-2" />Twitter / X
+          <FaTwitter className="inline-block mr-2" />
+          Twitter / X
         </Link>
         <Link
           className="dark:bg-[#1e1e1e] bg-[#f3f3f3] link rounded-10 text-decoration-none tap-highlight-transparent font-roboto mx-10 my-3 block transform rounded-lg
@@ -83,7 +83,26 @@ const Links = () => {
         >
           <FaDiscord className="inline-block mr-2" /> Discord
         </Link>
-
+        <Link
+          className={`dark:bg-[#1e1e1e] bg-[#f3f3f3] link rounded-10 text-decoration-none tap-highlight-transparent font-roboto mx-10 my-3 block transform rounded-lg
+          border border-black border-opacity-75 p-2 text-center text-lg text-black shadow-md  shadow-zinc-300 transition-transform duration-300 hover:scale-105 
+        hover:text-white dark:border-white dark:text-white dark:shadow-zinc-600 dark:hover:text-white ${styles.instagram}`}
+          href="https://www.instagram.com/talonaa_/"
+          target="_blank"
+          aria-label="Link para o perfil do Instagram @talonaa_"
+        >
+          <FaInstagram className="inline-block mr-2" /> Instagram
+        </Link>
+        <Link
+          className="dark:bg-[#1e1e1e] bg-[#f3f3f3] link rounded-10 text-decoration-none tap-highlight-transparent  font-roboto mx-10 my-3 block transform rounded-lg
+          border border-black border-opacity-75 p-2 text-center text-lg text-black shadow-md shadow-zinc-300 transition-transform duration-300 hover:scale-105 hover:bg-zinc-600 
+          hover:text-white dark:border-white dark:text-white dark:shadow-zinc-600 dark:hover:bg-zinc-800 dark:hover:text-white"
+          href="https://www.threads.net/@talonaa_"
+          target="_blank"
+          aria-label="Link para o perfil do Threads talona_"
+        >
+          <FaInstagram className="inline-block mr-2" /> Threads
+        </Link>
         <Link
           className="dark:bg-[#1e1e1e] bg-[#f3f3f3] link rounded-10 text-decoration-none tap-highlight-transparent font-roboto mx-10 my-3 block transform rounded-lg
           border border-black border-opacity-75 p-2 text-center text-lg text-black shadow-md shadow-zinc-300 transition-transform  duration-300 hover:scale-105 
@@ -104,16 +123,6 @@ const Links = () => {
           aria-label="Link para o perfil do Spotify"
         >
           <FaSpotify className="inline-block mr-2" /> Spotify
-        </Link>
-        <Link
-          className={`dark:bg-[#1e1e1e] bg-[#f3f3f3] link rounded-10 text-decoration-none tap-highlight-transparent font-roboto mx-10 my-3 block transform rounded-lg
-          border border-black border-opacity-75 p-2 text-center text-lg text-black shadow-md  shadow-zinc-300 transition-transform duration-300 hover:scale-105 
-        hover:text-white dark:border-white dark:text-white dark:shadow-zinc-600 dark:hover:text-white ${styles.instagram}`}
-          href="https://www.instagram.com/talonaa_/"
-          target="_blank"
-          aria-label="Link para o perfil do Instagram @talonaa_"
-        >
-          <FaInstagram className="inline-block mr-2" /> Instagram
         </Link>
       </div>
       <h3 className="text-1xl mt-1 text-center text-black dark:text-white">
