@@ -80,6 +80,7 @@ const EquipamentosList = () => {
     { name: "Fonte", value: "MSI MAG A650BN" },
     { name: "Gabinete", value: "Mancer Goblin Branco" },
     { name: "SSD", value: "480GB" },
+    { name: "SSD nvme", value: "480GB" },
     { name: "HD", value: "1TB" },
   ]
 
