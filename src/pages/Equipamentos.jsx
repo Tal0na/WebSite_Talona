@@ -94,7 +94,7 @@ const EquipamentosList = () => {
 
   const Old = [
     { name: "Celular", value: "Xiaomi MI A2" },
-    { name: "Mouse", value: "vgn dragonfly f1 pro max" },
+    { name: "Mouse", value: "Logitec G403" },
     { name: "Processador", value: "i5 2400" },
     { name: "Placa mãe", value: "Isync H61 CYB-20-GH61" },
     { name: "Memórias RAM", value: "1x8GB ddr3 1333mhz" },
