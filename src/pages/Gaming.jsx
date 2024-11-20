@@ -23,10 +23,10 @@ const Gaming = () => {
             <h1 className="mb-2 text-lg font-semi bold hover:dark:text-white ">
               Mouse Sens
             </h1>
-            <p>DPI - 800</p>
-            <p>Sensitivity - 1.25</p>
-            <p>Zoon - 1.2</p>
-            <p>Hz 1000</p>
+            <p>DPI - 1600</p>
+            <p>Sensitivity - 0.16</p>
+            <p>Zoon - 1.0</p>
+            <p>Hz 2000</p>
           </div>
         </div>
         <h1 className="my-6 text-3xl font-semi bold dark:text-violet-500 text-violet-600">
@@ -42,10 +42,10 @@ const Gaming = () => {
             <h1 className="mb-2 text-lg font-semi bold hover:dark:text-white ">
               Mouse Sens
             </h1>
-            <p>DPI - 400</p>
+            <p>DPI - 1600</p>
             <p>Sensitivity - 0.32</p>
             <p>Zoon - 1</p>
-            <p>Hz 1000</p>
+            <p>Hz 2000</p>
           </div>
         </div>
 
@@ -62,10 +62,10 @@ const Gaming = () => {
             <h1 className="mb-2 text-lg font-semi bold hover:dark:text-white ">
               Mouse Sens
             </h1>
-            <p>DPI - 400</p>
+            <p>DPI - 1600</p>
             <p>Sensitivity - 0.32</p>
             <p>Zoon - 1</p>
-            <p>Hz 1000</p>
+            <p>Hz 2000</p>
           </div>
         </div>
       </div>
