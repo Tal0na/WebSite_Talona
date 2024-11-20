@@ -85,7 +85,6 @@ const EquipamentosList = () => {
   ]
 
   const Servidor = [
-    { name: "Placa de vídeo", value: "GTX 1060 3 GB" },
     { name: "Processador", value: "i5 7400" },
     { name: "Placa mãe", value: "Azus H110M-CS/BR" },
     { name: "Memórias RAM", value: "2x4GB 2400mhz" },
