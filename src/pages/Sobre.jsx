@@ -33,8 +33,8 @@ export default function Sobre() {
             </span>
           </h1>
 
-          <h2 className="text-lg font-semibold mb-2 text-blcak dark:text-white pl-1">
-            Sou um Engenheiro de Software
+          <h2 className="text-lg font-semibold mb-2 text-blcak text-black dark:text-white pl-1">
+          Desenvolvedor de Software
           </h2>
 
           <p className="text-black dark:text-white mb-6 text-lg pl-1">
