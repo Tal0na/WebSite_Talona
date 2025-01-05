@@ -60,7 +60,7 @@ const Contact = () => {
             Me Chame
           </h2>
           <p className="mb-5 leading-relaxed">
-            Mande um E-mail para me contatar
+            Mande um E-mail para me contatar !
           </p>
 
           <form
