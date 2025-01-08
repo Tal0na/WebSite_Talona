@@ -32,7 +32,7 @@ const Links = () => {
         <Link
           className=" dark:bg-[#1e1e1e] bg-[#f3f3f3] link rounded-10 text-decoration-none tap-highlight-transparent font-roboto mx-10 my-3 block transform rounded-lg
           border border-[#000000] border-opacity-75 p-2 text-center text-lg text-black shadow-md shadow-zinc-300 transition-transform duration-300 hover:scale-105 
-          hover:bg-[#00acee] hover:text-white dark:border-white dark:text-white dark:shadow-zinc-600 dark:hover:text-white"
+          dark:hover:bg-[#00acee] hover:bg-[#00acee] hover:text-white dark:border-white dark:text-white dark:shadow-zinc-600 dark:hover:text-white"
           href="https://twitter.com/Talonaa_"
           target="_blank"
           aria-label="Link para o perfil do Twitter / X @Talonaa_"
@@ -43,7 +43,7 @@ const Links = () => {
         <Link
           className="dark:bg-[#1e1e1e] bg-[#f3f3f3] link rounded-10 text-decoration-none tap-highlight-transparent font-roboto mx-10 my-3 block transform rounded-lg
           border border-black border-opacity-75 p-2 text-center text-lg text-black shadow-md shadow-zinc-300 transition-transform duration-300 hover:scale-105 
-          hover:bg-[#0A66C2] hover:text-white dark:border-white dark:text-white dark:shadow-zinc-600 dark:hover:text-white"
+          dark:hover:bg-[#0A66C2] hover:bg-[#0A66C2] hover:text-white dark:border-white dark:text-white dark:shadow-zinc-600 dark:hover:text-white"
           href="https://www.linkedin.com/in/talona-costa/"
           target="_blank"
           aria-label="Link para o perfil do linkedin talona-costa"
@@ -65,7 +65,7 @@ const Links = () => {
           className="dark:bg-[#1e1e1e] bg-[#f3f3f3] link rounded-10 text-decoration-none tap-highlight-transparent 
           font-roboto mx-10 my-3 block transform rounded-lg border border-black border-opacity-75 p-2 
           text-center text-lg text-black shadow-md shadow-zinc-300 transition-transform duration-300 hover:scale-105
-          hover:bg-[#db4a39] hover:text-white dark:border-white dark:text-white dark:shadow-zinc-600 dark:hover:text-white"
+          dark:hover:bg-[#db4a39] hover:bg-[#db4a39] hover:text-white dark:border-white dark:text-white dark:shadow-zinc-600 dark:hover:text-white"
           href="mailto:talonacostaa@gmail.com"
           target="_blank"
           aria-label="Link para o Gmail talonacostaa@gmail.com"
@@ -76,7 +76,7 @@ const Links = () => {
         <Link
           className="dark:bg-[#1e1e1e] bg-[#f3f3f3] link rounded-10 text-decoration-none tap-highlight-transparent font-roboto mx-10 my-3 block transform rounded-lg
             border border-black border-opacity-75 p-2 text-center text-lg text-black shadow-md shadow-zinc-300 transition-transform duration-300 hover:scale-105 
-        hover:bg-blue-400 hover:text-white dark:border-white dark:text-white dark:shadow-zinc-600 dark:hover:text-white"
+        hover:bg-blue-400 dark:hover:bg-blue-400 hover:text-white dark:border-white dark:text-white dark:shadow-zinc-600 dark:hover:text-white"
           aria-label="Nick Name / apelido para perfil do Discord talona_"
           href="https://discord.com/channels/@talona_/"
           target="_blank"
@@ -106,7 +106,7 @@ const Links = () => {
         <Link
           className="dark:bg-[#1e1e1e] bg-[#f3f3f3] link rounded-10 text-decoration-none tap-highlight-transparent font-roboto mx-10 my-3 block transform rounded-lg
           border border-black border-opacity-75 p-2 text-center text-lg text-black shadow-md shadow-zinc-300 transition-transform  duration-300 hover:scale-105 
-          hover:bg-[#9146ff] hover:text-white dark:border-white dark:text-white dark:shadow-zinc-600 dark:hover:text-white"
+          hover:bg-[#9146ff] dark:hover:bg-[#9146ff] hover:text-white dark:border-white dark:text-white dark:shadow-zinc-600 dark:hover:text-white"
           href="https://www.twitch.tv/talona_"
           target="_blank"
           aria-label="Link para o perfil do Twitch talona_"
@@ -116,7 +116,7 @@ const Links = () => {
         <Link
           className="dark:bg-[#1e1e1e] bg-[#f3f3f3] link rounded-10  tap-highlight-transparent font-roboto mx-10 my-3 block transform rounded-lg
           border border-black border-opacity-75 p-2 text-center text-lg text-black shadow-md shadow-zinc-300 
-          transition-transform duration-300 hover:scale-105 hover:bg-[#1ED760]
+          transition-transform duration-300 hover:scale-105 hover:bg-[#1ED760] dark:hover:bg-[#1ED760]
           hover:text-white dark:border-white dark:text-white dark:shadow-zinc-600 dark:hover:text-white "
           href="https://open.spotify.com/user/12184323470?si=ae5fd5e22a9141b7&nd=1"
           target="_blank"
