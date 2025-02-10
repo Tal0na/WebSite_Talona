@@ -1,4 +1,3 @@
-
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import Providers from "./providers"
@@ -62,7 +61,6 @@ export const metadata: ExtendedMetadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <>
-
       <meta
         name="description"
         content="Explore meu site para conhecer mais sobre mim."
@@ -86,6 +84,11 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       />
       <meta
         property="twitter:image"
+        content="https://i.imgur.com/Cz74nIx.png"
+      />
+
+      <meta
+        property="mastodon:image"
         content="https://i.imgur.com/Cz74nIx.png"
       />
 
