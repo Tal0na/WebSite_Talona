@@ -80,7 +80,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <meta property="twitter:title" content="Talona Site" />
       <meta
         property="twitter:description"
-        content="Explore meu site para experiências Web excepcionais."
+        content="Explore meu Web site."
       />
       <meta
         property="twitter:image"
