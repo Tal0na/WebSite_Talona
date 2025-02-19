@@ -3,9 +3,9 @@ const post7 = () => {
   return (
     <div className="min-h-screen dark:bg-[#121212] bg-[#f9f9f9]">
       <Navbar />
-      <main className="container mx-auto p-6 text-black dark:text-white">
-        <div className="text-center text-4xl  text-black dark:text-white">
-        <h1 className="text-3xl font-bold mb-4">Meus jogos preferidos</h1>
+      <main className="container mx-auto p-6 ">
+        <div className="text-center text-4xl ">
+        <h1 className="text-3xl font-bold mb-4 dark:text-violet-500 text-violet-600">Meus jogos preferidos</h1>
       <p className="text-lg mb-4">Neste artigo, vou compartilhar minha lista de jogos favoritos, cada um com uma experiência única e especial. Vamos dar uma olhada:</p>
       <ul className="list-disc pl-6 mb-4">
         <li>The Legend of Zelda: Breath of the Wild</li>

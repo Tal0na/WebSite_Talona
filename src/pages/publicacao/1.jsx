@@ -6,7 +6,7 @@ const post1 = () => {
       <Navbar />
       <main className="container mx-auto p-6 text-black dark:text-white">
         <div className="text-center text-4xl">
-          <h1 className="my-10 text-center text-4xl dark:text-purple-300 text-purple-400">
+          <h1 className="my-10 text-center text-4xl dark:text-violet-500 text-violet-600">
             Resetar o CSS
           </h1>
         </div>
