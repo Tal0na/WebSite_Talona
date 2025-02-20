@@ -21,7 +21,7 @@ const ProjectsPage = () => {
           Aqui estão alguns dos meus projetos
         </h1>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 text-black dark:text-white ">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 text-black dark:text-white font-roboto ">
           <ProjectCard
             title="Coffe Com Codigo"
             description="Projetos Leves e Divertidos para Acompanhar Seu Café Matinal ☕️"
@@ -83,7 +83,6 @@ const ProjectsPage = () => {
             description="Redes sociais e mais."
             link="/Links"
           />
-
         </div>
       </div>
     </div>

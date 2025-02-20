@@ -4,8 +4,8 @@ import Navbar from "../app/components/Navbar/NavbarComponent"
 
 const PeripheralBlock = ({ name, description }) => (
   <div
-    className=" dark:bg-[#1e1e1e] bg-[#f3f3f3] rounded-10 text-decoration-none tap-highlight-transparent  font-roboto 
-  block transform rounded-lg border border-black border-opacity-75 p-2 text-center text-lg text-black transition-transform 
+    className=" dark:bg-[#1E1E1E] bg-zinc-100 rounded-md dark:shadow-zinc-300 shadow-md shadow-zinc-300 text-decoration-none tap-highlight-transparent  font-roboto 
+  block transform border border-black border-opacity-75 p-2 text-center text-lg text-black transition-transform 
   duration-300 hover:scale-105 
   hover:text-blac dark:border-white dark:text-white"
   >
@@ -18,10 +18,10 @@ const PeripheralBlock = ({ name, description }) => (
 
 const ConfigBlock = ({ name, value }) => (
   <div
-    className=" dark:bg-[#1e1e1e] bg-[#f3f3f3] rounded-10 text-decoration-none tap-highlight-transparent  font-roboto 
-  block transform rounded-lg border border-black border-opacity-75 p-2 text-center text-lg text-black transition-transform 
+    className="dark:bg-[#1E1E1E] bg-zinc-100 rounded-md dark:shadow-zinc-300 shadow-md shadow-zinc-300 text-decoration-none tap-highlight-transparent  font-roboto 
+  block transform  border border-black border-opacity-75 p-2 text-center text-lg text-black transition-transform 
   duration-300 hover:scale-105 
-  hover:text-blac dark:border-white dark:text-white"
+  hover:text-black dark:border-white dark:text-white"
   >
     <h2 className="text-lg font-semibold mb-2 hover:dark:text-white ">
       {name}
@@ -32,10 +32,10 @@ const ConfigBlock = ({ name, value }) => (
 
 const ServidorBlock = ({ name, value }) => (
   <div
-    className="dark:bg-[#1e1e1e] bg-[#f3f3f3] rounded-10 text-decoration-none tap-highlight-transparent  font-roboto 
-  block transform rounded-lg border border-black border-opacity-75 p-2 text-center text-lg text-black transition-transform 
+    className="dark:bg-[#1E1E1E] bg-zinc-100 rounded-md dark:shadow-zinc-300 shadow-md shadow-zinc-300 text-decoration-none tap-highlight-transparent font-roboto 
+  block transform border border-black border-opacity-75 p-2 text-center text-lg text-black transition-transform 
   duration-300 hover:scale-105 
-  hover:text-blac dark:border-white dark:text-white"
+  hover:text-black dark:border-white dark:text-white"
   >
     <h2 className="text-lg font-semibold mb-2 hover:dark:text-white">{name}</h2>
     <p>{value}</p>
@@ -47,7 +47,7 @@ const OldBlock = ({ name, value }) => (
     className="dark:bg-[#1e1e1e] bg-[#f3f3f3] rounded-10 text-decoration-none tap-highlight-transparent  font-roboto 
   block transform rounded-lg border border-black border-opacity-75 p-2 text-center text-lg text-black transition-transform 
   duration-300 hover:scale-105 
-  hover:text-blac dark:border-white dark:text-white"
+  hover:text-black dark:border-white dark:text-white"
   >
     <h2 className="text-lg font-semibold mb-2 hover:dark:text-white">{name}</h2>
     <p>{value}</p>
