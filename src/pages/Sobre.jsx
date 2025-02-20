@@ -15,7 +15,7 @@ export default function Sobre() {
       <Navbar />
 
       <div className="flex items-center justify-center">
-        <div className=" p-8 rounded-md shadow-md max-w-2xl mt-4">
+        <div className="p-8 rounded-md shadow-md dark:shadow-neutral-800 dark:bg-[#0e0e0ec2] max-w-4xl mt-4">
           <Image
             src="/foto/perfil.jpg"
             width={500}
@@ -34,7 +34,7 @@ export default function Sobre() {
           </h1>
 
           <h2 className="text-lg font-semibold mb-2 text-blcak text-black dark:text-white pl-1">
-          Desenvolvedor de Software
+            Desenvolvedor de Software
           </h2>
 
           <p className="text-black dark:text-white mb-6 text-lg pl-1">
