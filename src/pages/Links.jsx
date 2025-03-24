@@ -22,17 +22,19 @@ const Links = () => {
   return (
     <div className="min-h-screen w-full dark:bg-[#121212] bg-[#f9f9f9] font-Poppins">
       <Navbar />
+
+
+
       <h1 className="text-purple-r mt-10 text-center text-3xl font-bold dark:text-violet-500 text-violet-600">
         Meus Links
       </h1>
       <p className="text-1xl my-4 text-center text-black dark:text-white">
         Aqui estão alguns links importantes para me encontrar online.
       </p>
-
-
-
+      {/* Blocode links */}
       <div id="links" className="mx-auto max-w-[675px]">
-      <h2 className="text-xl mt-6 text-center dark:text-violet-500 text-violet-600 font-bold">Redes Sociais</h2>
+      <h2 className="text-xl mt-8 text-center dark:text-violet-500 text-violet-600 font-bold">Redes Sociais</h2>
+
       <div className="mt-3">
         <Link
           className=" dark:bg-[#1e1e1e] bg-[#f3f3f3] link rounded-10 text-decoration-none tap-highlight-transparent font-roboto mx-10 my-3 block transform rounded-lg
