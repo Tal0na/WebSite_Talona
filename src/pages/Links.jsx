@@ -20,15 +20,20 @@ const Links = () => {
   }, [])
 
   return (
-    <div className="min-h-screen w-full dark:bg-[#121212] bg-[#f9f9f9]">
+    <div className="min-h-screen w-full dark:bg-[#121212] bg-[#f9f9f9] font-Poppins">
       <Navbar />
       <h1 className="text-purple-r mt-10 text-center text-3xl font-bold dark:text-violet-500 text-violet-600">
         Meus Links
       </h1>
-      <p className="text-1xl my-4 text-center text-black dark:text-white font-Poppins">
+      <p className="text-1xl my-4 text-center text-black dark:text-white">
         Aqui estão alguns links importantes para me encontrar online.
       </p>
+
+
+
       <div id="links" className="mx-auto max-w-[675px]">
+      <h2 className="text-xl mt-6 text-center dark:text-violet-500 text-violet-600 font-bold">Redes Sociais</h2>
+      <div className="mt-3">
         <Link
           className=" dark:bg-[#1e1e1e] bg-[#f3f3f3] link rounded-10 text-decoration-none tap-highlight-transparent font-roboto mx-10 my-3 block transform rounded-lg
           border border-[#000000] border-opacity-75 p-2 text-center text-lg text-black shadow-md shadow-zinc-300 transition-transform duration-300 hover:scale-105 
@@ -40,6 +45,29 @@ const Links = () => {
           <FaTwitter className="inline-block mr-2" />
           Twitter / X
         </Link>
+        <Link
+          className={`dark:bg-[#1e1e1e] bg-[#f3f3f3] link rounded-10 text-decoration-none tap-highlight-transparent font-roboto mx-10 my-3 block transform rounded-lg
+          border border-black border-opacity-75 p-2 text-center text-lg text-black shadow-md  shadow-zinc-300 transition-transform duration-300 hover:scale-105 
+        hover:text-white dark:border-white dark:text-white dark:shadow-zinc-600 dark:hover:text-white ${styles.instagram}`}
+          href="https://www.instagram.com/talonaa_/"
+          target="_blank"
+          aria-label="Link para o perfil do Instagram @talonaa_"
+        >
+          <FaInstagram className="inline-block mr-2" /> Instagram
+        </Link>
+        <Link
+          className="dark:bg-[#1e1e1e] bg-[#f3f3f3] link rounded-10 text-decoration-none tap-highlight-transparent  font-roboto mx-10 my-3 block transform rounded-lg
+          border border-black border-opacity-75 p-2 text-center text-lg text-black shadow-md shadow-zinc-300 transition-transform duration-300 hover:scale-105 hover:bg-zinc-600 
+          hover:text-white dark:border-white dark:text-white dark:shadow-zinc-600 dark:hover:bg-zinc-800 dark:hover:text-white"
+          href="https://www.threads.net/@talonaa_"
+          target="_blank"
+          aria-label="Link para o perfil do Threads talona_"
+        >
+          <FaInstagram className="inline-block mr-2" /> Threads
+        </Link>
+        </div>
+          {/* Plataformas de Desenvolvimento */}
+          <h2 className="text-xl mt-6 text-center  dark:text-violet-500 text-violet-600 font-bold">Plataformas de Desenvolvimento</h2>
         <Link
           className="dark:bg-[#1e1e1e] bg-[#f3f3f3] link rounded-10 text-decoration-none tap-highlight-transparent font-roboto mx-10 my-3 block transform rounded-lg
           border border-black border-opacity-75 p-2 text-center text-lg text-black shadow-md shadow-zinc-300 transition-transform duration-300 hover:scale-105 
@@ -72,7 +100,7 @@ const Links = () => {
         >
           <SiGmail className="inline-block mr-2" /> Gmail
         </Link>
-
+        <h2 className="text-xl mt-6 text-center dark:text-violet-500 text-violet-600 font-bold">Outros</h2>
         <Link
           className="dark:bg-[#1e1e1e] bg-[#f3f3f3] link rounded-10 text-decoration-none tap-highlight-transparent font-roboto mx-10 my-3 block transform rounded-lg
             border border-black border-opacity-75 p-2 text-center text-lg text-black shadow-md shadow-zinc-300 transition-transform duration-300 hover:scale-105 
@@ -83,26 +111,7 @@ const Links = () => {
         >
           <FaDiscord className="inline-block mr-2" /> Discord
         </Link>
-        <Link
-          className={`dark:bg-[#1e1e1e] bg-[#f3f3f3] link rounded-10 text-decoration-none tap-highlight-transparent font-roboto mx-10 my-3 block transform rounded-lg
-          border border-black border-opacity-75 p-2 text-center text-lg text-black shadow-md  shadow-zinc-300 transition-transform duration-300 hover:scale-105 
-        hover:text-white dark:border-white dark:text-white dark:shadow-zinc-600 dark:hover:text-white ${styles.instagram}`}
-          href="https://www.instagram.com/talonaa_/"
-          target="_blank"
-          aria-label="Link para o perfil do Instagram @talonaa_"
-        >
-          <FaInstagram className="inline-block mr-2" /> Instagram
-        </Link>
-        <Link
-          className="dark:bg-[#1e1e1e] bg-[#f3f3f3] link rounded-10 text-decoration-none tap-highlight-transparent  font-roboto mx-10 my-3 block transform rounded-lg
-          border border-black border-opacity-75 p-2 text-center text-lg text-black shadow-md shadow-zinc-300 transition-transform duration-300 hover:scale-105 hover:bg-zinc-600 
-          hover:text-white dark:border-white dark:text-white dark:shadow-zinc-600 dark:hover:bg-zinc-800 dark:hover:text-white"
-          href="https://www.threads.net/@talonaa_"
-          target="_blank"
-          aria-label="Link para o perfil do Threads talona_"
-        >
-          <FaInstagram className="inline-block mr-2" /> Threads
-        </Link>
+       
         <Link
           className="dark:bg-[#1e1e1e] bg-[#f3f3f3] link rounded-10 text-decoration-none tap-highlight-transparent font-roboto mx-10 my-3 block transform rounded-lg
           border border-black border-opacity-75 p-2 text-center text-lg text-black shadow-md shadow-zinc-300 transition-transform  duration-300 hover:scale-105 
