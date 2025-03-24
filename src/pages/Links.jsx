@@ -11,8 +11,18 @@ import {
   FaDiscord,
   FaTwitch,
   FaSpotify,
+  FaLastfm,
+  FaYoutube,
+  FaMastodon,
+  FaReddit,
+  FaBluesky,
+  FaTiktok,
+ 
+  
 } from "react-icons/fa"
-import { SiGmail } from "react-icons/si"
+import { 
+  SiGmail 
+} from "react-icons/si"
 
 const Links = () => {
   useEffect(() => {
