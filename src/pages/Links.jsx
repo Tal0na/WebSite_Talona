@@ -78,7 +78,7 @@ const Links = () => {
           >
             <SiThreads className="inline-block mr-2" /> Threads
           </Link>
-          {/* mudar link cor */}
+          {/* mudar link corj */}
           <Link
             className="dark:bg-[#1e1e1e] bg-[#f3f3f3] link rounded-10 text-decoration-none tap-highlight-transparent font-roboto mx-10 my-3 block transform rounded-lg
             border border-black border-opacity-75 p-2 text-center text-lg text-black shadow-md shadow-zinc-300 transition-transform duration-300 hover:scale-105 
