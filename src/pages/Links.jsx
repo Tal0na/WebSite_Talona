@@ -17,13 +17,9 @@ import {
   FaTiktok,
   FaYoutube,
   Fabluesky,
-  FaThreads
+  FaThreads,
 } from "react-icons/fa"
-import { 
-  SiGmail,
-  SiThreads,
-  
- } from "react-icons/si"
+import { SiGmail, SiThreads } from "react-icons/si"
 
 const Links = () => {
   useEffect(() => {
@@ -69,7 +65,7 @@ const Links = () => {
             <FaInstagram className="inline-block mr-2" /> Instagram
           </Link>
           <Link
-             className="dark:bg-[#1e1e1e] bg-[#f3f3f3] link rounded-10 text-decoration-none tap-highlight-transparent font-roboto mx-10 my-3 block transform rounded-lg
+            className="dark:bg-[#1e1e1e] bg-[#f3f3f3] link rounded-10 text-decoration-none tap-highlight-transparent font-roboto mx-10 my-3 block transform rounded-lg
              border border-black border-opacity-75 p-2 text-center text-lg text-black shadow-md shadow-zinc-300 transition-transform duration-300 hover:scale-105 
              dark:hover:bg-[#000000] hover:bg-[#000000] hover:text-white dark:border-white dark:text-white dark:shadow-zinc-600 dark:hover:text-white"
             href="https://www.threads.net/@talonaa_"
@@ -99,7 +95,6 @@ const Links = () => {
             aria-label="Link para o perfil do Bluesky talona_"
           >
             <FaMastodon className="inline-block mr-2" /> Bluesky
-            
           </Link>
           <Link
             className="dark:bg-[#1e1e1e] bg-[#f3f3f3] link rounded-10 text-decoration-none tap-highlight-transparent font-roboto mx-10 my-3 block transform rounded-lg
@@ -208,7 +203,7 @@ const Links = () => {
           <FaLastfm className="inline-block mr-2" /> Lastfm
         </Link>
       </div>
-      <h3 className="text-1xl mt-1 text-center text-black dark:text-white">
+      <h3 className="text-1xl mt-4 text-center text-black dark:text-white">
         @Talona
       </h3>
     </div>

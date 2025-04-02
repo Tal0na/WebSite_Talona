@@ -11,7 +11,7 @@ export default async function Home() {
         <div className="flex-grow flex items-center">
           <About />
         </div>
-        <div className="fixed bottom-0 w-full ">
+        <div className="fixed bottom-0 w-full">
           <Footer />
         </div>
       </main>
