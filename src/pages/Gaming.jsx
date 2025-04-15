@@ -9,6 +9,7 @@ const Gaming = () => {
   return (
     <div className="min-h-screen w-full dark:bg-[#121212] bg-[#f9f9f9]">
       <Navbar />
+      
       <div className="container mx-auto my-8 p-4">
         <h1 className="my-6 text-3xl font-semi bold dark:text-violet-500 text-violet-600">
           Valorant
