@@ -13,7 +13,7 @@ import {
 
 const ProjectsPage = () => {
   return (
-    <div className="min-h-screen w-full dark:bg-[#121212] bg-[#f9f9f9] font-indie">
+    <div className="min-h-screen w-full dark:bg-[#121212] bg-[] font-indie">
       <Navbar />
 
       <div className="max-w-7xl mx-auto px-4 py-12">
