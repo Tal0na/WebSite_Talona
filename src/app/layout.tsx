@@ -78,12 +78,12 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <meta property="twitter:description" content="Explore meu Web site." />
       <meta
         property="twitter:image"
-        content="https://i.imgur.com/Cz74nIx.png"
+        content="https://i.imgur.com/uTAbqTv.png"
       />
 
       <meta
         property="mastodon:image"
-        content="https://i.imgur.com/Cz74nIx.png"
+        content="https://i.imgur.com/uTAbqTv.png"
       />
 
       <meta
