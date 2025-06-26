@@ -6,13 +6,6 @@ import { ReactNode } from "react"
 import { Poppins, Roboto } from "next/font/google"
 import "./globals.css"
 
-interface ExtendedMetadata extends Metadata {
-  image: {
-    url: string
-    alt: string
-  }
-}
-
 const customFontPoppins = Poppins({
   variable: "--font-poppins",
   subsets: ["latin"],
@@ -25,7 +18,7 @@ const customFontRoboto = Roboto({
   weight: ["400", "500"],
 })
 
-export const metadata: ExtendedMetadata = {
+export const metadata: Metadata = {
   title: "Talona Costa",
   description: "Explore meu site para conhecer mais sobre mim.",
   keywords: [
@@ -52,11 +45,35 @@ export const metadata: ExtendedMetadata = {
       noimageindex: true,
     },
   },
-  image: {
-    url: "https://i.imgur.com/uTAbqTv.png",
-    alt: "logo talona",
+  metadataBase: new URL("https://talona.vercel.app"),
+  openGraph: {
+    title: "Talona Site",
+    description: "Explore meu Web site.",
+    url: "https://talona.vercel.app",
+    siteName: "Talona",
+    images: [
+      {
+        url: "https://i.imgur.com/uTAbqTv.png",
+        width: 1200,
+        height: 630,
+        alt: "logo talona",
+      },
+    ],
+    type: "website",
+    locale: "pt_BR",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Talona Site",
+    description: "Explore meu Web site.",
+    images: ["https://i.imgur.com/uTAbqTv.png"],
+    site: "@talonaa_", // se tiver Twitter, coloque aqui
+  },
+  verification: {
+    google: "TJfWJ0lzJo2y8hJBiJU0frm_SjaudSntNLDr9lV8E3w",
   },
 }
+
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
