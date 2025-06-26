@@ -72,7 +72,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <meta property="og:description" content="Explore meu Web site." />
       <meta property="og:image" content="https://i.imgur.com/uTAbqTv.png" />
 
-      <meta property="twitter:card" content="summary_large_image" />
+      <meta property="twitter:card" content="https://i.imgur.com/uTAbqTv.png" />
       <meta property="twitter:url" content="https://talona.vercel.app/" />
       <meta property="twitter:title" content="Talona Site" />
       <meta property="twitter:description" content="Explore meu Web site." />
