@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     siteName: "Talona",
     images: [
       {
-        url: "https://i.imgur.com/uTAbqTv.png",
+        url: "https://i.imgur.com/xN52CMR.png",
         width: 1200,
         height: 630,
         alt: "logo talona",
@@ -66,8 +66,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Talona Site",
     description: "Explore meu Web site.",
-    images: ["https://i.imgur.com/uTAbqTv.png"],
-    site: "@talonaa_", // se tiver Twitter, coloque aqui
+    images: ["https://i.imgur.com/xN52CMR.png"],
+    site: "@talonaa_", 
   },
   verification: {
     google: "TJfWJ0lzJo2y8hJBiJU0frm_SjaudSntNLDr9lV8E3w",
