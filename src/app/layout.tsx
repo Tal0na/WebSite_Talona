@@ -67,7 +67,7 @@ export const metadata: Metadata = {
     title: "Talona Site",
     description: "Explore meu Web site.",
     images: ["https://i.imgur.com/zGNPL74.png"],
-    site: "@talonaa_", 
+    site: "@tTalona_Xona", 
   },
   verification: {
     google: "TJfWJ0lzJo2y8hJBiJU0frm_SjaudSntNLDr9lV8E3w",
