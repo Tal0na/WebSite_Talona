@@ -9,11 +9,11 @@ const About = () => {
           Oi, Meu nome é!
         </h2>
         <h1 className="font-poppins pl-10 text-6xl">
-          <span className="font-medium dark:text-violet-500 text-violet-600">
+          <span className="font-medium dark:text-rose-500 text-rose-600">
             Talona
           </span>
-          <span className="dark:text-violet-500 text-violet-600">Costa</span>
-          <span className="font-medium dark:text-violet-500 text-violet-600">
+          <span className="dark:text-rose-500 text-rose-600">Costa</span>
+          <span className="font-medium dark:text-rose-500 text-rose-600">
             .
           </span>
         </h1>
@@ -31,9 +31,9 @@ const About = () => {
           <Link href="/Sobre" passHref>
             <div
               className="button h-12 w-40 cursor-pointer select-none 
-           rounded-lg border-b-[1px] dark:border-violet-500 border-violet-400 
-          dark:bg-violet-600 bg-violet-500 transition-all duration-150
-          hover:bg-violet-600 dark:hover:bg-violet-700 active:translate-y-3
+           rounded-lg border-b-[1px] dark:border-rose-500 border-rose-400 
+          dark:bg-rose-600 bg-rose-500 transition-all duration-150
+          hover:bg-rose-600 dark:hover:bg-rose-700 active:translate-y-3
         dark:shadow-zinc-800 shadow-md shadow-zinc-300"
             >
               <div

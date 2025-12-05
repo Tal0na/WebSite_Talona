@@ -134,7 +134,7 @@ const HomeBlog = () => {
     <div className="min-h-screen dark:bg-[#121212] bg-[#f9f9f9]">
       <Navbar />
       
-      <h1 className="text-purple-r mt-10 text-center text-3xl font-bold dark:text-violet-500 text-violet-600">
+      <h1 className="text-purple-r mt-10 text-center text-3xl font-bold dark:text-rose-500 text-rose-600">
         Talona Blog
       </h1>
       <p className="text-lg my-4 m-10 text-center text-black dark:text-white">

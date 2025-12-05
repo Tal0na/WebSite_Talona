@@ -5,7 +5,7 @@ const post8 = () => {
       <Navbar />
       <main className="container mx-auto p-6 text-black dark:text-white">
       <div>
-      <h1 className="text-3xl font-bold mb-4 dark:text-violet-500 text-violet-600">Análise do Impacto da Internet e das Redes Sociais na Sociedade</h1>
+      <h1 className="text-3xl font-bold mb-4 dark:text-rose-500 text-rose-600">Análise do Impacto da Internet e das Redes Sociais na Sociedade</h1>
       <p className="text-lg mb-4">Neste artigo, vamos explorar o impacto profundo que a internet e as redes sociais têm tido na sociedade moderna. Discutiremos questões fundamentais, incluindo privacidade online, desinformação, influência digital e cultura da internet.</p>
       <h2 className="text-2xl font-bold mb-2">Privacidade Online</h2>
       <p className="mb-4">A privacidade online tornou-se uma preocupação central à medida que mais aspectos de nossas vidas são digitalizados e compartilhados online. Questões como coleta de dados, monitoramento de atividades online e violações de privacidade levantam preocupações sobre quem tem acesso aos nossos dados pessoais e como eles são utilizados.</p>

@@ -24,11 +24,11 @@ export default function Sobre() {
             className="w-20 h-20 mx-auto rounded-full mb-4"
           />
           <h1 className="font-poppins text-3xl">
-            <span className="font-medium dark:text-violet-500 text-violet-600">
+            <span className="font-medium dark:text-rose-500 text-rose-600">
               Talona
             </span>
-            <span className="dark:text-violet-500 text-violet-600">Costa</span>
-            <span className="font-medium dark:text-violet-500 text-violet-600">
+            <span className="dark:text-rose-500 text-rose-600">Costa</span>
+            <span className="font-medium dark:text-rose-500 text-rose-600">
               .
             </span>
           </h1>

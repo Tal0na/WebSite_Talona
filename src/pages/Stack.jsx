@@ -32,7 +32,7 @@ const Stack = () => {
       <div className="min-h-screen w-full dark:bg-[#121212] bg-[#f9f9f9]">
         <Navbar />
         <div className="py-6 sm:py-8 lg:py-12 ">
-          <h2 className="mb-4 text-center text-2xl font-bold dark:text-violet-500 text-violet-600 md:mb-6 lg:text-3xl">
+          <h2 className="mb-4 text-center text-2xl font-bold dark:text-rose-500 text-rose-600 md:mb-6 lg:text-3xl">
             Minhas Skills
           </h2>
           <div className="mt-12 flex flex-wrap justify-center ">

@@ -5,7 +5,7 @@ const post9 = () => {
       <Navbar />
       <main className="container mx-auto p-6 text-black dark:text-white">
       <div>
-      <h1 className="text-3xl font-bold mb-4 dark:text-violet-500 text-violet-600">Explorando Especulações sobre o Futuro da Tecnologia</h1>
+      <h1 className="text-3xl font-bold mb-4 dark:text-rose-500 text-rose-600">Explorando Especulações sobre o Futuro da Tecnologia</h1>
       <p className="text-lg mb-4">Neste artigo, vamos nos aventurar em especulações sobre o futuro da tecnologia e explorar algumas tendências futuristas emocionantes que podem moldar o mundo nos próximos anos. Vamos mergulhar em:</p>
       <ul className="list-disc pl-6 mb-4">
         <li>Veículos Autônomos</li>

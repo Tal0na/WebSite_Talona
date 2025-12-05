@@ -30,7 +30,7 @@ const Links = () => {
     <div className="min-h-screen w-full dark:bg-[#121212] bg-[#f9f9f9] font-Poppins">
       <Navbar />
 
-      <h1 className="text-purple-r mt-10 text-center text-3xl font-bold dark:text-violet-500 text-violet-600">
+      <h1 className="text-purple-r mt-10 text-center text-3xl font-bold dark:text-rose-500 text-rose-600">
         Meus Links
       </h1>
       <p className="text-1xl my-4 text-center text-black dark:text-white">
@@ -38,7 +38,7 @@ const Links = () => {
       </p>
       {/* Blocode links */}
       <div id="links" className="mx-auto max-w-[675px]">
-        <h2 className="text-xl mt-8 text-center dark:text-violet-500 text-violet-600 font-bold">
+        <h2 className="text-xl mt-8 text-center dark:text-rose-500 text-rose-600 font-bold">
           Redes Sociais
         </h2>
 
@@ -108,7 +108,7 @@ const Links = () => {
           </Link>
         </div>
         {/* Plataformas de Desenvolvimento */}
-        <h2 className="text-xl mt-6 text-center  dark:text-violet-500 text-violet-600 font-bold">
+        <h2 className="text-xl mt-6 text-center  dark:text-rose-500 text-rose-600 font-bold">
           Plataformas de Desenvolvimento
         </h2>
         <Link
@@ -143,7 +143,7 @@ const Links = () => {
         >
           <SiGmail className="inline-block mr-2" /> Gmail
         </Link>
-        <h2 className="text-xl mt-6 text-center dark:text-violet-500 text-violet-600 font-bold">
+        <h2 className="text-xl mt-6 text-center dark:text-rose-500 text-rose-600 font-bold">
           Outros
         </h2>
         <Link

@@ -5,7 +5,7 @@ const post10 = () => {
       <Navbar />
       <main className="container mx-auto p-6 text-black dark:text-white">
         <div>
-          <h1 className="text-3xl font-bold mb-4 dark:text-violet-500 text-violet-600">
+          <h1 className="text-3xl font-bold mb-4 dark:text-rose-500 text-rose-600">
             Compartilhando Dicas e Tutoriais Úteis
           </h1>
           <p className="text-lg mb-4">
