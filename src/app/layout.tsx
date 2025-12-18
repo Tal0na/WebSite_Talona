@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     siteName: "Talona",
     images: [
       {
-        url: "https://i.imgur.com/tXlvlCu.png",
+        url: "https://i.imgur.com/VKtn6Fv.png",
         width: 1200,
         height: 630,
         alt: "logo talona",
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Talona Site",
     description: "Explore meu Web site.",
-    images: ["https://i.imgur.com/tXlvlCu.png"],
+    images: ["https://i.imgur.com/VKtn6Fv.png"],
     site: "@tTalona_Xona", 
   },
   verification: {
@@ -87,7 +87,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <meta property="og:url" content="https://talona.vercel.app/" />
       <meta property="og:title" content="Talona Site" />
       <meta property="og:description" content="Explore meu Web site." />
-      <meta property="og:image" content="https://i.imgur.com/tXlvlCu.png" />
+      <meta property="og:image" content="https://i.imgur.com/VKtn6Fv.png" />
 
       <meta property="twitter:card" content="summary_large_image" />
       <meta property="twitter:url" content="https://talona.vercel.app/" />
@@ -95,12 +95,12 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <meta property="twitter:description" content="Explore meu Web site." />
       <meta
         property="twitter:image"
-        content="https://i.imgur.com/tXlvlCu.png"
+        content="https://i.imgur.com/VKtn6Fv.png"
       />
 
       <meta
         property="mastodon:image"
-        content="https://i.imgur.com/tXlvlCu.png"
+        content="https://i.imgur.com/VKtn6Fv.png"
       />
 
       <meta
