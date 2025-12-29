@@ -49,7 +49,8 @@ const Links = () => {
           dark:hover:bg-[#00acee] hover:bg-[#00acee] hover:text-white dark:border-white dark:text-white dark:shadow-zinc-600 dark:hover:text-white"
             href="https://twitter.com/Talonaa_"
             target="_blank"
-            aria-label="Link para o perfil do Twitter / X @Talonaa_"
+            aria-label="Link para o perfil do Twitter / X @Talona_Xona
+"
           >
             <FaTwitter className="inline-block mr-2" />
             Twitter / X
@@ -210,3 +211,4 @@ const Links = () => {
   )
 }
 export default Links
+
