@@ -25,7 +25,7 @@ export default function Sobre() {
           />
           <h1 className="font-poppins text-3xl">
             <span className="font-medium dark:text-rose-500 text-rose-600">
-              Talona
+              Tales
             </span>
             <span className="dark:text-rose-500 text-rose-600">Costa</span>
             <span className="font-medium dark:text-rose-500 text-rose-600">
