@@ -10,7 +10,7 @@ const About = () => {
         </h2>
         <h1 className="font-poppins pl-10 text-6xl">
           <span className="font-medium dark:text-rose-500 text-rose-600">
-            Talona
+            Tales
           </span>
           <span className="dark:text-rose-500 text-rose-600">Costa</span>
           <span className="font-medium dark:text-rose-500 text-rose-600">
