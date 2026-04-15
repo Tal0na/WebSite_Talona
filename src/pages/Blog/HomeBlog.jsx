@@ -3,13 +3,12 @@ import Link from "next/link";
 import Navbar from "../../app/components/Navbar/NavbarComponent";
 
 export default function HomeBlog({ posts }) {
-  // Extrai os temas únicos dos arquivos Markdown
   const temas = [...new Set(posts.map((post) => post.tema))];
 
   return (
     <div className="min-h-screen bg-[#f9f9f9] dark:bg-[#121212] transition-colors duration-300">
       <Navbar />
-      
+
       <main className="container mx-auto py-12 px-6">
         <header className="mb-12 border-b border-zinc-200 dark:border-zinc-800 pb-8">
           <h1 className="text-4xl font-extrabold text-zinc-900 dark:text-white">
@@ -27,14 +26,13 @@ export default function HomeBlog({ posts }) {
               <h2 className="text-xl font-semibold uppercase tracking-widest text-rose-600 dark:text-rose-400 mb-6">
                 {tema}
               </h2>
-              
+
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {posts
                   .filter((post) => post.tema === tema)
                   .map((post) => (
                     <Link key={post.slug} href={`/publicacao/${post.slug}`}>
                       <div className="group p-6 bg-white dark:bg-[#1e1e1e] border border-zinc-200 dark:border-zinc-800 rounded-xl hover:shadow-xl transition-all cursor-pointer">
-                        {/* Hover alterado para Rose-500 */}
                         <h3 className="text-xl font-bold text-zinc-800 dark:text-zinc-100 group-hover:text-rose-500 transition-colors">
                           {post.titulo}
                         </h3>
@@ -58,9 +56,9 @@ export default function HomeBlog({ posts }) {
 
 export async function getStaticProps() {
   const posts = getAllPosts();
-  return { 
-    props: { 
-      posts: posts || [] 
-    } 
+  return {
+    props: {
+      posts: posts || []
+    }
   };
 }

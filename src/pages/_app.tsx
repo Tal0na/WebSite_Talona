@@ -21,14 +21,15 @@ function MyApp({ Component, pageProps }: MyAppProps) {
     >
       <Head>
         <link rel="icon" href="/ico/favicon-32x32.png" />
+        <title>Talona Blog</title>
       </Head>
-      <div>
+      <>
         <Component {...pageProps} />
         <Footer />
         <Analytics />
-      </div>
+      </>
     </ThemeProvider>
-  );
+  )
 }
 
 export default MyApp;
