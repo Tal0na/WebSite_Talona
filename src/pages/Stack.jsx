@@ -32,7 +32,7 @@ const Stack = () => {
       <div className="min-h-screen w-full dark:bg-[#121212] bg-[#f9f9f9]">
         <Navbar />
         <div className="py-6 sm:py-8 lg:py-12 ">
-          <h2 className="mb-4 text-center text-2xl font-bold dark:text-rose-500 text-rose-600 md:mb-6 lg:text-3xl">
+          <h2 className="mb-4 text-center text-2xl font-bold dark:text-rose-600 text-rose-600 md:mb-6 lg:text-3xl">
             Minhas Skills
           </h2>
           <div className="mt-12 flex flex-wrap justify-center ">
@@ -42,7 +42,7 @@ const Stack = () => {
                 className="mx-2 my-2 w-24 text-center transition-transform duration-300 hover:scale-105"
               >
                 <div className="flex h-24 w-24 items-center justify-center rounded-full border border-opacity-75 dark:border-white border-black dark:bg-[#1e1e1e] bg-[#f3f3f3]">
-                  <Icon color="#7c1fd3" size={35} />
+                  <Icon color="#ee2748" size={35} />
                 </div>
                 <div className="mt-2 font-poppis text-xl dark:text-white text-black">
                   {name}

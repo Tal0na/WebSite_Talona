@@ -4,9 +4,9 @@ import Navbar from "../app/components/Navbar/NavbarComponent"
 
 const PeripheralBlock = ({ name, description }) => (
   <div
-    className=" dark:bg-[#1E1E1E] bg-zinc-100 rounded-md dark:shadow-zinc-300 shadow-md shadow-zinc-300 text-decoration-none tap-highlight-transparent  font-roboto 
-  block transform border border-black border-opacity-75 p-2 text-center text-lg text-black transition-transform 
-  duration-300 hover:scale-105 
+    className=" dark:bg-[#1E1E1E] bg-zinc-100 rounded-md dark:shadow-zinc-300 shadow-md shadow-zinc-300 text-decoration-none tap-highlight-transparent  font-roboto
+  block transform border border-black border-opacity-75 p-2 text-center text-lg text-black transition-transform
+  duration-300 hover:scale-105
   hover:text-blac dark:border-white dark:text-white"
   >
     <h2 className="text-lg font-semibold mb-2 hover:dark:text-white ">
@@ -18,9 +18,9 @@ const PeripheralBlock = ({ name, description }) => (
 
 const ConfigBlock = ({ name, value }) => (
   <div
-    className="dark:bg-[#1E1E1E] bg-zinc-100 rounded-md dark:shadow-zinc-300 shadow-md shadow-zinc-300 text-decoration-none tap-highlight-transparent  font-roboto 
-  block transform  border border-black border-opacity-75 p-2 text-center text-lg text-black transition-transform 
-  duration-300 hover:scale-105 
+    className="dark:bg-[#1E1E1E] bg-zinc-100 rounded-md dark:shadow-zinc-300 shadow-md shadow-zinc-300 text-decoration-none tap-highlight-transparent  font-roboto
+  block transform  border border-black border-opacity-75 p-2 text-center text-lg text-black transition-transform
+  duration-300 hover:scale-105
   hover:text-black dark:border-white dark:text-white"
   >
     <h2 className="text-lg font-semibold mb-2 hover:dark:text-white ">
@@ -32,9 +32,9 @@ const ConfigBlock = ({ name, value }) => (
 
 const ServidorBlock = ({ name, value }) => (
   <div
-    className="dark:bg-[#1E1E1E] bg-zinc-100 rounded-md dark:shadow-zinc-300 shadow-md shadow-zinc-300 text-decoration-none tap-highlight-transparent font-roboto 
-  block transform border border-black border-opacity-75 p-2 text-center text-lg text-black transition-transform 
-  duration-300 hover:scale-105 
+    className="dark:bg-[#1E1E1E] bg-zinc-100 rounded-md dark:shadow-zinc-300 shadow-md shadow-zinc-300 text-decoration-none tap-highlight-transparent font-roboto
+  block transform border border-black border-opacity-75 p-2 text-center text-lg text-black transition-transform
+  duration-300 hover:scale-105
   hover:text-black dark:border-white dark:text-white"
   >
     <h2 className="text-lg font-semibold mb-2 hover:dark:text-white">{name}</h2>
@@ -44,9 +44,9 @@ const ServidorBlock = ({ name, value }) => (
 
 const OldBlock = ({ name, value }) => (
   <div
-    className="dark:bg-[#1e1e1e] bg-[#f3f3f3] rounded-10 text-decoration-none tap-highlight-transparent  font-roboto 
-  block transform rounded-lg border border-black border-opacity-75 p-2 text-center text-lg text-black transition-transform 
-  duration-300 hover:scale-105 
+    className="dark:bg-[#1e1e1e] bg-[#f3f3f3] rounded-10 text-decoration-none tap-highlight-transparent  font-roboto
+  block transform rounded-lg border border-black border-opacity-75 p-2 text-center text-lg text-black transition-transform
+  duration-300 hover:scale-105
   hover:text-black dark:border-white dark:text-white"
   >
     <h2 className="text-lg font-semibold mb-2 hover:dark:text-white">{name}</h2>
@@ -104,7 +104,7 @@ const EquipamentosList = () => {
     <div className="min-h-screen w-full dark:bg-[#121212] bg-[#f9f9f9]">
       <Navbar />
       <div className="container mx-auto p-24">
-        <h1 className="text-3xl dark:text-rose-500 text-rose-600 font-semibold my-6">
+        <h1 className="text-3xl dark:text-rose-600 text-rose-600 font-semibold my-6">
           Configurações do PC
         </h1>
 
@@ -114,7 +114,7 @@ const EquipamentosList = () => {
           ))}
         </div>
 
-        <h1 className="text-3xl dark:text-rose-500 text-rose-600 font-semibold my-6">
+        <h1 className="text-3xl dark:text-rose-600 text-rose-600 font-semibold my-6">
           Periféricos
         </h1>
 
@@ -124,7 +124,7 @@ const EquipamentosList = () => {
           ))}
         </div>
 
-        <h1 className="text-3xl dark:text-rose-500 text-rose-600 font-semibold my-6">
+        <h1 className="text-3xl dark:text-rose-600 text-rose-600 font-semibold my-6">
           Servidor
         </h1>
 
@@ -134,7 +134,7 @@ const EquipamentosList = () => {
           ))}
         </div>
 
-        <h1 className="text-3xl dark:text-rose-500 text-rose-600 font-semibold my-6">
+        <h1 className="text-3xl dark:text-rose-600 text-rose-600 font-semibold my-6">
           Old
         </h1>
 

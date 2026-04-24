@@ -23,7 +23,7 @@ export default function HomeBlog({ posts }) {
           {temas.map((tema) => (
             <section key={tema}>
               {/* Ajustado para Rose-600 / Rose-400 */}
-              <h2 className="text-xl font-semibold uppercase tracking-widest text-rose-600 dark:text-rose-400 mb-6">
+              <h2 className="text-xl font-semibold uppercase tracking-widest text-rose-600 dark:text-rose-600 mb-6">
                 {tema}
               </h2>
 
@@ -33,7 +33,7 @@ export default function HomeBlog({ posts }) {
                   .map((post) => (
                     <Link key={post.slug} href={`/publicacao/${post.slug}`}>
                       <div className="group p-6 bg-white dark:bg-[#1e1e1e] border border-zinc-200 dark:border-zinc-800 rounded-xl hover:shadow-xl transition-all cursor-pointer">
-                        <h3 className="text-xl font-bold text-zinc-800 dark:text-zinc-100 group-hover:text-rose-500 transition-colors">
+                        <h3 className="text-xl font-bold text-zinc-800 dark:text-zinc-100 group-hover:text-rose-600 transition-colors">
                           {post.titulo}
                         </h3>
                         <p className="mt-2 text-sm text-zinc-500 dark:text-zinc-400 line-clamp-2">

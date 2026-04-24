@@ -7,8 +7,8 @@ import LogoComponent from "../logo/logotheme"
 const DropdownMenu = ({ items }) => {
   return (
     <div
-      className="fixed mt-1 flex origin-top-right flex-col rounded-md 
-    border border-rose-500 dark:border-rose-600 border-opacity-75 
+      className="fixed mt-1 flex origin-top-right flex-col rounded-md
+    border border-rose-500 dark:text-rose-600 border-opacity-75
     bg-[#f9f9f9]  dark:bg-[#121212]"
     >
       {items.map((item, index) => (
@@ -16,7 +16,7 @@ const DropdownMenu = ({ items }) => {
           key={index}
           href={item.href || "#"}
           passHref
-          className="block rounded-md px-6 py-2 text-base text-black 
+          className="block rounded-md px-6 py-2 text-base text-black
           hover:bg-[#f0f0f0] dark:text-white dark:hover:bg-[#1d1d1d]"
         >
           {item.label}
@@ -50,7 +50,7 @@ const NavItemWithDropdown = ({ label, items }) => {
     return (
       <>
         <span
-          className={`dark:text-rose-500 text-rose-600 font-semibold ${
+          className={`dark:text-rose-600 text-rose-600 font-semibold ${
             number === "01" ? "dark:text-rose-500 text-rose-600 font-semibold" : ""
           }`}
         >
@@ -72,7 +72,7 @@ const NavItemWithDropdown = ({ label, items }) => {
     >
       <button
         type="button"
-        className="inline-flex h-10 items-center justify-center rounded-md 
+        className="inline-flex h-10 items-center justify-center rounded-md
         px-4 text-black transition-colors hover:bg-zinc-200 dark:text-white dark:hover:bg-zinc-800"
         onClick={() => handleDropdownToggle(!isDropdownOpen)}
       >
@@ -125,37 +125,37 @@ const Navbar = () => {
           <NavItemWithDropdown label="02. Setup" items={dropdownItemsSetup} />
           <Link
             href="/Blog/HomeBlog"
-            className="inline-flex items-center justify-center rounded-md 
+            className="inline-flex items-center justify-center rounded-md
             px-4 text-black transition-colors hover:bg-zinc-200 dark:text-white dark:hover:bg-zinc-800"
           >
-            <span className="dark:text-rose-500 text-rose-600 font-semibold text-lg py-1">
+            <span className="dark:text-rose-600 text-rose-600 font-semibold text-lg py-1">
               03.
             </span>{" "}
             Blog
           </Link>
           <Link
             href="/Myself"
-            className="inline-flex items-center justify-center rounded-md 
+            className="inline-flex items-center justify-center rounded-md
             px-4 text-black transition-colors hover:bg-zinc-200 dark:text-white dark:hover:bg-zinc-800"
           >
-            <span className="dark:text-rose-500 text-rose-600 font-semibold text-lg py-1">
+            <span className="dark:text-rose-600 text-rose-600 font-semibold text-lg py-1">
               04.
             </span>{" "}
             Myself
           </Link>
           <Link
             href="/Links"
-            className="inline-flex items-center justify-center rounded-md 
+            className="inline-flex items-center justify-center rounded-md
             px-4 text-black transition-colors hover:bg-zinc-200 dark:text-white dark:hover:bg-zinc-800"
           >
-            <span className="dark:text-rose-500 text-rose-600 font-semibold text-lg py-1">
+            <span className="dark:text-rose-600 text-rose-600 font-semibold text-lg py-1">
               05.
             </span>
             Links
           </Link>{" "}
           <Link href="/" passHref>
             <div
-              className=" flex cursor-pointer items-center rounded dark:bg-rose-600 bg-rose-500 px-3 py-1 
+              className=" flex cursor-pointer items-center rounded dark:bg-rose-600 bg-rose-500 px-3 py-1
               dark:text-black text-white transition
               duration-300 hover:bg-rose-600 dark:hover:bg-rose-700 text-lg font-semibold "
             >

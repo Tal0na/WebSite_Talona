@@ -11,7 +11,7 @@ const Myself = () => {
       <Navbar />
       <div className="flex flex-col p-8 text-black dark:text-white">
         <div className="border-b border-gray-300 dark:border-zinc-400">
-          <h1 className="text-center mt-10 text-2xl font-bold dark:text-rose-500 text-rose-600">
+          <h1 className="text-center mt-10 text-2xl font-bold dark:text-rose-600 text-rose-600">
             Um espaço para me expressar
           </h1>
 
@@ -34,7 +34,7 @@ const Myself = () => {
             Começo
           </span>
           <br />
-          
+
           <span className="border-b border-gray-300 dark:border-zinc-400 relative ">
             Rodeado de amigos e família, tomo um café, enquanto a música
             suavemente preenche o ambiente, criando uma atmosfera acolhedora e
