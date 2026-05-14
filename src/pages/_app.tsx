@@ -3,7 +3,7 @@ import {ComponentType} from 'react';
 import { ThemeProvider } from "next-themes";
 import Head from 'next/head';
 import Footer from '../app/components/Footer/Footer';
-import { Analytics } from "@vercel/analytics/react"
+
 
 
 interface MyAppProps {
@@ -26,7 +26,6 @@ function MyApp({ Component, pageProps }: MyAppProps) {
       <>
         <Component {...pageProps} />
         <Footer />
-        <Analytics />
       </>
     </ThemeProvider>
   )

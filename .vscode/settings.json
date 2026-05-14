@@ -1,5 +1,6 @@
 {
   "cSpell.words": [
     "Talona"
-  ]
+  ],
+  "css.lint.unknownAtRules": "ignore"
 }

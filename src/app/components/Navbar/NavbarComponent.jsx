@@ -8,8 +8,8 @@ const DropdownMenu = ({ items }) => {
   return (
     <div
       className="fixed mt-1 flex origin-top-right flex-col rounded-md
-    border border-rose-500 dark:text-rose-600 border-opacity-75
-    bg-[#f9f9f9]  dark:bg-[#121212]"
+      border border-rose-500 dark:text-rose-600 border-opacity-75
+      bg-gruvbox-light-bg dark:bg-gruvbox-bg"
     >
       {items.map((item, index) => (
         <Link
@@ -17,7 +17,7 @@ const DropdownMenu = ({ items }) => {
           href={item.href || "#"}
           passHref
           className="block rounded-md px-6 py-2 text-base text-black
-          hover:bg-[#f0f0f0] dark:text-white dark:hover:bg-[#1d1d1d]"
+          hover:bg-gruvbox-light-bg1 dark:text-white dark:hover:bg-gruvbox-bg1"
         >
           {item.label}
         </Link>
@@ -51,7 +51,9 @@ const NavItemWithDropdown = ({ label, items }) => {
       <>
         <span
           className={`dark:text-rose-600 text-rose-600 font-semibold ${
-            number === "01" ? "dark:text-rose-500 text-rose-600 font-semibold" : ""
+            number === "01"
+              ? "dark:text-rose-500 text-rose-600 font-semibold"
+              : ""
           }`}
         >
           {number}.
@@ -73,7 +75,7 @@ const NavItemWithDropdown = ({ label, items }) => {
       <button
         type="button"
         className="inline-flex h-10 items-center justify-center rounded-md
-        px-4 text-black transition-colors hover:bg-zinc-200 dark:text-white dark:hover:bg-zinc-800"
+        px-4 text-black transition-colors hover:bg-gruvbox-light-bg1 dark:text-white dark:hover:bg-gruvbox-bg1"
         onClick={() => handleDropdownToggle(!isDropdownOpen)}
       >
         {renderStyledLabel()}
@@ -114,19 +116,19 @@ const Navbar = () => {
   ]
 
   return (
-    <header>
+    <header className="bg-gruvbox-light-bg dark:bg-gruvbox-bg">
       <nav className="container mx-auto flex flex-col flex-wrap items-center p-6 px-2 md:flex-row">
         <Link href="/" passHref className="flex items-center md:mb-0">
           <LogoComponent />
         </Link>
 
-        <div className="flex flex-wrap items-center justify-center gap-x-1  text-lg md:ml-auto">
+        <div className="flex flex-wrap items-center justify-center gap-x-1 text-lg md:ml-auto">
           <NavItemWithDropdown label="01. About" items={dropdownItemsSobre} />
           <NavItemWithDropdown label="02. Setup" items={dropdownItemsSetup} />
           <Link
             href="/Blog/HomeBlog"
             className="inline-flex items-center justify-center rounded-md
-            px-4 text-black transition-colors hover:bg-zinc-200 dark:text-white dark:hover:bg-zinc-800"
+            px-4 text-black transition-colors hover:bg-gruvbox-light-bg1 dark:text-white dark:hover:bg-gruvbox-bg1"
           >
             <span className="dark:text-rose-600 text-rose-600 font-semibold text-lg py-1">
               03.
@@ -136,7 +138,7 @@ const Navbar = () => {
           <Link
             href="/Myself"
             className="inline-flex items-center justify-center rounded-md
-            px-4 text-black transition-colors hover:bg-zinc-200 dark:text-white dark:hover:bg-zinc-800"
+            px-4 text-black transition-colors hover:bg-gruvbox-light-bg1 dark:text-white dark:hover:bg-gruvbox-bg1"
           >
             <span className="dark:text-rose-600 text-rose-600 font-semibold text-lg py-1">
               04.
@@ -146,7 +148,7 @@ const Navbar = () => {
           <Link
             href="/Links"
             className="inline-flex items-center justify-center rounded-md
-            px-4 text-black transition-colors hover:bg-zinc-200 dark:text-white dark:hover:bg-zinc-800"
+            px-4 text-black transition-colors hover:bg-gruvbox-light-bg1 dark:text-white dark:hover:bg-gruvbox-bg1"
           >
             <span className="dark:text-rose-600 text-rose-600 font-semibold text-lg py-1">
               05.
@@ -155,9 +157,9 @@ const Navbar = () => {
           </Link>{" "}
           <Link href="/" passHref>
             <div
-              className=" flex cursor-pointer items-center rounded dark:bg-rose-600 bg-rose-500 px-3 py-1
+              className="flex cursor-pointer items-center rounded dark:bg-rose-600 bg-rose-500 px-3 py-1
               dark:text-black text-white transition
-              duration-300 hover:bg-rose-600 dark:hover:bg-rose-700 text-lg font-semibold "
+              duration-300 hover:bg-rose-600 dark:hover:bg-rose-700 text-lg font-semibold"
             >
               <span>Home</span>
               <svg

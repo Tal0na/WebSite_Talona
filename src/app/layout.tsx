@@ -1,5 +1,3 @@
-import { Analytics } from "@vercel/analytics/react"
-import { SpeedInsights } from "@vercel/speed-insights/next"
 import Providers from "./providers"
 import { Metadata } from "next"
 import { ReactNode } from "react"
@@ -67,7 +65,7 @@ export const metadata: Metadata = {
     title: "Talona Site",
     description: "Explore meu Web site.",
     images: ["https://i.imgur.com/VKtn6Fv.png"],
-    site: "@tTalona_Xona",
+    site: "@Talona_Xona",
   },
   verification: {
     google: "TJfWJ0lzJo2y8hJBiJU0frm_SjaudSntNLDr9lV8E3w",
@@ -83,8 +81,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body>
         <Providers>
           {children}
-          <Analytics />
-          <SpeedInsights />
         </Providers>
       </body>
     </html>
