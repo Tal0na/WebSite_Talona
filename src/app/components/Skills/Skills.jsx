@@ -18,8 +18,8 @@ const Skills = () => {
         </div>
 
         <div className="grid gap-8 sm:grid-cols-2 sm:gap-y-10 xl:grid-cols-3">
-          <div className="relative rounded-lg dark:shadow-neutral-800 dark:bg-[#0e0e0e] bg-[#f3f3f3] p-5 pt-8 shadow-md shadow-zinc-300">
-            <h3 className="mb-3 text-lg font-semibold dark:text-rose-600 text-rose-600 md:text-xl ">
+          <div className="relative rounded-lg bg-gruvbox-light-bg1 dark:bg-gruvbox-bg1 p-5 pt-8 shadow-md shadow-gruvbox-shadow-light dark:shadow-gruvbox-shadow-dark">
+            <h3 className="mb-3 text-lg font-semibold dark:text-rose-600 text-rose-600 md:text-xl">
               Design de interfaces
             </h3>
             <p className="dark:text-white text-black">
@@ -30,7 +30,7 @@ const Skills = () => {
             </p>
           </div>
 
-          <div className="relative rounded-lg dark:shadow-neutral-800 dark:bg-[#0e0e0e]dark:shadow-neutral-800 dark:bg-[#0e0e0e] bg-[#f3f3f3] p-5 pt-8 shadow-md shadow-zinc-300">
+          <div className="relative rounded-lg bg-gruvbox-light-bg1 dark:bg-gruvbox-bg1 p-5 pt-8 shadow-md shadow-gruvbox-shadow-light dark:shadow-gruvbox-shadow-dark">
             <h3 className="mb-3 text-lg font-semibold dark:text-rose-600 text-rose-600 md:text-xl">
               Usabilidade
             </h3>
@@ -41,7 +41,8 @@ const Skills = () => {
               facilidade de uso.
             </p>
           </div>
-          <div className="relative rounded-lg dark:shadow-neutral-800 dark:bg-[#0e0e0e] bg-[#f3f3f3] p-5 pt-8 shadow-md shadow-zinc-300">
+
+          <div className="relative rounded-lg bg-gruvbox-light-bg1 dark:bg-gruvbox-bg1 p-5 pt-8 shadow-md shadow-gruvbox-shadow-light dark:shadow-gruvbox-shadow-dark">
             <h3 className="mb-3 text-lg font-semibold dark:text-rose-600 text-rose-600 md:text-xl">
               UX/UI
             </h3>
@@ -52,7 +53,8 @@ const Skills = () => {
               envolvente para os usuários.
             </p>
           </div>
-          <div className="relative rounded-lg dark:shadow-neutral-800 dark:bg-[#0e0e0e] bg-[#f3f3f3] p-5 pt-8 shadow-md shadow-zinc-300">
+
+          <div className="relative rounded-lg bg-gruvbox-light-bg1 dark:bg-gruvbox-bg1 p-5 pt-8 shadow-md shadow-gruvbox-shadow-light dark:shadow-gruvbox-shadow-dark">
             <h3 className="mb-3 text-lg font-semibold dark:text-rose-600 text-rose-600 md:text-xl">
               HTML 5, CSS 3 e JavaScript
             </h3>
@@ -63,7 +65,8 @@ const Skills = () => {
               impactantes e responsivas.
             </p>
           </div>
-          <div className="relative rounded-lg dark:shadow-neutral-800 dark:bg-[#0e0e0e] bg-[#f3f3f3] p-5 pt-8  shadow-md shadow-zinc-300">
+
+          <div className="relative rounded-lg bg-gruvbox-light-bg1 dark:bg-gruvbox-bg1 p-5 pt-8 shadow-md shadow-gruvbox-shadow-light dark:shadow-gruvbox-shadow-dark">
             <h3 className="mb-3 text-lg font-semibold dark:text-rose-600 text-rose-600 md:text-xl">
               Prototipagem
             </h3>
@@ -75,10 +78,8 @@ const Skills = () => {
               e alinhadas às necessidades do usuário.
             </p>
           </div>
-          <div
-            className="relative rounded-lg dark:shadow-neutral-800 dark:bg-[#0e0e0e] bg-[#f3f3f3] p-5
-          pt-8 shadow-md shadow-zinc-300"
-          >
+
+          <div className="relative rounded-lg bg-gruvbox-light-bg1 dark:bg-gruvbox-bg1 p-5 pt-8 shadow-md shadow-gruvbox-shadow-light dark:shadow-gruvbox-shadow-dark">
             <h3 className="mb-3 text-lg font-semibold dark:text-rose-600 text-rose-600 md:text-xl">
               React e TailWind
             </h3>

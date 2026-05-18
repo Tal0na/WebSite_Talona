@@ -20,23 +20,18 @@ import {
 import { BsCloudFog2Fill } from "react-icons/bs"
 import { SiGmail, SiThreads } from "react-icons/si"
 
-// linkBase configurado com as cores exatas:
-// Dark: Fundo #2E2E2E, Texto/Borda #D6C8A4
-// Light: Fundo #F9F5D7 (Creme), Texto/Borda #2E2E2E
 const linkBase = `
-  /* Cores Light Mode */
-  bg-[#F9F5D7] text-[#2E2E2E] border-[#2E2E2E]
+  bg-gruvbox-light-bg1 text-gruvbox-light-fg border-gruvbox-red
+  dark:bg-gruvbox-bg1 dark:text-gruvbox-fg dark:border-gruvbox-red-bright
 
-  /* Cores Dark Mode (Suas cores exatas) */
-  dark:bg-[#2E2E2E] dark:text-[#D6C8A4] dark:border-[#D6C8A4]
+  border-l-4 font-roboto mx-10 my-2 flex items-center
+  rounded-sm px-5 py-3 text-base font-bold tracking-wide
 
-  border-2 font-roboto mx-10 my-3 block transform rounded-lg
-  p-2 text-center text-lg font-bold
-  shadow-md transition-all duration-300 hover:scale-105
+  shadow-gruvbox-light dark:shadow-gruvbox-dark
+  transition-all duration-200
 
-  /* Hover dinâmico: inverte as cores conforme o tema */
-  hover:bg-[#2E2E2E] hover:text-[#F9F5D7]
-  dark:hover:bg-[#D6C8A4] dark:hover:text-[#2E2E2E]
+  hover:bg-gruvbox-red hover:text-gruvbox-light-bg hover:border-gruvbox-red hover:translate-x-1
+  dark:hover:bg-gruvbox-red-bright dark:hover:text-gruvbox-bg dark:hover:border-gruvbox-red-bright dark:hover:translate-x-1
 `
 
 const Links = () => {
@@ -45,21 +40,14 @@ const Links = () => {
   }, [])
 
   return (
-    <div className="min-h-screen w-full bg-[#F9F5D7] dark:bg-[#2E2E2E] font-poppins pb-10 transition-colors duration-500">
+    <div className="min-h-screen w-full bg-gruvbox-light-bg dark:bg-gruvbox-bg font-poppins pb-10 transition-colors duration-500">
       <Navbar />
-
-      <h1 className="mt-10 text-center text-3xl font-bold text-[#2E2E2E] dark:text-[#D6C8A4]">
-        Meus Links
-      </h1>
-      <p className="text-lg my-4 text-center text-[#2E2E2E] dark:text-[#D6C8A4] opacity-80">
+      <h1 className="mt-10 text-center text-3xl font-bold">Meus Links</h1>
+      <p className="text-lg my-4 text-center opacity-80">
         Aqui estão alguns links importantes para me encontrar online.
       </p>
-
       <div id="links" className="mx-auto max-w-[675px]">
-        {/* --- REDES SOCIAIS --- */}
-        <h2 className="text-xl mt-8 text-center text-[#2E2E2E] dark:text-[#D6C8A4] font-bold">
-          Redes Sociais
-        </h2>
+        <h2 className="text-xl mt-8 text-center font-bold">Redes Sociais</h2>
 
         <div className="mt-3">
           <Link
@@ -70,7 +58,6 @@ const Links = () => {
           >
             <FaTwitter className="inline-block mr-2" /> Twitter / X
           </Link>
-
           <Link
             className={linkBase}
             href="https://www.instagram.com/talonaa_/"
@@ -79,7 +66,6 @@ const Links = () => {
           >
             <FaInstagram className="inline-block mr-2" /> Instagram
           </Link>
-
           <Link
             className={linkBase}
             href="https://www.threads.net/@talona_xona"
@@ -88,7 +74,6 @@ const Links = () => {
           >
             <SiThreads className="inline-block mr-2" /> Threads
           </Link>
-
           <Link
             className={linkBase}
             href="https://mastodon.social/@Talona_"
@@ -97,7 +82,6 @@ const Links = () => {
           >
             <FaMastodon className="inline-block mr-2" /> Mastodon
           </Link>
-
           <Link
             className={linkBase}
             href="https://bsky.app/profile/talona.bsky.social"
@@ -106,7 +90,6 @@ const Links = () => {
           >
             <BsCloudFog2Fill className="inline-block mr-2" /> Bluesky
           </Link>
-
           <Link
             className={linkBase}
             href="https://www.tiktok.com/@talonaa_"
@@ -117,8 +100,7 @@ const Links = () => {
           </Link>
         </div>
 
-        {/* --- DESENVOLVIMENTO --- */}
-        <h2 className="text-xl mt-10 text-center text-[#2E2E2E] dark:text-[#D6C8A4] font-bold">
+        <h2 className="text-xl mt-10 text-center text-gruvbox-light-fg dark:text-gruvbox-fg font-bold">
           Plataformas de Desenvolvimento
         </h2>
 
@@ -131,7 +113,6 @@ const Links = () => {
           >
             <FaLinkedin className="inline-block mr-2" /> LinkedIn
           </Link>
-
           <Link
             className={linkBase}
             href="https://github.com/Tal0na"
@@ -140,7 +121,6 @@ const Links = () => {
           >
             <FaGithub className="inline-block mr-2" /> GitHub
           </Link>
-
           <Link
             className={linkBase}
             href="mailto:talonacostaa@gmail.com"
@@ -151,8 +131,7 @@ const Links = () => {
           </Link>
         </div>
 
-        {/* --- OUTROS --- */}
-        <h2 className="text-xl mt-10 text-center text-[#2E2E2E] dark:text-[#D6C8A4] font-bold">
+        <h2 className="text-xl mt-10 text-center text-gruvbox-light-fg dark:text-gruvbox-fg font-bold">
           Outros
         </h2>
 
@@ -165,7 +144,6 @@ const Links = () => {
           >
             <FaDiscord className="inline-block mr-2" /> Discord
           </Link>
-
           <Link
             className={linkBase}
             href="https://www.twitch.tv/talona_"
@@ -174,7 +152,6 @@ const Links = () => {
           >
             <FaTwitch className="inline-block mr-2" /> Twitch
           </Link>
-
           <Link
             className={linkBase}
             href="https://www.reddit.com/user/Talona_/"
@@ -183,7 +160,6 @@ const Links = () => {
           >
             <FaReddit className="inline-block mr-2" /> Reddit
           </Link>
-
           <Link
             className={linkBase}
             href="https://open.spotify.com/user/12184323470"
@@ -192,7 +168,6 @@ const Links = () => {
           >
             <FaSpotify className="inline-block mr-2" /> Spotify
           </Link>
-
           <Link
             className={linkBase}
             href="https://www.last.fm/user/talona_"
@@ -204,7 +179,7 @@ const Links = () => {
         </div>
       </div>
 
-      <h3 className="text-lg mt-12 mb-8 text-center text-[#2E2E2E] dark:text-[#D6C8A4] opacity-70 font-bold">
+      <h3 className="text-lg mt-12 mb-8 text-center text-gruvbox-light-fg dark:text-gruvbox-fg opacity-70 font-bold">
         @Talona
       </h3>
     </div>

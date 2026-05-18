@@ -5,7 +5,8 @@ import Footer from "./components/Footer/Footer"
 export default async function Home() {
   return (
     <>
-      <main className="dark:bg-[#121212] bg-[#f9f9f9] min-h-screen flex flex-col justify-between">
+      <main
+        className="bg-gruvbox-light-bg dark:bg-gruvbox-bg min-h-screen flex flex-col justify-between">
         <Navbar />
         <div className="flex-grow flex items-center">
           <About />

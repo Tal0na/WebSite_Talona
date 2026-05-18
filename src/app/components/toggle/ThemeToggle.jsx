@@ -1,5 +1,4 @@
-
-"use clinet"
+"use client"
 import React, { useEffect, useState } from "react"
 import { useTheme } from "next-themes"
 
@@ -9,13 +8,12 @@ const ThemeButton = () => {
 
   useEffect(() => setMounted(true), [])
 
-  if (!mounted) {
-    return null
-  }
+  if (!mounted) return null
 
   const toggleTheme = () => {
     setTheme(resolvedTheme === "dark" ? "light" : "dark")
   }
+
   return (
     <div className="flex items-center space-x-2">
       <input
@@ -26,15 +24,19 @@ const ThemeButton = () => {
       />
       <label
         htmlFor="checkbox"
-        className={`cursor-pointer relative w-12 h-7 transition-transform duration-400 rounded-full ${
-          resolvedTheme === "dark" ? "bg-zinc-800" : "bg-zinc-300 "
+        className={`cursor-pointer relative w-12 h-7 transition-all duration-300 rounded-full border-2 ${
+          resolvedTheme === "dark"
+            ? "bg-gruvbox-bg2 border-gruvbox-red-bright"
+            : "bg-gruvbox-light-bg2 border-gruvbox-red"
         }`}
       >
         <div
-          className={`absolute left-1 top-1 w-5 h-5 transition-transform duration-400 ease-in-out bg-white rounded-full ${
-            resolvedTheme === "dark" ? "transform translate-x-full" : ""
+          className={`absolute left-1 top-1 w-4 h-4 transition-transform duration-300 ease-in-out rounded-full ${
+            resolvedTheme === "dark"
+              ? "translate-x-full bg-gruvbox-red-bright"
+              : "translate-x-0 bg-gruvbox-red"
           }`}
-        ></div>
+        />
       </label>
     </div>
   )
