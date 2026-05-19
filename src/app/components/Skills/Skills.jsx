@@ -5,11 +5,11 @@ const Skills = () => {
     <div className="sm:py-20 lg:py-24 mt-8">
       <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
         <div className="mb-10 md:mb-16">
-          <h2 className="mb-4 text-center text-2xl font-bold dark:text-rose-600 text-rose-600 md:mb-6 lg:text-3xl">
+          <h2 className="mb-4 text-center text-2xl font-bold text-gruvbox-red dark:text-gruvbox-red md:mb-6 lg:text-3xl">
             Minhas Skills
           </h2>
 
-          <p className="mx-auto max-w-screen-md text-center dark:text-white text-black md:text-lg">
+          <p className="mx-auto max-w-screen-md text-center text-gruvbox-light-fg dark:text-gruvbox-fg md:text-lg">
             Com habilidades afiadas e uma sede insaciável por aprender, estou
             sempre pronto para enfrentar desafios e fazer contribuições
             significativas, seja na tecnologia, na criatividade ou na resolução
@@ -19,10 +19,10 @@ const Skills = () => {
 
         <div className="grid gap-8 sm:grid-cols-2 sm:gap-y-10 xl:grid-cols-3">
           <div className="relative rounded-lg bg-gruvbox-light-bg1 dark:bg-gruvbox-bg1 p-5 pt-8 shadow-md shadow-gruvbox-shadow-light dark:shadow-gruvbox-shadow-dark">
-            <h3 className="mb-3 text-lg font-semibold dark:text-rose-600 text-rose-600 md:text-xl">
+            <h3 className="mb-3 text-lg font-semibold text-gruvbox-red dark:text-gruvbox-red md:text-xl">
               Design de interfaces
             </h3>
-            <p className="dark:text-white text-black">
+            <p className="text-gruvbox-light-fg dark:text-gruvbox-fg">
               Desenvolvo designs de interfaces que unem estética e
               funcionalidade, priorizando a experiência do usuário. Crio
               soluções visuais que comunicam efetivamente e elevam a interação
@@ -31,10 +31,10 @@ const Skills = () => {
           </div>
 
           <div className="relative rounded-lg bg-gruvbox-light-bg1 dark:bg-gruvbox-bg1 p-5 pt-8 shadow-md shadow-gruvbox-shadow-light dark:shadow-gruvbox-shadow-dark">
-            <h3 className="mb-3 text-lg font-semibold dark:text-rose-600 text-rose-600 md:text-xl">
+            <h3 className="mb-3 text-lg font-semibold text-gruvbox-red dark:text-gruvbox-red md:text-xl">
               Usabilidade
             </h3>
-            <p className="dark:text-white text-black">
+            <p className="text-gruvbox-light-fg dark:text-gruvbox-fg">
               Meu foco na usabilidade se traduz em criar experiências
               intuitivas, onde cada interação é pensada para proporcionar
               eficiência e satisfação aos usuários, garantindo acessibilidade e
@@ -43,10 +43,10 @@ const Skills = () => {
           </div>
 
           <div className="relative rounded-lg bg-gruvbox-light-bg1 dark:bg-gruvbox-bg1 p-5 pt-8 shadow-md shadow-gruvbox-shadow-light dark:shadow-gruvbox-shadow-dark">
-            <h3 className="mb-3 text-lg font-semibold dark:text-rose-600 text-rose-600 md:text-xl">
+            <h3 className="mb-3 text-lg font-semibold text-gruvbox-red dark:text-gruvbox-red md:text-xl">
               UX/UI
             </h3>
-            <p className="dark:text-white text-black">
+            <p className="text-gruvbox-light-fg dark:text-gruvbox-fg">
               Na interseção entre UX e UI, busco a fusão perfeita entre
               funcionalidade e beleza, criando designs que não apenas agradam
               visualmente, mas também proporcionam uma experiência fluida e
@@ -55,10 +55,10 @@ const Skills = () => {
           </div>
 
           <div className="relative rounded-lg bg-gruvbox-light-bg1 dark:bg-gruvbox-bg1 p-5 pt-8 shadow-md shadow-gruvbox-shadow-light dark:shadow-gruvbox-shadow-dark">
-            <h3 className="mb-3 text-lg font-semibold dark:text-rose-600 text-rose-600 md:text-xl">
+            <h3 className="mb-3 text-lg font-semibold text-gruvbox-red dark:text-gruvbox-red md:text-xl">
               HTML 5, CSS 3 e JavaScript
             </h3>
-            <p className="dark:text-white text-black">
+            <p className="text-gruvbox-light-fg dark:text-gruvbox-fg">
               Domino HTML5, CSS3 e JavaScript, traduzindo ideias em páginas web
               interativas e estilizadas. Minha habilidade técnica se combina com
               uma abordagem criativa para oferecer experiências digitais
@@ -67,10 +67,10 @@ const Skills = () => {
           </div>
 
           <div className="relative rounded-lg bg-gruvbox-light-bg1 dark:bg-gruvbox-bg1 p-5 pt-8 shadow-md shadow-gruvbox-shadow-light dark:shadow-gruvbox-shadow-dark">
-            <h3 className="mb-3 text-lg font-semibold dark:text-rose-600 text-rose-600 md:text-xl">
+            <h3 className="mb-3 text-lg font-semibold text-gruvbox-red dark:text-gruvbox-red md:text-xl">
               Prototipagem
             </h3>
-            <p className="dark:text-white text-black">
+            <p className="text-gruvbox-light-fg dark:text-gruvbox-fg">
               Através da prototipagem, transformo conceitos em realidade
               tangível, permitindo a validação e aprimoramento iterativo de
               ideias antes da implementação final. Minha abordagem ágil na
@@ -80,10 +80,10 @@ const Skills = () => {
           </div>
 
           <div className="relative rounded-lg bg-gruvbox-light-bg1 dark:bg-gruvbox-bg1 p-5 pt-8 shadow-md shadow-gruvbox-shadow-light dark:shadow-gruvbox-shadow-dark">
-            <h3 className="mb-3 text-lg font-semibold dark:text-rose-600 text-rose-600 md:text-xl">
+            <h3 className="mb-3 text-lg font-semibold text-gruvbox-red dark:text-gruvbox-red md:text-xl">
               React e TailWind
             </h3>
-            <p className="dark:text-white text-black">
+            <p className="text-gruvbox-light-fg dark:text-gruvbox-fg">
               Com React e Tailwind CSS, desenvolvo interfaces dinâmicas e
               estilizadas. A combinação da eficiência do React com a
               flexibilidade do Tailwind permite criar aplicações web modernas,

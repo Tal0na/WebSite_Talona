@@ -2,54 +2,42 @@ import React from "react"
 import { useEffect } from "react"
 import Navbar from "../app/components/Navbar/NavbarComponent"
 
+const sharedBlockCls = `
+  bg-gruvbox-light-bg-soft dark:bg-gruvbox-bg1
+  rounded-md
+  shadow-md shadow-gruvbox-shadow-light dark:shadow-gruvbox-shadow-dark
+  text-decoration-none tap-highlight-transparent font-roboto
+  block transform
+  border border-gruvbox-light-border dark:border-gruvbox-border border-opacity-75
+  p-2 text-center text-lg
+  text-gruvbox-light-fg dark:text-gruvbox-fg
+  transition-transform duration-300 hover:scale-105
+`.trim()
+
 const PeripheralBlock = ({ name, description }) => (
-  <div
-    className=" dark:bg-[#1E1E1E] bg-zinc-100 rounded-md dark:shadow-zinc-300 shadow-md shadow-zinc-300 text-decoration-none tap-highlight-transparent  font-roboto
-  block transform border border-black border-opacity-75 p-2 text-center text-lg text-black transition-transform
-  duration-300 hover:scale-105
-  hover:text-blac dark:border-white dark:text-white"
-  >
-    <h2 className="text-lg font-semibold mb-2 hover:dark:text-white ">
-      {name}
-    </h2>
+  <div className={sharedBlockCls}>
+    <h2 className="text-lg font-semibold mb-2">{name}</h2>
     <p>{description}</p>
   </div>
 )
 
 const ConfigBlock = ({ name, value }) => (
-  <div
-    className="dark:bg-[#1E1E1E] bg-zinc-100 rounded-md dark:shadow-zinc-300 shadow-md shadow-zinc-300 text-decoration-none tap-highlight-transparent  font-roboto
-  block transform  border border-black border-opacity-75 p-2 text-center text-lg text-black transition-transform
-  duration-300 hover:scale-105
-  hover:text-black dark:border-white dark:text-white"
-  >
-    <h2 className="text-lg font-semibold mb-2 hover:dark:text-white ">
-      {name}
-    </h2>
+  <div className={sharedBlockCls}>
+    <h2 className="text-lg font-semibold mb-2">{name}</h2>
     <p>{value}</p>
   </div>
 )
 
 const ServidorBlock = ({ name, value }) => (
-  <div
-    className="dark:bg-[#1E1E1E] bg-zinc-100 rounded-md dark:shadow-zinc-300 shadow-md shadow-zinc-300 text-decoration-none tap-highlight-transparent font-roboto
-  block transform border border-black border-opacity-75 p-2 text-center text-lg text-black transition-transform
-  duration-300 hover:scale-105
-  hover:text-black dark:border-white dark:text-white"
-  >
-    <h2 className="text-lg font-semibold mb-2 hover:dark:text-white">{name}</h2>
+  <div className={sharedBlockCls}>
+    <h2 className="text-lg font-semibold mb-2">{name}</h2>
     <p>{value}</p>
   </div>
 )
 
 const OldBlock = ({ name, value }) => (
-  <div
-    className="dark:bg-[#1e1e1e] bg-[#f3f3f3] rounded-10 text-decoration-none tap-highlight-transparent  font-roboto
-  block transform rounded-lg border border-black border-opacity-75 p-2 text-center text-lg text-black transition-transform
-  duration-300 hover:scale-105
-  hover:text-black dark:border-white dark:text-white"
-  >
-    <h2 className="text-lg font-semibold mb-2 hover:dark:text-white">{name}</h2>
+  <div className={sharedBlockCls}>
+    <h2 className="text-lg font-semibold mb-2">{name}</h2>
     <p>{value}</p>
   </div>
 )
@@ -58,6 +46,7 @@ const EquipamentosList = () => {
   useEffect(() => {
     document.title = "Equipamentos"
   }, [])
+
   const peripherals = [
     { name: "Celular", description: "Xiaomi 13 Lite" },
     { name: "Fone TWS", description: "MOONDROP SPACE TRAVEL" },
@@ -101,43 +90,39 @@ const EquipamentosList = () => {
   ]
 
   return (
-    <div className="min-h-screen w-full dark:bg-[#121212] bg-[#f9f9f9]">
+    <div className="min-h-screen w-full bg-gruvbox-light-bg dark:bg-gruvbox-bg">
       <Navbar />
       <div className="container mx-auto p-24">
-        <h1 className="text-3xl dark:text-rose-600 text-rose-600 font-semibold my-6">
+        <h1 className="text-3xl text-gruvbox-red dark:text-gruvbox-red font-semibold my-6">
           Configurações do PC
         </h1>
-
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
           {configs.map((config, index) => (
             <ConfigBlock key={index} {...config} />
           ))}
         </div>
 
-        <h1 className="text-3xl dark:text-rose-600 text-rose-600 font-semibold my-6">
+        <h1 className="text-3xl text-gruvbox-red dark:text-gruvbox-red font-semibold my-6">
           Periféricos
         </h1>
-
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
           {peripherals.map((peripheral, index) => (
             <PeripheralBlock key={index} {...peripheral} />
           ))}
         </div>
 
-        <h1 className="text-3xl dark:text-rose-600 text-rose-600 font-semibold my-6">
+        <h1 className="text-3xl text-gruvbox-red dark:text-gruvbox-red font-semibold my-6">
           Servidor
         </h1>
-
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
           {Servidor.map((servidor, index) => (
             <ServidorBlock key={index} {...servidor} />
           ))}
         </div>
 
-        <h1 className="text-3xl dark:text-rose-600 text-rose-600 font-semibold my-6">
+        <h1 className="text-3xl text-gruvbox-red dark:text-gruvbox-red font-semibold my-6">
           Old
         </h1>
-
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
           {Old.map((Old, index) => (
             <OldBlock key={index} {...Old} />

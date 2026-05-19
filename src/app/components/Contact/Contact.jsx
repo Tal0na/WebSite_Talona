@@ -23,7 +23,7 @@ const Contact = () => {
         "service_hi6sk51",
         "template_fhi13ew",
         templateParams,
-        "BAcnMMRxa5i1HZyvK"
+        "BAcnMMRxa5i1HZyvK",
       )
       .then(
         (response) => {
@@ -34,12 +34,12 @@ const Contact = () => {
         },
         (err) => {
           console.log("erro", err)
-        }
+        },
       )
   }
 
   return (
-    <section className="body-font mt-24 relative text-black dark:text-white text-sm">
+    <section className="body-font mt-24 relative text-gruvbox-light-fg dark:text-gruvbox-fg text-sm">
       <div className="absolute inset-0 bg-black">
         <iframe
           title="map"
@@ -53,10 +53,10 @@ const Contact = () => {
       </div>
       <div className="container mx-auto flex px-5 py-24">
         <div
-          className="relative z-10 mt-10 flex w-full flex-col rounded-lg bg-white dark:bg-black p-8 shadow-md
+          className="relative z-10 mt-10 flex w-full flex-col rounded-lg bg-gruvbox-light-bg dark:bg-gruvbox-bg p-8 shadow-md
         md:ml-auto md:mt-0 md:w-1/2 lg:w-1/3"
         >
-          <h2 className="title-font mb-1 text-lg font-semibold dark:text-rose-600 text-rose-600">
+          <h2 className="title-font mb-1 text-lg font-semibold text-gruvbox-red dark:text-gruvbox-red">
             Me Chame
           </h2>
           <p className="mb-5 leading-relaxed">
@@ -71,7 +71,7 @@ const Contact = () => {
             <div className="relative mb-4">
               <label
                 htmlFor="name"
-                className="text-sm leading-7 text-black dark:text-white"
+                className="text-sm leading-7 text-gruvbox-light-fg dark:text-gruvbox-fg"
               >
                 Nome
               </label>
@@ -79,11 +79,11 @@ const Contact = () => {
                 type="text"
                 id="name"
                 name="name"
-                className="w-full rounded border border-rose-800 dark:border-rose-600
-                bg-zinc-100 dark:bg-black  px-3 py-1 text-base leading-8
-                text-gray-100 outline-none transition-colors duration-200 ease-in-out
-                focus:border-rose-800 focus:ring-1
-                focus:ring-rose-900"
+                className="w-full rounded border border-gruvbox-light-border dark:border-gruvbox-border
+                bg-gruvbox-light-bg-soft dark:bg-gruvbox-bg-hard px-3 py-1 text-base leading-8
+                text-gruvbox-light-fg dark:text-gruvbox-fg outline-none transition-colors duration-200 ease-in-out
+                focus:border-gruvbox-red focus:ring-1
+                focus:ring-gruvbox-red"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
               />
@@ -92,7 +92,7 @@ const Contact = () => {
             <div className="relative mb-4">
               <label
                 htmlFor="email"
-                className="text-sm leading-7 text-black dark:text-white"
+                className="text-sm leading-7 text-gruvbox-light-fg dark:text-gruvbox-fg"
               >
                 E-mail
               </label>
@@ -100,10 +100,10 @@ const Contact = () => {
                 type="email"
                 id="email"
                 name="email"
-                className="w-full rounded border border-rose-800 dark:border-rose-600 bg-zinc-100 dark:bg-black
+                className="w-full rounded border border-gruvbox-light-border dark:border-gruvbox-border bg-gruvbox-light-bg-soft dark:bg-gruvbox-bg-hard
                 py-1 text-base leading-8
-                text-gray-100 outline-none transition-colors duration-200 ease-in-out focus:border-rose-400 focus:ring-1
-                focus:ring-rose-500"
+                text-gruvbox-light-fg dark:text-gruvbox-fg outline-none transition-colors duration-200 ease-in-out focus:border-gruvbox-red focus:ring-1
+                focus:ring-gruvbox-red"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
@@ -112,32 +112,31 @@ const Contact = () => {
             <div className="relative mb-4">
               <label
                 htmlFor="message"
-                className="text-sm leading-7 text-black dark:text-white"
+                className="text-sm leading-7 text-gruvbox-light-fg dark:text-gruvbox-fg"
               >
                 Mensagem
               </label>
               <textarea
                 id="message"
                 name="message"
-                className="h-32 w-full resize-none rounded border border-rose-800 dark:border-rose-600 bg-zinc-100 dark:bg-black
-                px-3 py-1 text-base leading-6 text-gray-100 outline-none transition-colors duration-200
-
-                ease-in-out focus:border-rose-400 focus:ring-1
-                focus:ring-rose-500"
+                className="h-32 w-full resize-none rounded border border-gruvbox-light-border dark:border-gruvbox-border bg-gruvbox-light-bg-soft dark:bg-gruvbox-bg-hard
+                px-3 py-1 text-base leading-6 text-gruvbox-light-fg dark:text-gruvbox-fg outline-none transition-colors duration-200
+                ease-in-out focus:border-gruvbox-red focus:ring-1
+                focus:ring-gruvbox-red"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
               ></textarea>
             </div>
 
             <input
-              className="rounded border-0 dark:bg-rose-700 bg-rose-600 px-6 py-2 text-lg
-              text-white hover:bg-rose-500 focus:border-rose-400 focus:ring-1
-              focus:ring-rose-700"
+              className="rounded border-0 bg-gruvbox-red dark:bg-gruvbox-red px-6 py-2 text-lg
+              text-gruvbox-light-bg hover:bg-gruvbox-orange focus:border-gruvbox-red focus:ring-1
+              focus:ring-gruvbox-red"
               type="submit"
               value="Enviar"
             />
           </form>
-          <p className="mt-3 text-xs text-zinc-400 text-opacity-90">
+          <p className="mt-3 text-xs text-gruvbox-light-fg4 dark:text-gruvbox-fg4 text-opacity-90">
             Clique no botão para confimar a mensagem.
           </p>
         </div>
