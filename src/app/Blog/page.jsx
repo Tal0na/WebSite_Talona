@@ -2,8 +2,7 @@ import { getAllPosts } from "../../lib/posts"
 import Link from "next/link"
 import Navbar from "../components/Navbar/NavbarComponent"
 
-// ✅ App Router: busca direto no Server Component, sem getStaticProps
-export default async function HomeBlog() {
+export default function HomeBlog() {
   const posts = getAllPosts() || []
   const temas = [...new Set(posts.map((post) => post.tema))]
 
@@ -15,7 +14,6 @@ export default async function HomeBlog() {
           <h1 className="text-4xl font-extrabold">Talona Blog</h1>
           <p className="mt-2">Explorações sobre Linux, Web Dev e automação.</p>
         </header>
-
         <div className="space-y-12">
           {temas.map((tema) => (
             <section key={tema}>
@@ -29,9 +27,9 @@ export default async function HomeBlog() {
                     <Link key={post.slug} href={`/publicacao/${post.slug}`}>
                       <div
                         className="group p-6 bg-gruvbox-light-bg1 dark:bg-gruvbox-bg1
-                        border border-gruvbox-light-border dark:border-gruvbox-border
-                        rounded-xl hover:shadow-gruvbox-light dark:hover:shadow-gruvbox-dark
-                        transition-all cursor-pointer"
+                      border border-gruvbox-light-border dark:border-gruvbox-border
+                      rounded-xl hover:shadow-gruvbox-light dark:hover:shadow-gruvbox-dark
+                      transition-all cursor-pointer"
                       >
                         <h3 className="text-xl font-bold group-hover:text-gruvbox-red dark:group-hover:text-gruvbox-red-bright transition-colors">
                           {post.titulo}

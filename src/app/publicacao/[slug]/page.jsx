@@ -2,13 +2,11 @@ import { getAllPosts, getPostBySlug } from "../../../lib/posts"
 import ReactMarkdown from "react-markdown"
 import Navbar from "../../components/Navbar/NavbarComponent"
 
-// ✅ Gera as rotas estáticas (substitui getStaticPaths)
 export async function generateStaticParams() {
   const posts = getAllPosts()
   return posts.map((post) => ({ slug: post.slug }))
 }
 
-// ✅ Gera metadados dinâmicos por post (bônus)
 export async function generateMetadata({ params }) {
   const post = getPostBySlug(params.slug)
   return {
@@ -17,10 +15,8 @@ export async function generateMetadata({ params }) {
   }
 }
 
-// ✅ Server Component direto, sem getStaticProps
 export default function PostPage({ params }) {
   const post = getPostBySlug(params.slug)
-
   if (!post) return null
 
   return (
@@ -40,11 +36,9 @@ export default function PostPage({ params }) {
             {post.subtitulo}
           </div>
         </header>
-
         <article className="mt-8 max-w-4xl mx-auto">
           <div
-            className="prose prose-lg dark:prose-invert
-            max-w-none
+            className="prose prose-lg dark:prose-invert max-w-none
             prose-p:leading-relaxed prose-p:text-justify
             prose-headings:text-gruvbox-red dark:prose-headings:text-gruvbox-red-bright
             prose-a:text-gruvbox-blue dark:prose-a:text-gruvbox-blue-bright

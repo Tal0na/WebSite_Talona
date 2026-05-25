@@ -110,7 +110,7 @@ const Navbar = () => {
           <NavItemWithDropdown label="01. About" items={dropdownItemsSobre} />
           <NavItemWithDropdown label="02. Setup" items={dropdownItemsSetup} />
 
-          <Link href="/Blog/HomeBlog" className={navLinkClass}>
+          <Link href="/Blog" className={navLinkClass}>
             <span className="text-gruvbox-red dark:text-gruvbox-red-bright font-semibold">03.</span>
             <span className="text-gruvbox-light-fg dark:text-gruvbox-fg">Blog</span>
           </Link>
