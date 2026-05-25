@@ -1,3 +1,5 @@
+export const dynamic = "force-static"
+
 import { getAllPosts, getPostBySlug } from "../../../lib/posts"
 import ReactMarkdown from "react-markdown"
 import Navbar from "../../components/Navbar/NavbarComponent"

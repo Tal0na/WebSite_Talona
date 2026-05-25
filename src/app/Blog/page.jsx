@@ -1,3 +1,5 @@
+export const dynamic = "force-static"
+
 import { getAllPosts } from "../../lib/posts"
 import Link from "next/link"
 import Navbar from "../components/Navbar/NavbarComponent"
@@ -5,7 +7,6 @@ import Navbar from "../components/Navbar/NavbarComponent"
 export default function HomeBlog() {
   const posts = getAllPosts() || []
   const temas = [...new Set(posts.map((post) => post.tema))]
-
   return (
     <div className="min-h-screen bg-gruvbox-light-bg dark:bg-gruvbox-bg transition-colors duration-300">
       <Navbar />
@@ -27,9 +28,9 @@ export default function HomeBlog() {
                     <Link key={post.slug} href={`/publicacao/${post.slug}`}>
                       <div
                         className="group p-6 bg-gruvbox-light-bg1 dark:bg-gruvbox-bg1
-                      border border-gruvbox-light-border dark:border-gruvbox-border
-                      rounded-xl hover:shadow-gruvbox-light dark:hover:shadow-gruvbox-dark
-                      transition-all cursor-pointer"
+                        border border-gruvbox-light-border dark:border-gruvbox-border
+                        rounded-xl hover:shadow-gruvbox-light dark:hover:shadow-gruvbox-dark
+                        transition-all cursor-pointer"
                       >
                         <h3 className="text-xl font-bold group-hover:text-gruvbox-red dark:group-hover:text-gruvbox-red-bright transition-colors">
                           {post.titulo}
