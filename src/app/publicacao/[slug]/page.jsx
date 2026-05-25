@@ -10,15 +10,18 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }) {
-  const post = getPostBySlug(params.slug)
+  const { slug } = await params // ✅ await aqui
+  const post = getPostBySlug(slug)
   return {
     title: post.titulo,
     description: post.subtitulo,
   }
 }
 
-export default function PostPage({ params }) {
-  const post = getPostBySlug(params.slug)
+export default async function PostPage({ params }) {
+  // ✅ async aqui
+  const { slug } = await params // ✅ await aqui
+  const post = getPostBySlug(slug)
   if (!post) return null
 
   return (
