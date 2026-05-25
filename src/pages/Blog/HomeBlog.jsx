@@ -1,8 +1,10 @@
 import { getAllPosts } from "../../lib/posts"
 import Link from "next/link"
-import Navbar from "../../app/components/Navbar/NavbarComponent"
+import Navbar from "../components/Navbar/NavbarComponent"
 
-export default function HomeBlog({ posts }) {
+// ✅ App Router: busca direto no Server Component, sem getStaticProps
+export default async function HomeBlog() {
+  const posts = getAllPosts() || []
   const temas = [...new Set(posts.map((post) => post.tema))]
 
   return (
@@ -20,7 +22,6 @@ export default function HomeBlog({ posts }) {
               <h2 className="text-xl font-semibold uppercase tracking-widest text-gruvbox-red dark:text-gruvbox-red-bright mb-6">
                 {tema}
               </h2>
-
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {posts
                   .filter((post) => post.tema === tema)
@@ -51,13 +52,4 @@ export default function HomeBlog({ posts }) {
       </main>
     </div>
   )
-}
-
-export async function getStaticProps() {
-  const posts = getAllPosts()
-  return {
-    props: {
-      posts: posts || [],
-    },
-  }
 }

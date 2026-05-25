@@ -1,26 +1,26 @@
-import fs from "fs";
-import path from "path";
-import matter from "gray-matter";
+import matter from "gray-matter"
 
-const postsDirectory = path.join(process.cwd(), "posts");
+// ✅ Importa todos os .md em build time — compatível com Cloudflare
+const postFiles = import.meta.glob("../../posts/*.md", {
+  query: "?raw",
+  import: "default",
+  eager: true,
+})
 
 export function getAllPosts() {
-  const filenames = fs.readdirSync(postsDirectory);
-  return filenames.map((filename) => {
-    const filePath = path.join(postsDirectory, filename);
-    const fileContents = fs.readFileSync(filePath, "utf8");
-    const { data, content } = matter(fileContents);
-    return {
-      slug: filename.replace(/\.md$/, ""),
-      ...data,
-      content,
-    };
-  });
+  return Object.entries(postFiles).map(([filepath, content]) => {
+    const filename = filepath.split("/").pop()
+    const slug = filename.replace(/\.md$/, "")
+    const { data, content: body } = matter(content)
+    return { slug, ...data, content: body }
+  })
 }
 
 export function getPostBySlug(slug) {
-  const fullPath = path.join(postsDirectory, `${slug}.md`);
-  const fileContents = fs.readFileSync(fullPath, "utf8");
-  const { data, content } = matter(fileContents);
-  return { slug, ...data, content };
+  const entry = Object.entries(postFiles).find(([filepath]) =>
+    filepath.endsWith(`/${slug}.md`),
+  )
+  if (!entry) throw new Error(`Post não encontrado: ${slug}`)
+  const { data, content } = matter(entry[1])
+  return { slug, ...data, content }
 }

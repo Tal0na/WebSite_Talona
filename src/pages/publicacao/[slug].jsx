@@ -1,8 +1,26 @@
-import { getAllPosts, getPostBySlug } from "../../lib/posts"
+import { getAllPosts, getPostBySlug } from "../../../lib/posts"
 import ReactMarkdown from "react-markdown"
-import Navbar from "../../app/components/Navbar/NavbarComponent"
+import Navbar from "../../components/Navbar/NavbarComponent"
 
-export default function PostPage({ post }) {
+// ✅ Gera as rotas estáticas (substitui getStaticPaths)
+export async function generateStaticParams() {
+  const posts = getAllPosts()
+  return posts.map((post) => ({ slug: post.slug }))
+}
+
+// ✅ Gera metadados dinâmicos por post (bônus)
+export async function generateMetadata({ params }) {
+  const post = getPostBySlug(params.slug)
+  return {
+    title: post.titulo,
+    description: post.subtitulo,
+  }
+}
+
+// ✅ Server Component direto, sem getStaticProps
+export default function PostPage({ params }) {
+  const post = getPostBySlug(params.slug)
+
   if (!post) return null
 
   return (
@@ -42,15 +60,4 @@ export default function PostPage({ post }) {
       </main>
     </div>
   )
-}
-
-export async function getStaticPaths() {
-  const posts = getAllPosts()
-  const paths = posts.map((post) => ({ params: { slug: post.slug } }))
-  return { paths, fallback: false }
-}
-
-export async function getStaticProps({ params }) {
-  const post = getPostBySlug(params.slug)
-  return { props: { post } }
 }
