@@ -1,0 +1,74 @@
+[
+  {
+    "slug": "2026-03-11-dicas-tutoriais",
+    "titulo": "Dicas e Tutoriais Úteis",
+    "subtitulo": "Guia prático para ferramentas de produtividade.",
+    "tema": "Tutoriais",
+    "data": "2026-03-11",
+    "content": "\n# Guia Prático\n\n* **Microsoft Excel**: Análise de dados.\n* **Photoshop**: Edição básica de imagens.\n* **Trello**: Maximizar a produtividade.\n* **Google Drive**: Colaboração em equipa.\n"
+  },
+  {
+    "slug": "2026-03-11-entretenimento-digital",
+    "titulo": "Entretenimento Digital",
+    "subtitulo": "Quais são os conteúdos que mais me interessam na internet.",
+    "tema": "Web Development",
+    "data": "2026-03-11",
+    "content": "\n# Introdução\n\nNeste post, compartilho um pouco sobre o que consumo no mundo digital.\n\n## Meus Interesses\n\nAtualmente, foco muito em acompanhar a evolução da web e novas tecnologias.\n"
+  },
+  {
+    "slug": "2026-03-11-futuro-tecnologia",
+    "titulo": "Especulações sobre o Futuro da Tecnologia",
+    "subtitulo": "Tendências futuristas que podem moldar o mundo.",
+    "tema": "Tecnologia",
+    "data": "2026-03-11",
+    "content": "\n# Tendências Futuristas\n\n* Veículos Autónomos\n* Inteligência Artificial\n* Medicina de Precisão\n* Realidade Virtual e Aumentada\n"
+  },
+  {
+    "slug": "2026-03-11-hobbies-passatempos",
+    "titulo": "Hobbies e Passatempos",
+    "subtitulo": "Meus hobbies favoritos e o que eu gosto de fazer no tempo livre.",
+    "tema": "Pessoal",
+    "data": "2026-03-11",
+    "content": "\n# O Ritmo da Vida: Rock, Jogos e Corridas\n\nNo palco da minha vida, o som estrondoso do rock ressoa como uma trilha sonora poderosa.\n\n## Minhas Paixões\n\n* **Jogos**: Nesses mundos virtuais, sou um explorador e estrategista.\n* **Corridas**: Encontro meu refúgio nas pistas, onde sinto uma conexão profunda com meu corpo e mente.\n"
+  },
+  {
+    "slug": "2026-03-11-impacto-internet",
+    "titulo": "Impacto da Internet e Redes Sociais na Sociedade",
+    "subtitulo": "Análise sobre privacidade, desinformação e cultura digital.",
+    "tema": "Sociedade",
+    "data": "2026-03-11",
+    "content": "\n# Análise Social\n\n* **Privacidade Online**: Preocupações com a coleta e monitoramento de dados.\n* **Desinformação**: O desafio de distinguir factos de ficção.\n* **Cultura da Internet**: Memes e comunidades que definem a nossa comunicação.\n"
+  },
+  {
+    "slug": "2026-03-11-jogos-preferidos",
+    "titulo": "Meus Jogos Preferidos",
+    "subtitulo": "Uma lista de experiências únicas e mundos fantásticos.",
+    "tema": "Games",
+    "data": "2026-03-11",
+    "content": "\n# Top Games\n\n* **The Legend of Zelda: Breath of the Wild**\n* **The Witcher 3: Wild Hunt**\n* **Red Dead Redemption 2**\n* **Dark Souls**\n* **Persona 5**\n"
+  },
+  {
+    "slug": "2026-03-11-reset-css",
+    "titulo": "Resetar o CSS de uma página HTML",
+    "subtitulo": "Como tirar o estilo base do CSS para criar o seu do zero.",
+    "tema": "Web Development",
+    "data": "2026-03-11",
+    "content": "\n# Introdução\n\nMuitas vezes precisamos começar com um CSS limpo...\n\n## Resetando CSS\n\n```css\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}---\ntitulo: \"Resetar o CSS de uma página HTML\"\nsubtitulo: \"Como tirar o estilo base do CSS para criar o seu do zero.\"\ntema: \"Web Development\"\ndata: \"2026-03-11\"\n---\n\n# Introdução\n\nMuitas vezes precisamos começar com um CSS limpo...\n\n## Resetando CSS\n\n```css\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}"
+  },
+  {
+    "slug": "2026-03-11-tecnologias-software",
+    "titulo": "Tecnologias de Desenvolvimento de Software",
+    "subtitulo": "Explorando linguagens, frameworks e metodologias essenciais.",
+    "tema": "Web Development",
+    "data": "2026-03-11",
+    "content": "\n# Tecnologias de Software\n\nExploraremos tópicos essenciais como:\n\n* Linguagens de Programação\n* Frameworks e Bibliotecas\n* Metodologias Ágeis\n* Melhores Práticas de Codificação\n"
+  },
+  {
+    "slug": "2026-04-30-Minhas-configs",
+    "titulo": "Minhas configs Do KDE",
+    "subtitulo": "Minhas configuraçoes do desktop KDE plasma",
+    "tema": "Tecnologia",
+    "data": "2026-04-30",
+    "content": "\n# KDE Plasma — Minhas Configurações\n\nFala pessoal! Neste post vou compartilhar as minhas configurações do **KDE Plasma**, o ambiente desktop que uso no dia a dia. Se você curte um desktop bonito, organizado e altamente personalizável, esse conteúdo é pra você.\n\nO tema central de toda a minha setup é o **Gruvbox** — uma paleta de cores retrô com tons quentes de marrom, laranja, amarelo e verde, que além de visualmente agradável, é excelente para longas sessões no computador por não cansar os olhos.\n\n---\n\n## Por que o KDE Plasma?\n\nO KDE Plasma é um dos ambientes desktop mais completos e personalizáveis do Linux. Ele oferece:\n\n- **Alta performance** com baixo consumo de recursos\n- **Personalização profunda** de praticamente todos os elementos visuais\n- **Integração nativa** com aplicativos Qt e do ecossistema KDE\n- **Estabilidade** para uso diário tanto em trabalho quanto em lazer\n\n---\n\n## O Tema: Gruvbox\n\nO **Gruvbox** é uma paleta de cores criada por Pavel Pertsev, inspirada no estilo retro groove. As cores principais são:\n\n- 🟤 Fundo escuro (`#282828`)\n- 🟠 Laranja e amarelo para destaques\n- 🟢 Verde suave para elementos secundários\n- ⬜ Texto claro com bom contraste\n\nEssa paleta foi aplicada em todos os elementos do meu desktop: barra de tarefas, janelas, esquema de cores do sistema, terminal e aplicativos.\n\n---\n\n## Esquema de Cores\n\nO arquivo de esquema de cores fica em:\n\n```\n~/.local/share/color-schemes/\n```\n\nEle define as cores para todos os elementos visuais do Plasma — títulos de janelas, botões, fundos, textos e bordas — todos seguindo a paleta Gruvbox.\n\n---\n\n## Configurações do Sistema\n\nOs arquivos de configuração do KDE ficam em:\n\n```\n~/.config/\n```\n\nOs principais arquivos que customizei foram:\n\n- `kdeglobals` — configurações globais de cores e fontes\n- `plasmarc` — tema visual do Plasma (painel, widgets)\n- `kwinrc` — comportamento do gerenciador de janelas KWin\n- `breezerc` — decorações de janelas\n\n---\n\n## Repositório\n\nTodas as minhas configurações estão disponíveis no GitHub para quem quiser usar ou se inspirar:\n\n🔗 [github.com/Tal0na/talona-kde-plasma](https://github.com/Tal0na/talona-kde-plasma)\n\nBasta clonar o repositório e copiar as pastas `.config` e `.local` para o seu diretório home:\n\n```bash\ngit clone https://github.com/Tal0na/talona-kde-plasma.git\ncp -r talona-kde-plasma/.config ~/\ncp -r talona-kde-plasma/.local ~/\n```\n\n> ⚠️ **Atenção:** faça backup das suas configs atuais antes de substituir!\n\n---\n\n## Conclusão\n\nO KDE Plasma com Gruvbox é uma combinação que une estética e funcionalidade. Se você está procurando um desktop personalizado, bonito e confortável para o dia a dia, recomendo muito experimentar essa setup.\n"
+  }
+]
