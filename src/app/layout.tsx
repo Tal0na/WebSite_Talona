@@ -1,4 +1,5 @@
 import Providers from "./providers"
+import Script from "next/script"
 import type { Metadata } from "next"
 import type { ReactNode } from "react"
 import "./globals.css"
@@ -65,18 +66,18 @@ export default function RootLayout({
   children: ReactNode
 }) {
   return (
-      <html lang="pt-BR">
-        <body>
-          <Providers>
-            {children}
-          </Providers>
+    <html lang="pt-BR">
+      <body>
+        <Providers>
+          {children}
+        </Providers>
 
-          <Script
-            src="https://analytics.talona.com.br/script.js"
-            data-website-id="1b568788-5123-436f-a27f-eae8de7ecc70"
-            strategy="afterInteractive"
-          />
-        </body>
-      </html>
-    )
-  }
+        <Script
+          src="https://analytics.talona.com.br/script.js"
+          data-website-id="1b568788-5123-436f-a27f-eae8de7ecc70"
+          strategy="afterInteractive"
+        />
+      </body>
+    </html>
+  )
+}
