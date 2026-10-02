@@ -77,6 +77,7 @@ export default function RootLayout({
           data-website-id="1b568788-5123-436f-a27f-eae8de7ecc70"
           strategy="afterInteractive"
         />
+        <script defer src="https://analytics.talona.com.br/recorder.js" data-website-id="1b568788-5123-436f-a27f-eae8de7ecc70"></script>
       </body>
     </html>
   )
