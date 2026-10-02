@@ -1,4 +1,5 @@
-import React from "react"
+"use client"
+
 import { useEffect } from "react"
 import Image from "next/image"
 import Navbar from "../app/components/Navbar/NavbarComponent"
@@ -12,45 +13,134 @@ export default function Sobre() {
   }, [])
 
   return (
-    <div className="min-h-screen w-full bg-gruvbox-light-bg dark:bg-gruvbox-bg">
+    <main className="min-h-screen w-full bg-background text-on-background">
       <Navbar />
-      <div className="flex items-center justify-center">
-        <div className="p-8 rounded-md shadow-md shadow-gruvbox-shadow-light dark:shadow-gruvbox-shadow-dark bg-gruvbox-light-bg-soft dark:bg-gruvbox-bg-hard max-w-4xl mt-4">
-          <Image
-            src="/foto/perfil.jpg"
-            width={500}
-            height={500}
-            alt="Tales Costa - Developer"
-            className="w-20 h-20 mx-auto rounded-full mb-4"
-          />
-          <h1 className="font-poppins text-3xl">
-            <span className="font-medium text-gruvbox-red dark:text-gruvbox-red">
-              Tales
-            </span>
-            <span className="text-gruvbox-red dark:text-gruvbox-red">
-              Costa
-            </span>
-            <span className="font-medium text-gruvbox-red dark:text-gruvbox-red">
-              .
-            </span>
-          </h1>
-          <h2 className="text-lg font-semibold mb-2 text-gruvbox-light-fg dark:text-gruvbox-fg pl-1">
-            Desenvolvedor de Software
-          </h2>
-          <p className="text-gruvbox-light-fg2 dark:text-gruvbox-fg2 mb-6 text-lg pl-1">
-            Sou um experiente desenvolvedor de software, com habilidades sólidas
-            em diversas linguagens de programação e tecnologias de
-            desenvolvimento. Comprometido com a qualidade, tenho experiência em
-            desenvolvimento orientado a testes e em criar soluções inovadoras
-            para os usuários. Estou sempre em busca de oportunidades para
-            contribuir em projetos desafiadores, alinhados com os mais altos
-            padrões de usabilidade e design.
-          </p>
+
+      {/* About */}
+      <section className="container mx-auto px-4 py-12 sm:px-6 lg:px-8">
+        <div
+          className="
+            mx-auto max-w-4xl
+            rounded-3xl
+            bg-surface-container
+            p-6
+            shadow-sm
+            sm:p-8
+            lg:p-10
+          "
+        >
+          <div className="flex flex-col items-center text-center sm:items-start sm:text-left">
+            {/* Profile */}
+            <Image
+              src="/foto/perfil.jpg"
+              width={500}
+              height={500}
+              alt="Tales Costa - Developer"
+              priority
+              className="
+                mb-6
+                h-24 w-24
+                rounded-full
+                object-cover
+                ring-4
+                ring-primary-container
+              "
+            />
+
+            {/* Name */}
+            <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
+              <span className="text-primary">Tales</span>{" "}
+              <span className="text-on-surface">Costa</span>
+              <span className="text-primary">.</span>
+            </h1>
+
+            {/* Role */}
+            <h2 className="mt-3 text-xl font-medium text-on-surface">
+              Desenvolvedor de Software
+            </h2>
+
+            {/* Description */}
+            <p
+              className="
+                mt-5 max-w-3xl
+                text-base leading-7
+                text-on-surface-variant
+                sm:text-lg
+              "
+            >
+              Sou desenvolvedor de software com experiência em diferentes
+              linguagens e tecnologias. Tenho interesse em criar soluções
+              modernas, acessíveis e fáceis de usar, buscando sempre equilibrar
+              qualidade de código, usabilidade e design.
+            </p>
+
+            {/* Actions */}
+            <div className="mt-7 flex flex-wrap gap-3">
+              <a
+                href="#projetos"
+                className="
+                  inline-flex h-10 items-center justify-center
+                  rounded-full
+                  bg-primary
+                  px-6
+                  font-medium
+                  text-on-primary
+                  transition
+                  hover:brightness-95
+                  focus-visible:outline
+                  focus-visible:outline-2
+                  focus-visible:outline-offset-2
+                  focus-visible:outline-primary
+                "
+              >
+                Ver projetos
+              </a>
+
+              <a
+                href="#contato"
+                className="
+                  inline-flex h-10 items-center justify-center
+                  rounded-full
+                  border
+                  border-outline
+                  px-6
+                  font-medium
+                  text-primary
+                  transition-colors
+                  hover:bg-primary/10
+                  focus-visible:outline
+                  focus-visible:outline-2
+                  focus-visible:outline-offset-2
+                  focus-visible:outline-primary
+                "
+              >
+                Entrar em contato
+              </a>
+            </div>
+          </div>
         </div>
-      </div>
-      <Skills />
-      <Projects />
-      <Contact />
-    </div>
+      </section>
+
+      {/* Skills */}
+      <section className="container mx-auto px-4 py-8 sm:px-6 lg:px-8">
+        <Skills />
+      </section>
+
+      {/* Projects */}
+      <section
+        id="projetos"
+        className="container mx-auto px-4 py-8 sm:px-6 lg:px-8"
+      >
+        <Projects />
+      </section>
+
+      {/* Contact */}
+      <section
+        id="contato"
+        className="container mx-auto px-4 py-8 sm:px-6 lg:px-8"
+      >
+        <Contact />
+      </section>
+    </main>
   )
 }

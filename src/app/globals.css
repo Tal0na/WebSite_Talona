@@ -1,22 +1,119 @@
+@import "@fontsource-variable/roboto-flex";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 29, 32, 33;
-  /* #1D2021 */
-  --background-end-rgb: 249, 245, 215;
-  /* #f9f5d7 */
+  --font-roboto-flex: "Roboto Flex", sans-serif;
+
+  /* Material 3 */
+  --md-primary: #e8174a;
+  --md-on-primary: #ffffff;
+  --md-primary-container: #ffd9df;
+  --md-on-primary-container: #3b0010;
+
+  --md-secondary: #76565e;
+  --md-on-secondary: #ffffff;
+  --md-secondary-container: #ffdae0;
+  --md-on-secondary-container: #2c151b;
+
+  --md-tertiary: #78572f;
+  --md-on-tertiary: #ffffff;
+  --md-tertiary-container: #ffdcad;
+  --md-on-tertiary-container: #2b1700;
+
+  --md-background: #fff8f8;
+  --md-on-background: #201a1b;
+
+  --md-surface: #fff8f8;
+  --md-on-surface: #201a1b;
+
+  --md-surface-variant: #f3dde0;
+  --md-on-surface-variant: #524347;
+
+  --md-surface-container-lowest: #ffffff;
+  --md-surface-container-low: #fff0f1;
+  --md-surface-container: #f5eeee;
+  --md-surface-container-high: #f0e8e9;
+  --md-surface-container-highest: #eae2e3;
+
+  --md-outline: #817477;
+  --md-outline-variant: #d4c2c5;
+
+  --md-error: #ba1a1a;
+  --md-on-error: #ffffff;
+  --md-error-container: #ffdad6;
+  --md-on-error-container: #410002;
 }
 
 .dark {
-  --foreground-rgb: 255, 255, 255;
-  /* branco puro, sem laranja */
-  --background-end-rgb: 29, 32, 33;
-  /* #1D2021 */
+  --md-primary: #ffb1bf;
+  --md-on-primary: #670029;
+  --md-primary-container: #8f003f;
+  --md-on-primary-container: #ffd9df;
+
+  --md-secondary: #e5bdc5;
+  --md-on-secondary: #432931;
+  --md-secondary-container: #5b3f47;
+  --md-on-secondary-container: #ffdae0;
+
+  --md-tertiary: #e9bd8a;
+  --md-on-tertiary: #452b08;
+  --md-tertiary-container: #5d411c;
+  --md-on-tertiary-container: #ffdcad;
+
+  --md-background: #181113;
+  --md-on-background: #f0dfe1;
+
+  --md-surface: #181113;
+  --md-on-surface: #f0dfe1;
+
+  --md-surface-variant: #524347;
+  --md-on-surface-variant: #d7c2c5;
+
+  --md-surface-container-lowest: #120d0e;
+  --md-surface-container-low: #21191a;
+  --md-surface-container: #251d1f;
+  --md-surface-container-high: #302729;
+  --md-surface-container-highest: #3b3234;
+
+  --md-outline: #9a8c8f;
+  --md-outline-variant: #524347;
+
+  --md-error: #ffb4ab;
+  --md-on-error: #690005;
+  --md-error-container: #93000a;
+  --md-on-error-container: #ffdad6;
+}
+
+html {
+  font-family: var(--font-roboto-flex);
+  color-scheme: light;
+}
+
+html.dark {
+  color-scheme: dark;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: rgb(var(--background-end-rgb));
+  margin: 0;
+  min-height: 100vh;
+
+  font-family: var(--font-roboto-flex);
+  color: var(--md-on-background);
+  background-color: var(--md-background);
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+* {
+  border-color: var(--md-outline-variant);
+}
+
+::selection {
+  color: var(--md-on-primary);
+  background-color: var(--md-primary);
 }

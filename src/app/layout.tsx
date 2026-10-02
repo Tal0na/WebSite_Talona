@@ -1,20 +1,7 @@
 import Providers from "./providers"
-import { Metadata } from "next"
-import { ReactNode } from "react"
-import { Poppins, Roboto } from "next/font/google"
+import type { Metadata } from "next"
+import type { ReactNode } from "react"
 import "./globals.css"
-
-const customFontPoppins = Poppins({
-  variable: "--font-poppins",
-  subsets: ["latin"],
-  weight: ["400", "500"],
-})
-
-const customFontRoboto = Roboto({
-  variable: "--font-roboto",
-  subsets: ["latin"],
-  weight: ["400", "500"],
-})
 
 export const metadata: Metadata = {
   title: "Talona Costa",
@@ -72,17 +59,24 @@ export const metadata: Metadata = {
   },
 }
 
-export default function RootLayout({ children }: { children: ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: ReactNode
+}) {
   return (
-    <html
-      lang="pt-BR"
-      className={`${customFontPoppins.variable} ${customFontRoboto.variable}`}
-    >
-      <body>
-        <Providers>
-          {children}
-        </Providers>
-      </body>
-    </html>
-  )
-}
+      <html lang="pt-BR">
+        <body>
+          <Providers>
+            {children}
+          </Providers>
+
+          <Script
+            src="https://analytics.talona.com.br/script.js"
+            data-website-id="1b568788-5123-436f-a27f-eae8de7ecc70"
+            strategy="afterInteractive"
+          />
+        </body>
+      </html>
+    )
+  }

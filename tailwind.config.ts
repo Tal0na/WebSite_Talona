@@ -11,8 +11,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        poppins: ["var(--font-poppins)", "sans-serif"],
-        roboto:  ["var(--font-roboto)", "sans-serif"],
+        sans: ["var(--font-roboto-flex)", "sans-serif"],
       },
       colors: {
         gruvbox: {
